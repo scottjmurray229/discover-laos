@@ -1,0 +1,786 @@
+{
+  "name": "10-Day Laos Explorer",
+  "subtitle": "Vientiane → Vang Vieng → Luang Prabang → Nong Khiaw",
+  "dates": "Mar 10–19, 2026",
+  "group": [
+    { "id": "scott", "name": "Scott", "avatar": "🧔", "role": "host", "color": "#0D7377" },
+    { "id": "kham", "name": "Kham", "avatar": "🇱🇦", "role": "editor", "color": "#7C3AED" }
+  ],
+  "days": [
+    {
+      "day": 1,
+      "date": "Mar 10",
+      "title": "Arrive in the Mellow Capital",
+      "location": "Vientiane",
+      "bounds": { "north": 17.985, "south": 17.950, "east": 102.640, "west": 102.590 },
+      "items": [
+        {
+          "id": "d1-1",
+          "time": "2:00 PM",
+          "icon": "✈️",
+          "type": "transport",
+          "title": "Arrive at Wattay International Airport",
+          "detail": "Transfer to hotel by tuk-tuk. 100,000-160,000 LAK ($5-8 USD). Visa on arrival available for most nationalities — $30-42 depending on passport. Bring a passport photo and USD cash for the fee",
+          "status": "confirmed",
+          "lat": 17.9884,
+          "lng": 102.5633
+        },
+        {
+          "id": "d1-2",
+          "time": "3:30 PM",
+          "icon": "🏨",
+          "type": "accommodation",
+          "title": "Check in – Dhavara Boutique Hotel",
+          "detail": "Nokeokoummane Rd, central Vientiane. Stylish rooms with Mekong proximity. 600,000 LAK ($30 USD)/night. Pool, breakfast included. Walking distance to riverside promenade and night market",
+          "status": "confirmed",
+          "lat": 17.9630,
+          "lng": 102.6130
+        },
+        {
+          "id": "d1-3",
+          "time": "4:30 PM",
+          "icon": "🌅",
+          "type": "activity",
+          "title": "Walk the Mekong Riverside Promenade",
+          "detail": "Stroll along Fa Ngum Road as the sun drops over Thailand across the river. Free. Street vendors sell coconut ice cream and grilled meats. The sunset over the Mekong is one of Laos's best free experiences",
+          "status": "confirmed",
+          "lat": 17.9580,
+          "lng": 102.6100
+        },
+        {
+          "id": "d1-4",
+          "time": "6:30 PM",
+          "icon": "🍽️",
+          "type": "food",
+          "title": "Dinner at Kualao Restaurant",
+          "detail": "Traditional Lao cuisine in a classic teak house. Try the laap (minced meat salad) and sticky rice — this is the national dish. Mekong river weed (kaipen) as a starter. 80,000-150,000 LAK ($4-$8 USD)/person. Tam mak hoong (spicy papaya salad) is essential",
+          "status": "confirmed",
+          "lat": 17.9620,
+          "lng": 102.6160
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "date": "Mar 11",
+      "title": "Temples, Monuments & Buddha Park",
+      "location": "Vientiane",
+      "bounds": { "north": 18.000, "south": 17.920, "east": 102.770, "west": 102.590 },
+      "items": [
+        {
+          "id": "d2-1",
+          "time": "7:00 AM",
+          "icon": "☕",
+          "type": "food",
+          "title": "Breakfast – French Baguettes & Lao Coffee",
+          "detail": "Joma Bakery Cafe on Setthathirath Rd. The French colonial legacy means incredible baguette sandwiches. Lao coffee (kafeh) with condensed milk 30,000 LAK ($1.50 USD). Baguette sandwich 50,000 LAK ($2.50 USD). Strong, dark roast — Laos is a coffee-growing country",
+          "status": "confirmed",
+          "lat": 17.9640,
+          "lng": 102.6130
+        },
+        {
+          "id": "d2-2",
+          "time": "8:30 AM",
+          "icon": "🛕",
+          "type": "activity",
+          "title": "Pha That Luang – National Symbol of Laos",
+          "detail": "The most important monument in Laos — a 45m golden stupa dating to the 3rd century, rebuilt in the 16th century. 10,000 LAK ($0.50 USD) entry. Featured on the national emblem and currency. Best photos in morning light. Remove shoes before entering",
+          "status": "confirmed",
+          "lat": 17.9762,
+          "lng": 102.6340
+        },
+        {
+          "id": "d2-3",
+          "time": "10:00 AM",
+          "icon": "🏛️",
+          "type": "activity",
+          "title": "Patuxai Victory Monument",
+          "detail": "Laos's Arc de Triomphe, built with cement donated by the US for a runway — locals call it 'the vertical runway.' Climb to the top for panoramic city views. 5,000 LAK ($0.25 USD). Surrounded by a musical fountain park. Best ironic monument in Southeast Asia",
+          "status": "confirmed",
+          "lat": 17.9753,
+          "lng": 102.6149
+        },
+        {
+          "id": "d2-4",
+          "time": "12:00 PM",
+          "icon": "🍜",
+          "type": "food",
+          "title": "Lunch – Khao Piak Sen at a Local Shop",
+          "detail": "Lao-style noodle soup with hand-rolled rice noodles in a chicken or pork broth. 30,000-40,000 LAK ($1.50-2 USD). Thicker and chewier than Vietnamese pho. Add fresh herbs, lime, and chili flakes from the table. Ask any tuk-tuk driver for the best shop nearby",
+          "status": "confirmed",
+          "lat": 17.9660,
+          "lng": 102.6100
+        },
+        {
+          "id": "d2-5",
+          "time": "1:30 PM",
+          "icon": "🗿",
+          "type": "activity",
+          "title": "Buddha Park (Xieng Khuan)",
+          "detail": "25 km south of Vientiane. Over 200 Hindu and Buddhist sculptures in a riverside meadow, built in 1958 by a shaman-priest. Climb inside the giant pumpkin structure for a trippy journey through hell, earth, and heaven. 15,000 LAK ($0.75 USD). Tuk-tuk round trip 200,000 LAK ($10 USD)",
+          "status": "confirmed",
+          "lat": 17.9160,
+          "lng": 102.7650
+        },
+        {
+          "id": "d2-6",
+          "time": "5:00 PM",
+          "icon": "🛒",
+          "type": "activity",
+          "title": "Vientiane Night Market",
+          "detail": "Along the Mekong riverfront. Handicrafts, textiles, Lao silk scarves from 100,000 LAK ($5 USD), souvenirs. Try grilled ping kai (chicken skewers) and sai oua (Lao sausage) from food stalls — 20,000-40,000 LAK ($1-2 USD). Bargaining expected on handicrafts but less aggressive than Thailand",
+          "status": "confirmed",
+          "lat": 17.9575,
+          "lng": 102.6105
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "date": "Mar 12",
+      "title": "Journey to Vang Vieng & Blue Lagoon",
+      "location": "Vang Vieng",
+      "bounds": { "north": 18.960, "south": 18.900, "east": 102.460, "west": 102.420 },
+      "items": [
+        {
+          "id": "d3-1",
+          "time": "7:30 AM",
+          "icon": "🚐",
+          "type": "transport",
+          "title": "Minivan Vientiane to Vang Vieng",
+          "detail": "3.5-4 hour drive on improved highway through stunning karst scenery. Minivan 80,000-100,000 LAK ($4-5 USD). Departs from VIP bus station. Book at any hotel or travel agent. The last hour through limestone valleys is spectacular",
+          "status": "confirmed",
+          "lat": 18.9222,
+          "lng": 102.4477
+        },
+        {
+          "id": "d3-2",
+          "time": "12:00 PM",
+          "icon": "🏨",
+          "type": "accommodation",
+          "title": "Check in – Inthira Vang Vieng Hotel",
+          "detail": "Riverside location with karst mountain views from the balcony. 500,000 LAK ($25 USD)/night. Pool, restaurant, bike rental available. Central location near restaurants and tour operators",
+          "status": "confirmed",
+          "lat": 18.9230,
+          "lng": 102.4470
+        },
+        {
+          "id": "d3-3",
+          "time": "12:30 PM",
+          "icon": "🍽️",
+          "type": "food",
+          "title": "Lunch at Vang Vieng Riverside Restaurant",
+          "detail": "Lao fried rice with egg and vegetables, fresh spring rolls, Beer Lao on the deck overlooking the Nam Song river and karst peaks. 60,000-100,000 LAK ($3-5 USD). Beer Lao 15,000 LAK ($0.75 USD) — the national beer and genuinely good",
+          "status": "confirmed",
+          "lat": 18.9235,
+          "lng": 102.4465
+        },
+        {
+          "id": "d3-4",
+          "time": "2:00 PM",
+          "icon": "🏞️",
+          "type": "activity",
+          "title": "Blue Lagoon 1 (Tham Phu Kham)",
+          "detail": "The most famous of Vang Vieng's swimming holes. Turquoise water at the base of limestone cliffs. Entry 10,000 LAK ($0.50 USD). Rope swing and tree jump into the lagoon. Explore Tham Phu Kham cave behind it with a headlamp — reclining Buddha inside. Rent a motorbike 80,000 LAK ($4 USD)/day or cycle 7 km",
+          "status": "confirmed",
+          "lat": 18.9080,
+          "lng": 102.4610
+        },
+        {
+          "id": "d3-5",
+          "time": "5:30 PM",
+          "icon": "🌅",
+          "type": "activity",
+          "title": "Sunset Viewpoint over Vang Vieng",
+          "detail": "Hike 15 minutes to Pha Ngern viewpoint for golden hour views over the Nam Song river valley and karst mountains. Free. Bring water. The panorama of limestone peaks turning orange at sunset is unforgettable",
+          "status": "confirmed",
+          "lat": 18.9310,
+          "lng": 102.4390
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "date": "Mar 13",
+      "title": "Tubing, Caves & Kayaking",
+      "location": "Vang Vieng",
+      "bounds": { "north": 18.960, "south": 18.880, "east": 102.470, "west": 102.420 },
+      "items": [
+        {
+          "id": "d4-1",
+          "time": "7:30 AM",
+          "icon": "🥞",
+          "type": "food",
+          "title": "Breakfast – Banana Pancakes & Fruit Shake",
+          "detail": "The backpacker trail classic. Banana pancakes 25,000 LAK ($1.25 USD), fresh mango shake 20,000 LAK ($1 USD). Available at nearly every guesthouse and riverside restaurant. Fuel up — active day ahead",
+          "status": "confirmed",
+          "lat": 18.9225,
+          "lng": 102.4475
+        },
+        {
+          "id": "d4-2",
+          "time": "9:00 AM",
+          "icon": "🛶",
+          "type": "activity",
+          "title": "Kayaking the Nam Song River",
+          "detail": "Half-day guided kayak through karst scenery. Paddle past limestone cliffs, through small rapids, and stop at caves. 200,000-300,000 LAK ($10-15 USD) including equipment and guide. 3-4 hours. No experience needed — gentle Class I-II rapids. Best morning activity in Vang Vieng",
+          "status": "confirmed",
+          "lat": 18.9300,
+          "lng": 102.4450
+        },
+        {
+          "id": "d4-3",
+          "time": "12:30 PM",
+          "icon": "🍚",
+          "type": "food",
+          "title": "Lunch at Earth Restaurant",
+          "detail": "Farm-to-table Lao cuisine with Nam Song views. Try the stuffed lemongrass and water buffalo laap. 60,000-120,000 LAK ($3-6 USD). Organic vegetables from their own garden. One of the best meals in Vang Vieng",
+          "status": "confirmed",
+          "lat": 18.9215,
+          "lng": 102.4460
+        },
+        {
+          "id": "d4-4",
+          "time": "2:00 PM",
+          "icon": "🦇",
+          "type": "activity",
+          "title": "Tham Chang Cave",
+          "detail": "The most accessible cave near Vang Vieng. Lit pathways through spectacular stalactites and stalagmites. Spring-fed pool at the entrance for swimming. 15,000 LAK ($0.75 USD). 200 steps up — rewarded with a natural window overlooking the river valley. Headlamp not needed — this one is well-lit",
+          "status": "confirmed",
+          "lat": 18.9140,
+          "lng": 102.4510
+        },
+        {
+          "id": "d4-5",
+          "time": "3:30 PM",
+          "icon": "🎯",
+          "type": "activity",
+          "title": "Nam Song River Tubing",
+          "detail": "The famous Vang Vieng tubing experience — now much calmer than its wild party days. Drift 3-4 km downstream in an inner tube through karst scenery. 60,000 LAK ($3 USD) tube rental + 100,000 LAK ($5 USD) tuk-tuk back. 2-3 hours. Bring waterproof bag for phone. Dry season (Nov-Apr) is best — water is too fast in rainy season",
+          "status": "confirmed",
+          "lat": 18.9350,
+          "lng": 102.4430
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "date": "Mar 14",
+      "title": "Scenic Journey to Luang Prabang",
+      "location": "Luang Prabang",
+      "bounds": { "north": 19.910, "south": 19.870, "east": 102.150, "west": 102.110 },
+      "items": [
+        {
+          "id": "d5-1",
+          "time": "7:00 AM",
+          "icon": "☕",
+          "type": "food",
+          "title": "Quick Breakfast Before Departure",
+          "detail": "Baguette and Lao coffee to go from a roadside vendor. 40,000 LAK ($2 USD). Grab extra water and snacks — long drive ahead with limited stops",
+          "status": "confirmed",
+          "lat": 18.9225,
+          "lng": 102.4475
+        },
+        {
+          "id": "d5-2",
+          "time": "8:00 AM",
+          "icon": "🚐",
+          "type": "transport",
+          "title": "Minivan Vang Vieng to Luang Prabang",
+          "detail": "6-7 hour journey through mountain switchbacks and stunning highland scenery. VIP minivan 120,000-150,000 LAK ($6-8 USD). The road winds through ethnic Hmong and Khmu villages. Motion sickness pills recommended — very curvy. Alternative: Lao-China Railway, 2 hours, 120,000 LAK ($6 USD) — faster but less scenic",
+          "status": "confirmed",
+          "lat": 19.8900,
+          "lng": 102.1350
+        },
+        {
+          "id": "d5-3",
+          "time": "3:00 PM",
+          "icon": "🏨",
+          "type": "accommodation",
+          "title": "Check in – Villa Santi Hotel",
+          "detail": "Sakkaline Rd, former royal residence. Colonial charm in the UNESCO zone. 700,000 LAK ($35 USD)/night. Walking distance to everything — night market, temples, riverside restaurants. Garden courtyard, traditional Lao architecture",
+          "status": "confirmed",
+          "lat": 19.8880,
+          "lng": 102.1340
+        },
+        {
+          "id": "d5-4",
+          "time": "4:00 PM",
+          "icon": "🛕",
+          "type": "activity",
+          "title": "Wat Xieng Thong – Crown Jewel of Lao Temples",
+          "detail": "The most magnificent temple in Laos, built in 1560 at the confluence of the Mekong and Nam Khan rivers. Sweeping tiered roof, stunning glass mosaic Tree of Life on the rear wall. 20,000 LAK ($1 USD). Golden chapel houses the royal funeral carriage. Allow 1 hour. Late afternoon light is best for the mosaics",
+          "status": "confirmed",
+          "lat": 19.8932,
+          "lng": 102.1398
+        },
+        {
+          "id": "d5-5",
+          "time": "6:00 PM",
+          "icon": "🛒",
+          "type": "activity",
+          "title": "Luang Prabang Night Market",
+          "detail": "Sisavangvong Rd transforms into a handicraft market every evening. Handwoven textiles, mulberry paper products, silver jewelry, hill tribe embroidery. Silk scarves 80,000-200,000 LAK ($4-10 USD). Negotiate gently — prices are already fair. The food alley at the end has incredible 10,000 LAK ($0.50 USD) buffets",
+          "status": "confirmed",
+          "lat": 19.8878,
+          "lng": 102.1330
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "date": "Mar 15",
+      "title": "Alms Ceremony & Kuang Si Falls",
+      "location": "Luang Prabang",
+      "bounds": { "north": 19.910, "south": 19.740, "east": 102.220, "west": 102.050 },
+      "items": [
+        {
+          "id": "d6-1",
+          "time": "5:30 AM",
+          "icon": "🙏",
+          "type": "activity",
+          "title": "Morning Alms Giving Ceremony (Tak Bat)",
+          "detail": "Hundreds of saffron-robed monks walk barefoot through the streets collecting sticky rice from kneeling locals. Observe silently from across the street — do not use flash photography or block the monks' path. Starts at dawn, ~5:30-6:30 AM. Free. If you wish to give alms, buy sticky rice from local vendors (not tourist stalls). The most spiritual experience in Laos",
+          "status": "confirmed",
+          "lat": 19.8880,
+          "lng": 102.1340
+        },
+        {
+          "id": "d6-2",
+          "time": "6:30 AM",
+          "icon": "☕",
+          "type": "food",
+          "title": "Breakfast at Joma Bakery Luang Prabang",
+          "detail": "Post-alms coffee and pastries. Lao iced coffee 25,000 LAK ($1.25 USD), croissants 30,000 LAK ($1.50 USD). The French-Lao breakfast culture is one of the best things about this country. Outdoor seating on the main street for people-watching",
+          "status": "confirmed",
+          "lat": 19.8877,
+          "lng": 102.1335
+        },
+        {
+          "id": "d6-3",
+          "time": "9:00 AM",
+          "icon": "💧",
+          "type": "activity",
+          "title": "Kuang Si Waterfalls",
+          "detail": "30 km south of town. Multi-tiered turquoise waterfall cascading through limestone pools — the most beautiful waterfall in Southeast Asia. 20,000 LAK ($1 USD) entry. Swim in the turquoise pools. Bear rescue center at the entrance (free with ticket). Tuk-tuk round trip 200,000-250,000 LAK ($10-13 USD) with 2-3 hour wait. Go early to beat tour groups — arrive by 9:30 AM",
+          "status": "confirmed",
+          "lat": 19.7485,
+          "lng": 102.0955
+        },
+        {
+          "id": "d6-4",
+          "time": "1:00 PM",
+          "icon": "🍽️",
+          "type": "food",
+          "title": "Lunch at Kuang Si Butterfly Park",
+          "detail": "Next to the falls entrance. Organic Lao food in a garden setting with hundreds of butterflies. Bamboo bridge seating. Lao set lunch 80,000 LAK ($4 USD). Fresh fruit shakes 25,000 LAK ($1.25 USD). Peaceful spot to rest after the waterfall hike",
+          "status": "confirmed",
+          "lat": 19.7495,
+          "lng": 102.0945
+        },
+        {
+          "id": "d6-5",
+          "time": "4:00 PM",
+          "icon": "⛰️",
+          "type": "activity",
+          "title": "Climb Mount Phousi for Sunset",
+          "detail": "328 steps to the golden stupa at the top of the hill in the center of town. 20,000 LAK ($1 USD). 360-degree panorama of Luang Prabang, the Mekong, Nam Khan, and surrounding mountains. Arrive by 4:30 PM to claim a sunset spot — it gets packed. One of the best viewpoints in all of Laos",
+          "status": "confirmed",
+          "lat": 19.8883,
+          "lng": 102.1354
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "date": "Mar 16",
+      "title": "Royal Palace & Cooking Class",
+      "location": "Luang Prabang",
+      "bounds": { "north": 19.900, "south": 19.870, "east": 102.150, "west": 102.120 },
+      "items": [
+        {
+          "id": "d7-1",
+          "time": "8:00 AM",
+          "icon": "🥞",
+          "type": "food",
+          "title": "Breakfast at Le Banneton",
+          "detail": "French bakery on Sakkaline Rd. Best croissants and pain au chocolat in Laos — the French baking tradition is alive and well here. 40,000 LAK ($2 USD) for pastry + coffee. Try the baguette with Lao pate",
+          "status": "confirmed",
+          "lat": 19.8885,
+          "lng": 102.1340
+        },
+        {
+          "id": "d7-2",
+          "time": "9:00 AM",
+          "icon": "🏛️",
+          "type": "activity",
+          "title": "Royal Palace Museum (Haw Kham)",
+          "detail": "Former residence of the Lao royal family until 1975. Houses the sacred Phra Bang Buddha, royal regalia, diplomatic gifts, and the king's personal quarters. 30,000 LAK ($1.50 USD). No photos inside. Remove shoes. The throne room and Pha Bang chapel are highlights. Allow 1.5 hours",
+          "status": "confirmed",
+          "lat": 19.8895,
+          "lng": 102.1350
+        },
+        {
+          "id": "d7-3",
+          "time": "11:00 AM",
+          "icon": "🛕",
+          "type": "activity",
+          "title": "Temple Walk – Wat Mai & Wat Visoun",
+          "detail": "Stroll between Luang Prabang's 33 temples. Wat Mai has a stunning golden relief facade. Wat Visoun (1513) is the oldest temple in town — unique watermelon-shaped stupa. 20,000 LAK ($1 USD) each. Monks are happy to chat — many are learning English and appreciate practice",
+          "status": "confirmed",
+          "lat": 19.8890,
+          "lng": 102.1345
+        },
+        {
+          "id": "d7-4",
+          "time": "12:30 PM",
+          "icon": "🍜",
+          "type": "food",
+          "title": "Lunch – Khao Soi at Luang Prabang Noodle Shop",
+          "detail": "Lao khao soi is completely different from the Thai version — a clear broth with hand-torn rice noodles topped with minced pork, tomato, and fresh herbs. 25,000-35,000 LAK ($1.25-1.75 USD). The definitive Luang Prabang dish. Try it at the unnamed shop across from the Royal Palace — just follow the locals",
+          "status": "confirmed",
+          "lat": 19.8892,
+          "lng": 102.1348
+        },
+        {
+          "id": "d7-5",
+          "time": "2:00 PM",
+          "icon": "🍳",
+          "type": "activity",
+          "title": "Lao Cooking Class at Tamarind",
+          "detail": "Start with a guided market tour at Phosy Morning Market. Learn 5 Lao dishes: laap, sticky rice, jaew bong (chili paste), mok pa (steamed fish in banana leaf), and spring rolls. 400,000 LAK ($20 USD) including all ingredients and recipe booklet. 4 hours. The best way to understand Lao cuisine. Book a day ahead",
+          "status": "confirmed",
+          "lat": 19.8870,
+          "lng": 102.1320
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "date": "Mar 17",
+      "title": "Pak Ou Caves & Mekong Villages",
+      "location": "Luang Prabang",
+      "bounds": { "north": 20.100, "south": 19.870, "east": 102.250, "west": 102.110 },
+      "items": [
+        {
+          "id": "d8-1",
+          "time": "7:00 AM",
+          "icon": "☕",
+          "type": "food",
+          "title": "Early Coffee at Saffron Coffee",
+          "detail": "Lao single-origin coffee roasted in-house. Espresso 20,000 LAK ($1 USD), latte 35,000 LAK ($1.75 USD). Lao Arabica beans from the Bolaven Plateau — rivals anything in Vietnam or Colombia. Sit on the balcony overlooking the Mekong",
+          "status": "confirmed",
+          "lat": 19.8878,
+          "lng": 102.1330
+        },
+        {
+          "id": "d8-2",
+          "time": "8:30 AM",
+          "icon": "🚢",
+          "type": "transport",
+          "title": "Slow Boat to Pak Ou Caves",
+          "detail": "2-hour upstream journey on the Mekong in a traditional longboat. 130,000-160,000 LAK ($7-8 USD)/person shared boat. The river journey through jungle-clad mountains is half the experience. Stop at Ban Xang Hai village (Whisky Village) to sample lao-lao rice whiskey",
+          "status": "confirmed",
+          "lat": 20.0540,
+          "lng": 102.2175
+        },
+        {
+          "id": "d8-3",
+          "time": "10:30 AM",
+          "icon": "🗿",
+          "type": "activity",
+          "title": "Pak Ou Caves (Tham Ting & Tham Theung)",
+          "detail": "Sacred limestone caves at the confluence of the Mekong and Nam Ou rivers. Thousands of Buddha statues deposited by pilgrims over centuries — small wooden Buddhas fill every surface. Lower cave (Tham Ting) is open-air with Mekong views. Upper cave (Tham Theung) requires a flashlight. 20,000 LAK ($1 USD). Deeply atmospheric — the spiritual heart of the Mekong",
+          "status": "confirmed",
+          "lat": 20.0540,
+          "lng": 102.2175
+        },
+        {
+          "id": "d8-4",
+          "time": "12:30 PM",
+          "icon": "🍽️",
+          "type": "food",
+          "title": "Lunch at a Mekong Riverside Village",
+          "detail": "Simple Lao lunch at Ban Xang Hai — grilled fish from the Mekong, sticky rice, and jaew (dipping sauce). 40,000-60,000 LAK ($2-3 USD). Sample the village's homemade lao-lao whiskey (20,000 LAK / $1 for a bottle to take home). Try the snake whiskey if you're brave",
+          "status": "confirmed",
+          "lat": 20.0260,
+          "lng": 102.1980
+        },
+        {
+          "id": "d8-5",
+          "time": "3:00 PM",
+          "icon": "🚢",
+          "type": "transport",
+          "title": "Return Boat to Luang Prabang",
+          "detail": "Downstream return is faster — 1.5 hours. Relax on the boat deck and watch riverside village life. Buffalo bathing, children playing, fishermen casting nets. Included in round-trip boat fare",
+          "status": "confirmed",
+          "lat": 19.8932,
+          "lng": 102.1398
+        },
+        {
+          "id": "d8-6",
+          "time": "5:00 PM",
+          "icon": "🍸",
+          "type": "food",
+          "title": "Sundowners at Utopia Bar",
+          "detail": "Legendary riverside bar with cushions and hammocks overlooking the Nam Khan river. Beer Lao 20,000 LAK ($1 USD), cocktails 60,000 LAK ($3 USD). Recline on floor cushions on the multi-level bamboo terrace. Perfect end to a river day. Closes at 11 PM — Luang Prabang has an early curfew",
+          "status": "confirmed",
+          "lat": 19.8905,
+          "lng": 102.1380
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "date": "Mar 18",
+      "title": "Into the Mountains – Nong Khiaw",
+      "location": "Nong Khiaw",
+      "bounds": { "north": 20.590, "south": 20.560, "east": 102.620, "west": 102.590 },
+      "items": [
+        {
+          "id": "d9-1",
+          "time": "7:30 AM",
+          "icon": "🚐",
+          "type": "transport",
+          "title": "Minivan to Nong Khiaw",
+          "detail": "3-hour drive north through dramatic mountain scenery along the Nam Ou river. 60,000-80,000 LAK ($3-4 USD). Departs from Luang Prabang northern bus station. Road has improved significantly — paved the entire way now. Alternatively take a boat up the Nam Ou (5 hrs, 200,000 LAK / $10 USD) for the scenic route",
+          "status": "confirmed",
+          "lat": 20.5700,
+          "lng": 102.6100
+        },
+        {
+          "id": "d9-2",
+          "time": "11:00 AM",
+          "icon": "🏨",
+          "type": "accommodation",
+          "title": "Check in – Nong Khiaw Riverside Bungalows",
+          "detail": "Bamboo bungalows perched above the Nam Ou river with jaw-dropping karst views. 300,000-400,000 LAK ($15-20 USD)/night. No air-con needed — mountain breeze. Hot shower, mosquito net, balcony with river view. The best-value accommodation in all of Laos",
+          "status": "confirmed",
+          "lat": 20.5720,
+          "lng": 102.6100
+        },
+        {
+          "id": "d9-3",
+          "time": "12:00 PM",
+          "icon": "🍽️",
+          "type": "food",
+          "title": "Lunch at Coco Home Bar & Restaurant",
+          "detail": "Riverside terrace with Nam Ou views and towering karst cliffs behind. Lao set lunch with soup, rice, and stir-fry 40,000-60,000 LAK ($2-3 USD). Fresh fruit shakes 20,000 LAK ($1 USD). The views from this restaurant are better than most 5-star hotels",
+          "status": "confirmed",
+          "lat": 20.5715,
+          "lng": 102.6095
+        },
+        {
+          "id": "d9-4",
+          "time": "1:30 PM",
+          "icon": "🥾",
+          "type": "activity",
+          "title": "Pha Daeng Viewpoint Trek",
+          "detail": "The signature hike of Nong Khiaw. 1.5-2 hour trek through jungle to a jaw-dropping viewpoint over the Nam Ou valley — limestone karsts, river bends, and misty mountains. 20,000 LAK ($1 USD) trail fee. Steep in places, bring water and good shoes. The reward at the top is one of the most stunning views in Laos. Best in afternoon light",
+          "status": "confirmed",
+          "lat": 20.5750,
+          "lng": 102.6050
+        },
+        {
+          "id": "d9-5",
+          "time": "5:30 PM",
+          "icon": "🌅",
+          "type": "activity",
+          "title": "Sunset from the Bridge",
+          "detail": "The old bridge over the Nam Ou offers a perfect sunset vantage point. Mountains turn golden, river reflects the colors. Free. Local kids swim below. Stop at CT Bakery for banana bread and a Beer Lao afterward — 40,000 LAK ($2 USD). The pace of life here is profoundly slow",
+          "status": "confirmed",
+          "lat": 20.5710,
+          "lng": 102.6110
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "date": "Mar 19",
+      "title": "River Caves, Farewell & Return",
+      "location": "Nong Khiaw",
+      "bounds": { "north": 20.590, "south": 20.550, "east": 102.630, "west": 102.590 },
+      "items": [
+        {
+          "id": "d10-1",
+          "time": "6:30 AM",
+          "icon": "☀️",
+          "type": "activity",
+          "title": "Sunrise Over the Nam Ou Valley",
+          "detail": "Wake early for mist rising off the river between karst peaks. Watch from your bungalow balcony or walk to the bridge. Free. Bring coffee from the guesthouse kitchen. One of those mornings you'll remember for years. The mountains glow pink and gold",
+          "status": "confirmed",
+          "lat": 20.5720,
+          "lng": 102.6100
+        },
+        {
+          "id": "d10-2",
+          "time": "8:00 AM",
+          "icon": "🍳",
+          "type": "food",
+          "title": "Breakfast at Delilah's Place",
+          "detail": "Best breakfast spot in Nong Khiaw. Banana pancakes with honey, fresh fruit bowl, Lao coffee. 40,000-60,000 LAK ($2-3 USD). Garden seating with mountain views. Run by a local family — warm hospitality",
+          "status": "confirmed",
+          "lat": 20.5718,
+          "lng": 102.6092
+        },
+        {
+          "id": "d10-3",
+          "time": "9:30 AM",
+          "icon": "🚣",
+          "type": "activity",
+          "title": "Boat to Tham Pha Tok Cave",
+          "detail": "Short boat ride upstream on the Nam Ou + short walk to caves used by villagers as shelters during the Secret War bombing campaigns. 100,000 LAK ($5 USD) for boat + cave entry. The caves are vast — multiple chambers with natural light shafts. A sobering reminder of Laos being the most heavily bombed country per capita in history",
+          "status": "confirmed",
+          "lat": 20.5800,
+          "lng": 102.6200
+        },
+        {
+          "id": "d10-4",
+          "time": "12:00 PM",
+          "icon": "🍽️",
+          "type": "food",
+          "title": "Farewell Lunch – Riverside BBQ",
+          "detail": "Lao-style BBQ (sin dat) on the riverbank. Grill your own meats, vegetables, and make lettuce wraps with herbs and jaew dipping sauce. 60,000-80,000 LAK ($3-4 USD)/person. Beer Lao to toast the journey. Sa bai dee Laos — until next time",
+          "status": "confirmed",
+          "lat": 20.5715,
+          "lng": 102.6095
+        },
+        {
+          "id": "d10-5",
+          "time": "2:00 PM",
+          "icon": "🚐",
+          "type": "transport",
+          "title": "Return Journey – Nong Khiaw to Luang Prabang",
+          "detail": "3-hour minivan back to Luang Prabang. 60,000-80,000 LAK ($3-4 USD). Connect to onward transport: fly from Luang Prabang International Airport to Vientiane (30 min, $50-80 USD) or Bangkok (2 hrs). Alternatively take the scenic Lao-China Railway south. Khop chai lai lai, Laos — thank you very much!",
+          "status": "confirmed",
+          "lat": 19.8970,
+          "lng": 102.1614
+        }
+      ]
+    }
+  ],
+  "weather": [
+    { "day": "Mar 10", "icon": "☀️", "high": 33, "low": 20, "rain": 5 },
+    { "day": "Mar 11", "icon": "🌤️", "high": 34, "low": 21, "rain": 10 },
+    { "day": "Mar 12", "icon": "☀️", "high": 32, "low": 19, "rain": 5 },
+    { "day": "Mar 13", "icon": "⛅", "high": 31, "low": 18, "rain": 15 },
+    { "day": "Mar 14", "icon": "🌤️", "high": 30, "low": 17, "rain": 10 },
+    { "day": "Mar 15", "icon": "☀️", "high": 31, "low": 18, "rain": 5 },
+    { "day": "Mar 16", "icon": "🌤️", "high": 32, "low": 19, "rain": 10 },
+    { "day": "Mar 17", "icon": "☀️", "high": 30, "low": 17, "rain": 5 },
+    { "day": "Mar 18", "icon": "⛅", "high": 28, "low": 15, "rain": 15 },
+    { "day": "Mar 19", "icon": "☀️", "high": 29, "low": 16, "rain": 5 }
+  ],
+  "contacts": [
+    { "icon": "🏨", "name": "Dhavara Boutique Hotel", "role": "Vientiane Accommodation", "phone": "+856 21 222 382" },
+    { "icon": "🏨", "name": "Inthira Vang Vieng", "role": "Vang Vieng Accommodation", "phone": "+856 23 511 088" },
+    { "icon": "🏨", "name": "Villa Santi Hotel", "role": "Luang Prabang Accommodation", "phone": "+856 71 252 157" },
+    { "icon": "🏨", "name": "Nong Khiaw Riverside", "role": "Nong Khiaw Accommodation", "phone": "+856 30 514 7896" },
+    { "icon": "🇱🇦", "name": "Kham Phanthavong", "role": "Local Guide (Luang Prabang)", "phone": "+856 20 5555 1234" },
+    { "icon": "🚑", "name": "Laos Emergency", "role": "Police / Ambulance / Fire", "phone": "191 / 195 / 190" },
+    { "icon": "🏥", "name": "Mahosot Hospital", "role": "Main Hospital (Vientiane)", "phone": "+856 21 214 018" },
+    { "icon": "🇺🇸", "name": "US Embassy Vientiane", "role": "Consular Services", "phone": "+856 21 267 000" }
+  ],
+  "notifications": [
+    {
+      "id": 1,
+      "type": "weather",
+      "text": "Dry season in Laos! March is ideal — warm days, cool mountain evenings. Pack layers for Nong Khiaw (15°C at night).",
+      "time": "2 hrs ago",
+      "read": false
+    },
+    {
+      "id": 2,
+      "type": "change",
+      "by": "scott",
+      "text": "Added cooking class at Tamarind in Luang Prabang — afternoon slot confirmed with market tour!",
+      "time": "5 hrs ago",
+      "read": false
+    },
+    {
+      "id": 3,
+      "type": "enriched",
+      "text": "Tip: The alms ceremony in Luang Prabang starts at dawn (~5:30 AM). Be respectful — observe from across the street, no flash photography.",
+      "time": "1 day ago",
+      "read": true
+    },
+    {
+      "id": 4,
+      "type": "currency",
+      "text": "Exchange rate: 1 USD = ~20,000 LAK. ATMs dispense max 2,000,000 LAK ($100) per withdrawal. BCEL Bank has widest ATM network. Carry cash outside Vientiane and Luang Prabang.",
+      "time": "1 day ago",
+      "read": true
+    },
+    {
+      "id": 5,
+      "type": "sync",
+      "text": "All 10 days synced and available offline. Total trip budget estimate: 13,000,000–18,000,000 LAK ($650–$900 USD) per person.",
+      "time": "2 days ago",
+      "read": true
+    },
+    {
+      "id": 6,
+      "type": "change",
+      "by": "kham",
+      "text": "Suggested adding Pha Daeng viewpoint trek in Nong Khiaw — the best panorama in northern Laos!",
+      "time": "3 days ago",
+      "read": true
+    }
+  ],
+  "changeLog": [
+    {
+      "id": 1,
+      "type": "added",
+      "by": "scott",
+      "time": "5 hrs ago",
+      "title": "Lao Cooking Class at Tamarind",
+      "detail": "Added to Day 7 — Luang Prabang",
+      "day": 7,
+      "synced": true
+    },
+    {
+      "id": 2,
+      "type": "swapped",
+      "by": "scott",
+      "time": "1 day ago",
+      "title": "Kuang Si Falls",
+      "from": "Day 7",
+      "to": "Day 6",
+      "reason": "Better flow — visit falls early before cooking class day",
+      "day": 6,
+      "synced": true
+    },
+    {
+      "id": 3,
+      "type": "added",
+      "by": "kham",
+      "time": "2 days ago",
+      "title": "Pha Daeng Viewpoint Trek",
+      "detail": "Local recommendation — best viewpoint in Nong Khiaw, added to Day 9",
+      "day": 9,
+      "synced": true
+    },
+    {
+      "id": 4,
+      "type": "note",
+      "by": "scott",
+      "time": "3 days ago",
+      "title": "Slow Boat to Pak Ou Caves",
+      "detail": "Booked shared longboat instead of private — the Mekong river journey is half the experience",
+      "day": 8,
+      "synced": true
+    },
+    {
+      "id": 5,
+      "type": "time_changed",
+      "by": "scott",
+      "time": "4 days ago",
+      "title": "Alms Ceremony (Tak Bat)",
+      "from": "6:00 AM",
+      "to": "5:30 AM",
+      "reason": "Ceremony starts at dawn — need to be in position before the monks arrive",
+      "day": 6,
+      "synced": true
+    }
+  ]
+}

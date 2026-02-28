@@ -1,0 +1,23 @@
+{
+	"main": "dist/_worker.js/index.js",
+	"name": "discover-laos",
+  "compatibility_date": "2026-02-04",
+  "compatibility_flags": [
+    "nodejs_compat",
+    "global_fetch_strictly_public"
+  ],
+	"assets": {
+		"binding": "ASSETS",
+		"directory": "./dist"
+	},
+	"observability": {
+    "enabled": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "trip-planner-cache-la",
+      "database_id": "122a8c9c-54cb-4180-adff-d86e6e24aa14"
+    }
+  ]
+}
