@@ -27,13 +27,13 @@ const COLORS = {
   gray600: '#6B7280',
 };
 
-const SAMPLE_PASTE = `Day 1 - Arrive Luang Prabang, transfer to Moalboal
-Day 2 - Sardine run snorkeling, Kawasan Falls canyoneering
-Day 3 - Ferry to Vang Vieng, Chocolate Hills, Tarsier Sanctuary
-Day 4 - Island hopping Balicasag & Virgin Island
-Day 5 - Ferry to Nong Khiaw, Cambugahay Falls, Paliton Beach sunset
-Day 6 - Tubod Marine Sanctuary, Balete Tree, free afternoon
-Day 7 - Ferry to Pakse, fly home`;
+const SAMPLE_PASTE = `Day 1 - Arrive Vientiane, explore Pha That Luang & COPE Visitor Centre
+Day 2 - Morning flight to Luang Prabang, alms giving ceremony at dawn
+Day 3 - Kuang Si Falls, traditional weaving villages
+Day 4 - Slow boat to Nong Khiaw, Tham Pha Tok caves
+Day 5 - Kayak the Nam Ou, hike to 100 Waterfalls viewpoint
+Day 6 - Bus to Vang Vieng, Blue Lagoon & Tham Phu Kham cave
+Day 7 - Tubing on Nam Song, fly home from Vientiane`;
 
 const ENRICHMENT_FEATURES = [
   { icon: '🧭', title: 'Real Directions' },
@@ -236,9 +236,9 @@ export default function IntakeFlow() {
         <div style={{
           position: 'absolute', top: -20, right: -20, fontSize: 100, opacity: 0.08,
           transform: 'rotate(-15deg)',
-        }}>🇵🇭</div>
+        }}>🇱🇦</div>
         <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 2, textTransform: 'uppercase' as const, opacity: 0.6, marginBottom: 8 }}>
-          DISCOVER PHILIPPINES
+          DISCOVER LAOS
         </div>
         <div style={{ fontSize: 26, fontWeight: 800, lineHeight: 1.2, marginBottom: 8 }}>
           Your Trip.<br />Your Companion.
@@ -422,7 +422,7 @@ export default function IntakeFlow() {
         <textarea
           value={pasteText}
           onChange={(e) => setPasteText(e.target.value)}
-          placeholder={"Paste your itinerary here, or describe your trip...\n\nExamples:\n• Copy/paste from an email\n• \"5 days in Luang Prabang and Vang Vieng, want to snorkel and see Chocolate Hills\"\n• Day-by-day breakdown from a travel blog"}
+          placeholder={"Paste your itinerary here, or describe your trip...\n\nExamples:\n• Copy/paste from an email\n• \"5 days in Luang Prabang and Vang Vieng, want to see temples and try Lao cooking classes\"\n• Day-by-day breakdown from a travel blog"}
           style={{
             width: '100%', minHeight: 200, padding: 16, borderRadius: 16,
             border: `1.5px solid ${pasteText ? COLORS.oceanTeal : '#E8E8EC'}`,
@@ -466,9 +466,9 @@ export default function IntakeFlow() {
     const filtered = filter === 'all'
       ? templates
       : templates.filter((t) => {
-          if (filter === 'visayas') return t.route.match(/Luang Prabang|Vang Vieng|Nong Khiaw|Pakse/i);
-          if (filter === 'palawan') return t.route.match(/Southern Laos|4000 Islands|Phonsavan|Puerto Princesa/i);
-          if (filter === 'mindanao') return t.route.match(/Bolaven Plateau|Davao/i);
+          if (filter === 'north') return t.route.match(/Luang Prabang|Nong Khiaw|Phonsavan/i);
+          if (filter === 'central') return t.route.match(/Vientiane|Vang Vieng|Thakhek/i);
+          if (filter === 'south') return t.route.match(/Pakse|Bolaven Plateau|4000 Islands|Si Phan Don/i);
           return true;
         });
 
@@ -480,7 +480,7 @@ export default function IntakeFlow() {
         </div>
 
         <div style={{ display: 'flex', gap: 8, marginBottom: 16, overflowX: 'auto' as const }}>
-          {['all', 'visayas', 'palawan', 'mindanao'].map((f) => (
+          {['all', 'north', 'central', 'south'].map((f) => (
             <Pill key={f} active={filter === f} onClick={() => setFilter(f)}>
               {f.charAt(0).toUpperCase() + f.slice(1)}
             </Pill>
@@ -840,9 +840,9 @@ export default function IntakeFlow() {
         <>
           <div style={{ fontSize: 14, fontWeight: 800, color: COLORS.deepNight, marginBottom: 10 }}>Everything included:</div>
           {[
-            { icon: '🧭', title: 'Real Directions', desc: "Not Google Maps pins — actual 'take the Ceres bus, tell the conductor Panagsama' directions" },
+            { icon: '🧭', title: 'Real Directions', desc: "Not Google Maps pins — actual 'take the songthaew to Kuang Si, tell the driver Ban Thapene' directions" },
             { icon: '🌅', title: 'Sunrise/Sunset', desc: 'Golden hour times with best viewpoints matched to your daily locations' },
-            { icon: '💬', title: 'Local Phrases', desc: 'Luang Prabangano & Lao phrases tuned to your destinations with pronunciation' },
+            { icon: '💬', title: 'Local Phrases', desc: 'Lao phrases tuned to your destinations with pronunciation — sabaidee, khop chai, thao dai' },
             { icon: '📞', title: 'Key Contacts', desc: 'Emergency numbers, hospitals, trusted local drivers & guides for your specific route' },
             { icon: '🎒', title: 'Smart Packing', desc: 'Checklist auto-generated from your activities — canyoneering adds water shoes' },
             { icon: '💰', title: 'Budget Tracker', desc: 'Log expenses, see typical costs, convert currency — all offline' },

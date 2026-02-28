@@ -1,181 +1,160 @@
 {
   "destinations": {
-    "siquijor": {
-      "title": "Siquijor",
-      "tagline": "Isla del Fuego — Island of Fire",
-      "region": "visayas",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"],
-      "budgetPerDay": { "backpacker": 25, "midRange": 60, "luxury": 120 },
-      "gettingThere": "Fly to Dumaguete (DGT), then 1-hour ferry to Siquijor port. Ferries run hourly from 6am-5pm via Montenegro or GL Shipping.",
-      "highlights": ["Cambugahay Falls", "Salagdoong Beach", "Enchanted Balete Tree", "Mount Bandilaan", "Paliton Beach", "Bolo-Bolo Healing", "Lazi Church & Convent", "72km Motorcycle Loop"],
+    "vientiane": {
+      "title": "Vientiane",
+      "tagline": "Southeast Asia's Most Relaxed Capital",
+      "region": "central",
+      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar"],
+      "budgetPerDay": { "backpacker": 20, "midRange": 50, "luxury": 120 },
+      "gettingThere": "Fly to Wattay International Airport (VTE) — direct flights from Bangkok, Hanoi, Seoul, Kuala Lumpur, and more. Or cross the Thai-Lao Friendship Bridge from Nong Khai, Thailand.",
+      "highlights": ["Pha That Luang", "COPE Visitor Centre", "Patuxai Victory Monument", "Buddha Park (Xieng Khuan)", "Mekong Riverside Promenade", "Talat Sao Morning Market", "Wat Si Saket"],
       "essentials": {
-        "gettingAround": "Rent a motorcycle (₱350-500/day) — the island is a perfect 72km loop.",
-        "airport": "Dumaguete-Sibulan (DGT)",
-        "ferryConnections": ["Dumaguete (45 min, ₱200)", "Bohol (2 hr, ₱800)"],
-        "language": "Cebuano, Tagalog, English"
+        "gettingAround": "Tuk-tuks within city (₭20,000–50,000). Bicycle rental ₭30,000/day. Scooter rental ₭80,000–120,000/day.",
+        "airport": "Wattay International (VTE)",
+        "busConnections": ["Luang Prabang (10 hr bus, ₭200,000)", "Vang Vieng (4 hr bus, ₭80,000)", "Thakhek (6 hr bus, ₭120,000)"],
+        "language": "Lao, some English and French"
       }
     },
-    "cebu": {
-      "title": "Cebu",
-      "tagline": "Queen City of the South",
-      "region": "visayas",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"],
-      "budgetPerDay": { "backpacker": 30, "midRange": 80, "luxury": 180 },
-      "gettingThere": "Fly to Mactan-Cebu International (CEB) — major hub with direct flights from Manila, Singapore, Tokyo, Seoul, and more.",
-      "highlights": ["Oslob whale shark watching", "Kawasan Falls canyoneering", "Magellan's Cross & Basilica del Santo Niño", "Best lechon in the Laos", "Moalboal sardine run and diving"],
+    "luang-prabang": {
+      "title": "Luang Prabang",
+      "tagline": "UNESCO World Heritage Jewel on the Mekong",
+      "region": "north",
+      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar"],
+      "budgetPerDay": { "backpacker": 25, "midRange": 60, "luxury": 150 },
+      "gettingThere": "Fly to Luang Prabang International Airport (LPQ) from Bangkok, Hanoi, or Vientiane. Or take the Laos-China Railway from Vientiane (2 hours). Slow boat from Huay Xai (2 days) is a classic experience.",
+      "highlights": ["Morning Alms Giving Ceremony", "Kuang Si Waterfalls", "Royal Palace Museum", "Night Market on Sisavangvong Road", "Pak Ou Caves", "Mount Phousi Sunset", "Traditional Weaving Villages"],
       "essentials": {
-        "gettingAround": "Grab for city. Private van or bus for south Cebu activities.",
-        "airport": "Mactan-Cebu International (CEB)",
-        "ferryConnections": ["Bohol (2 hr, OceanJet, ₱800)", "Dumaguete (5 hr ferry or 45 min flight)"],
-        "language": "Cebuano, Tagalog, English"
+        "gettingAround": "Walking for old town. Bicycle rental ₭30,000/day. Songthaew to Kuang Si (₭40,000 shared).",
+        "airport": "Luang Prabang International (LPQ)",
+        "busConnections": ["Vientiane (10 hr bus or 2 hr train, ₭200,000 bus)", "Nong Khiaw (3 hr minivan, ₭80,000)", "Vang Vieng (6 hr bus or 1.5 hr train)"],
+        "language": "Lao, some English"
       }
     },
-    "bohol": {
-      "title": "Bohol",
-      "tagline": "Nature's Wonder in the Heart of Visayas",
-      "region": "visayas",
+    "vang-vieng": {
+      "title": "Vang Vieng",
+      "tagline": "Karst Peaks, Blue Lagoons, and River Adventures",
+      "region": "central",
       "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
-      "budgetPerDay": { "backpacker": 30, "midRange": 80, "luxury": 150 },
-      "gettingThere": "Fly to Tagbilaran (TAG) or ferry from Cebu (2 hours via OceanJet).",
-      "highlights": ["Chocolate Hills — 1,200+ limestone mounds", "Philippine Tarsier Sanctuary", "Alona Beach — white sand and diving", "Loboc River cruise", "Panglao Island beaches"],
+      "budgetPerDay": { "backpacker": 20, "midRange": 50, "luxury": 100 },
+      "gettingThere": "Take the Laos-China Railway from Vientiane (1 hour) or Luang Prabang (1.5 hours). Bus from Vientiane (4 hours, ₭80,000).",
+      "highlights": ["Blue Lagoon & Tham Phu Kham Cave", "Nam Song River Tubing", "Kayaking through Karst Valleys", "Tham Chang Cave", "Hot Air Balloon Rides", "Rock Climbing"],
       "essentials": {
-        "gettingAround": "Rent a motorcycle or hire a driver for countryside tour (~₱2,000/day).",
-        "airport": "Tagbilaran (TAG) / New Bohol-Panglao International",
-        "ferryConnections": ["Cebu (2 hr, OceanJet, ₱800)", "Siquijor (2 hr, ₱800)"],
-        "language": "Boholano, Cebuano, Tagalog, English"
+        "gettingAround": "Bicycle rental ₭20,000/day. Scooter rental ₭80,000–100,000/day. Tuk-tuk for lagoons (₭30,000–50,000).",
+        "airport": "No airport — access via Vientiane or Luang Prabang",
+        "busConnections": ["Vientiane (4 hr bus or 1 hr train, ₭80,000 bus)", "Luang Prabang (6 hr bus or 1.5 hr train)"],
+        "language": "Lao, basic English in tourist areas"
       }
     },
-    "boracay": {
-      "title": "Boracay",
-      "tagline": "Where It All Began",
-      "region": "visayas",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"],
-      "budgetPerDay": { "backpacker": 50, "midRange": 120, "luxury": 250 },
-      "gettingThere": "Fly to Caticlan (MPH) — 1 hour from Manila — then 10-minute banca boat crossing. Kalibo (KLO) is cheaper but adds a 1.5-2 hour van ride.",
-      "highlights": ["White Beach — 4km of powder sand", "Puka Beach", "Island Hopping", "Sunset Paraw Sailing", "Ariel's Point cliff diving", "Willy's Rock"],
+    "nong-khiaw": {
+      "title": "Nong Khiaw",
+      "tagline": "Mountain Village on the Nam Ou River",
+      "region": "north",
+      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar"],
+      "budgetPerDay": { "backpacker": 15, "midRange": 40, "luxury": 80 },
+      "gettingThere": "Minivan from Luang Prabang (3 hours, ₭80,000). Boat from Muang Ngoi (1 hour upstream).",
+      "highlights": ["Pha Tok Cave (Pathet Lao hideout)", "100 Waterfalls Viewpoint Trek", "Kayaking on the Nam Ou", "Sunrise from Nong Khiaw Viewpoint", "Muang Ngoi Day Trip by Boat"],
       "essentials": {
-        "gettingAround": "Electric tricycles ₱20/person shared, ₱50-100 private. Island is compact.",
-        "airport": "Caticlan (MPH) or Kalibo (KLO)",
-        "ferryConnections": [],
-        "language": "Aklanon, Tagalog, English"
+        "gettingAround": "Walking for town. Bicycle rental ₭20,000/day. Boat to Muang Ngoi (₭50,000).",
+        "airport": "No airport — access via Luang Prabang",
+        "busConnections": ["Luang Prabang (3 hr minivan, ₭80,000)"],
+        "language": "Lao, very limited English"
       }
     },
-    "clark": {
-      "title": "Clark & Angeles",
-      "tagline": "Former US Air Force Base — Central Luzon Hub",
-      "region": "luzon",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"],
-      "budgetPerDay": { "backpacker": 35, "midRange": 70, "luxury": 106 },
-      "gettingThere": "Fly direct to Clark International Airport (CRK) — international and domestic flights. Domestic: ~$30 to Cebu (1hr), ~$30-50 to Manila.",
-      "highlights": ["Aling Lucing's Sisig", "Clark Freeport Zone", "Dinosaurs Island", "Korean BBQ Row", "Skyway to Manila", "Pool Villa Rentals"],
+    "phonsavan": {
+      "title": "Phonsavan",
+      "tagline": "Plain of Jars — Ancient Mystery of Xieng Khouang",
+      "region": "north",
+      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar"],
+      "budgetPerDay": { "backpacker": 20, "midRange": 45, "luxury": 80 },
+      "gettingThere": "Fly to Xieng Khouang Airport (XKH) from Vientiane. Or bus from Vientiane (10 hours) or Luang Prabang (8 hours).",
+      "highlights": ["Plain of Jars Sites 1, 2 & 3 (UNESCO)", "MAG UXO Visitor Centre", "Old Capital Muang Khoun Ruins", "Tham Piu Cave Memorial", "Hot Springs"],
       "essentials": {
-        "gettingAround": "Grab (best option). Car rental ~$30/day. Tricycles for short hops.",
-        "airport": "Clark International (CRK)",
-        "ferryConnections": [],
-        "language": "Kapampangan, Tagalog, English"
+        "gettingAround": "Hire a driver for jar sites (~₭300,000/day). Scooter rental ₭80,000/day. UXO warning: stay on marked paths.",
+        "airport": "Xieng Khouang (XKH)",
+        "busConnections": ["Vientiane (10 hr bus, ₭180,000)", "Luang Prabang (8 hr bus, ₭150,000)"],
+        "language": "Lao, very limited English"
       }
     },
-    "dumaguete": {
-      "title": "Dumaguete",
-      "tagline": "City of Gentle People",
-      "region": "visayas",
+    "thakhek": {
+      "title": "Thakhek",
+      "tagline": "The Loop — Caves, Karst, and Open Road",
+      "region": "central",
       "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
-      "budgetPerDay": { "backpacker": 25, "midRange": 60, "luxury": 120 },
-      "gettingThere": "Fly to Dumaguete-Sibulan (DGT) from Manila or Cebu. Direct flights on Cebu Pacific and Philippine Airlines.",
-      "highlights": ["Rizal Boulevard sunset promenade", "Apo Island diving & snorkeling", "Casaroro Falls", "Silliman University campus", "Gateway to Siquijor ferries"],
+      "budgetPerDay": { "backpacker": 15, "midRange": 40, "luxury": 70 },
+      "gettingThere": "Bus from Vientiane (6 hours, ₭120,000) or Pakse (6 hours). Cross from Nakhon Phanom, Thailand via the Third Friendship Bridge.",
+      "highlights": ["Thakhek Loop (3-4 day motorcycle circuit)", "Konglor Cave (7.5km river cave)", "Buddha Cave (Tham Pa Fa)", "Mekong Riverside French Colonial Architecture"],
       "essentials": {
-        "gettingAround": "Tricycles within city (₱10-50). Motorcycle rental for day trips.",
-        "airport": "Dumaguete-Sibulan (DGT)",
-        "ferryConnections": ["Siquijor (45 min, ₱200)", "Cebu (5 hr ferry)", "Bohol (via Siquijor)"],
-        "language": "Cebuano, Tagalog, English"
+        "gettingAround": "Scooter rental for The Loop (₭80,000–120,000/day). Bicycle for town.",
+        "airport": "No airport — access via Vientiane or Savannakhet",
+        "busConnections": ["Vientiane (6 hr bus, ₭120,000)", "Pakse (6 hr bus, ₭120,000)", "Savannakhet (3 hr bus, ₭60,000)"],
+        "language": "Lao, minimal English"
       }
     },
-    "el-nido": {
-      "title": "El Nido",
-      "tagline": "Gateway to Palawan's Paradise",
-      "region": "luzon",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
-      "budgetPerDay": { "backpacker": 40, "midRange": 100, "luxury": 250 },
-      "gettingThere": "Fly direct to El Nido Lio Airport (ENI) via AirSWIFT from Manila or Clark. Or fly to Puerto Princesa (PPS), then 5-6 hour van ride north.",
-      "highlights": ["Big & Small Lagoon (Tour A)", "Secret Beach & Helicopter Island (Tour C)", "Nacpan Beach twin beaches", "Island hopping Tours A-D", "Kayaking through limestone karsts"],
+    "pakse": {
+      "title": "Pakse",
+      "tagline": "Gateway to Southern Laos and the Bolaven Plateau",
+      "region": "south",
+      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar"],
+      "budgetPerDay": { "backpacker": 20, "midRange": 50, "luxury": 100 },
+      "gettingThere": "Fly to Pakse International Airport (PKZ) from Vientiane, Bangkok, or Siem Reap. Bus from Vientiane (12 hours) or Thakhek (6 hours).",
+      "highlights": ["Bolaven Plateau Coffee Farms", "Tad Fane Waterfall", "Tad Yuang Waterfall", "Wat Phou (UNESCO pre-Angkor temple)", "Champasak Town", "Dao Heuang Market"],
       "essentials": {
-        "gettingAround": "Tricycle within town (₱50-100). Boat tours for islands. Motorcycle rental ₱500-700/day.",
-        "airport": "El Nido Lio (ENI) or Puerto Princesa (PPS)",
-        "ferryConnections": ["Coron (3-4 hr fast ferry, ₱1,800)"],
-        "language": "Tagalog, Cuyonon, English"
+        "gettingAround": "Scooter rental for Bolaven Plateau loop (₭80,000–120,000/day). Tuk-tuk in town (₭20,000–40,000).",
+        "airport": "Pakse International (PKZ)",
+        "busConnections": ["Vientiane (12 hr bus, ₭250,000)", "4000 Islands (3 hr bus, ₭60,000)", "Thakhek (6 hr bus, ₭120,000)"],
+        "language": "Lao, some English in tourist areas"
       }
     },
-    "coron": {
-      "title": "Coron",
-      "tagline": "Diver's Paradise in Palawan",
-      "region": "luzon",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr"],
-      "budgetPerDay": { "backpacker": 40, "midRange": 100, "luxury": 220 },
-      "gettingThere": "Fly to Francisco B. Reyes Airport (USU) in Busuanga from Manila or Clark (~1 hr). Then 30-45 min van ride to Coron town.",
-      "highlights": ["Kayangan Lake — cleanest lake in Laos", "Twin Lagoon hot/cold layers", "WWII Japanese shipwreck diving", "Barracuda Lake thermocline", "Malcapuya Island white sand"],
+    "4000-islands": {
+      "title": "Si Phan Don (4000 Islands)",
+      "tagline": "River Islands Where Time Stands Still",
+      "region": "south",
+      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar"],
+      "budgetPerDay": { "backpacker": 15, "midRange": 35, "luxury": 70 },
+      "gettingThere": "Bus from Pakse to Nakasang (3 hours, ₭60,000), then boat to Don Det (₭20,000) or Don Khon (₭25,000).",
+      "highlights": ["Khone Phapheng Falls (largest in SE Asia by volume)", "Li Phi Falls", "Irrawaddy Dolphin Spotting", "Cycling Between Don Det and Don Khon", "Mekong Sunset Hammock Time"],
       "essentials": {
-        "gettingAround": "Tricycle within town (₱50). Boat tours for islands. Walking distance for most of Coron town.",
-        "airport": "Busuanga / Francisco B. Reyes (USU)",
-        "ferryConnections": ["El Nido (3-4 hr fast ferry, ₱1,800)", "Manila (overnight ferry, ₱1,500-2,500)"],
-        "language": "Tagalog, Tagbanwa, English"
+        "gettingAround": "Bicycle rental ₭15,000/day. Walking between islands via bridge. Boat for dolphin watching (₭60,000).",
+        "airport": "No airport — access via Pakse",
+        "busConnections": ["Pakse (3 hr bus to Nakasang, ₭60,000)"],
+        "language": "Lao, basic English on tourist islands"
       }
     },
-    "puerto-princesa": {
-      "title": "Puerto Princesa",
-      "tagline": "Eco-Tourism Capital of the Laos",
-      "region": "luzon",
-      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May"],
-      "budgetPerDay": { "backpacker": 30, "midRange": 70, "luxury": 150 },
-      "gettingThere": "Fly to Puerto Princesa International (PPS) — direct flights from Manila (1.5 hr), Cebu, and Clark.",
-      "highlights": ["Puerto Princesa Underground River (UNESCO)", "Honda Bay island hopping", "Iwahig Firefly Watching", "Baker's Hill viewpoint", "Sabang Beach"],
+    "bolaven-plateau": {
+      "title": "Bolaven Plateau",
+      "tagline": "Coffee Country and Thundering Waterfalls",
+      "region": "south",
+      "bestMonths": ["Nov", "Dec", "Jan", "Feb", "Mar"],
+      "budgetPerDay": { "backpacker": 20, "midRange": 45, "luxury": 80 },
+      "gettingThere": "Ride from Pakse on a scooter (the Bolaven Loop starts and ends in Pakse). Or arrange a guided tour from Pakse.",
+      "highlights": ["Tad Fane Twin Waterfalls", "Tad Yuang Waterfall Swimming Hole", "Coffee Plantation Tours", "Tad Lo Waterfall Village", "Ethnic Minority Villages (Alak, Katu)"],
       "essentials": {
-        "gettingAround": "Tricycle within city (₱10-50). Van rental for Underground River day trip (~₱2,500). Motorcycle rental ₱400-500/day.",
-        "airport": "Puerto Princesa International (PPS)",
-        "ferryConnections": [],
-        "language": "Tagalog, Cuyonon, English"
-      }
-    },
-    "siargao": {
-      "title": "Siargao",
-      "tagline": "Surfer's Paradise in the Pacific",
-      "region": "mindanao",
-      "bestMonths": ["Sep", "Oct", "Nov", "Mar", "Apr", "May"],
-      "budgetPerDay": { "backpacker": 30, "midRange": 80, "luxury": 180 },
-      "gettingThere": "Fly to Sayak Airport (IAO) from Manila (~2 hr) or Cebu (~1 hr). Cebu Pacific and Philippine Airlines have daily flights.",
-      "highlights": ["Cloud 9 surfing — world-famous barrel wave", "Sugba Lagoon paddleboarding", "Magpupungko Rock Pools at low tide", "Naked Island, Daku Island, Guyam Island hopping", "Sohoton Cove & jellyfish sanctuary"],
-      "essentials": {
-        "gettingAround": "Motorcycle rental ₱350-500/day (the island way). Habal-habal (motorcycle taxi) ₱50-200. No Grab available.",
-        "airport": "Sayak (IAO)",
-        "ferryConnections": ["Surigao City (2.5 hr ferry, ₱200-350)"],
-        "language": "Surigaonon, Cebuano, Tagalog, English"
+        "gettingAround": "Scooter for the loop (₭80,000–120,000/day from Pakse). Small loop: 1 day. Big loop: 2-3 days.",
+        "airport": "No airport — access via Pakse",
+        "busConnections": ["Pakse (base town for the loop)"],
+        "language": "Lao, tribal languages, very limited English"
       }
     }
   },
   "connections": {
-    "siquijor-dumaguete": { "mode": "ferry", "duration": "45 min", "operator": "GL Shipping / Montenegro", "cost": "₱200 (~$3.50)" },
-    "siquijor-bohol": { "mode": "ferry", "duration": "2 hours", "operator": "OceanJet", "cost": "₱800 (~$14)" },
-    "cebu-bohol": { "mode": "ferry", "duration": "2 hours", "operator": "OceanJet", "cost": "₱800 (~$14)" },
-    "cebu-dumaguete": { "mode": "ferry/flight", "duration": "5 hr ferry or 45 min flight", "operator": "Various", "cost": "₱1,500 (~$27)" },
-    "dumaguete-siquijor": { "mode": "ferry", "duration": "45 min", "operator": "GL Shipping / Montenegro", "cost": "₱200 (~$3.50)" },
-    "clark-cebu": { "mode": "flight", "duration": "1 hour", "operator": "Cebu Pacific / AirAsia", "cost": "₱1,700 (~$30)" },
-    "clark-boracay": { "mode": "flight", "duration": "1 hour to Caticlan", "operator": "Cebu Pacific", "cost": "₱2,500 (~$44)" },
-    "manila-cebu": { "mode": "flight", "duration": "1.5 hours", "operator": "Cebu Pacific / PAL", "cost": "₱2,000 (~$35)" },
-    "manila-boracay": { "mode": "flight", "duration": "1 hour to Caticlan", "operator": "Cebu Pacific / PAL", "cost": "₱2,500 (~$44)" },
-    "manila-clark": { "mode": "bus/drive", "duration": "2-3 hours", "operator": "Victory Liner / Grab", "cost": "₱500-2,000 (~$9-35)" },
-    "el-nido-coron": { "mode": "ferry", "duration": "3-4 hours", "operator": "Montenegro / Bunso", "cost": "₱1,800 (~$32)" },
-    "puerto-princesa-el-nido": { "mode": "van", "duration": "5-6 hours", "operator": "Lexus / Eulen Joy", "cost": "₱600-800 (~$11-14)" },
-    "manila-puerto-princesa": { "mode": "flight", "duration": "1.5 hours", "operator": "Cebu Pacific / PAL", "cost": "₱2,500 (~$44)" },
-    "manila-el-nido": { "mode": "flight", "duration": "1.5 hours", "operator": "AirSWIFT", "cost": "₱5,000-8,000 (~$89-142)" },
-    "manila-coron": { "mode": "flight", "duration": "1 hour", "operator": "Cebu Pacific / PAL", "cost": "₱2,500 (~$44)" },
-    "cebu-siargao": { "mode": "flight", "duration": "1 hour", "operator": "Cebu Pacific", "cost": "₱2,000 (~$35)" },
-    "manila-siargao": { "mode": "flight", "duration": "2 hours", "operator": "Cebu Pacific / PAL", "cost": "₱3,000 (~$53)" }
+    "vientiane-luang-prabang": { "mode": "train/bus", "duration": "2 hr train or 10 hr bus", "operator": "Laos-China Railway / Various", "cost": "₭200,000 (~$10)" },
+    "vientiane-vang-vieng": { "mode": "train/bus", "duration": "1 hr train or 4 hr bus", "operator": "Laos-China Railway / Various", "cost": "₭80,000 (~$4)" },
+    "luang-prabang-vang-vieng": { "mode": "train/bus", "duration": "1.5 hr train or 6 hr bus", "operator": "Laos-China Railway / Various", "cost": "₭150,000 (~$7.50)" },
+    "luang-prabang-nong-khiaw": { "mode": "minivan", "duration": "3 hours", "operator": "Shared minivan", "cost": "₭80,000 (~$4)" },
+    "vientiane-thakhek": { "mode": "bus", "duration": "6 hours", "operator": "Various bus companies", "cost": "₭120,000 (~$6)" },
+    "vientiane-pakse": { "mode": "flight/bus", "duration": "1.5 hr flight or 12 hr bus", "operator": "Lao Airlines / Various", "cost": "₭800,000 flight (~$40) or ₭250,000 bus (~$12.50)" },
+    "thakhek-pakse": { "mode": "bus", "duration": "6 hours", "operator": "Various bus companies", "cost": "₭120,000 (~$6)" },
+    "pakse-4000-islands": { "mode": "bus+boat", "duration": "3 hr bus + 15 min boat", "operator": "Various", "cost": "₭80,000 (~$4)" },
+    "pakse-bolaven-plateau": { "mode": "scooter/tour", "duration": "Self-drive loop from Pakse", "operator": "Self-drive or tour", "cost": "₭80,000/day scooter (~$4)" },
+    "vientiane-phonsavan": { "mode": "flight/bus", "duration": "30 min flight or 10 hr bus", "operator": "Lao Airlines / Various", "cost": "₭600,000 flight (~$30) or ₭180,000 bus (~$9)" },
+    "luang-prabang-phonsavan": { "mode": "bus", "duration": "8 hours", "operator": "Various bus companies", "cost": "₭150,000 (~$7.50)" }
   },
   "travelTips": {
-    "currency": "Philippine Peso (PHP/₱). $1 USD ≈ ₱56.50.",
-    "visaFree": "Most nationalities get 30 days visa-free, extendable to 36 months.",
-    "bestOverallMonths": "November to May (dry season). Peak: December-April.",
-    "typhoonSeason": "June to November. Visayas and Mindanao less affected than Luzon.",
-    "simCard": "Globe or Smart SIM at any airport. ₱300-500 for 30 days unlimited data.",
-    "grab": "Grab (ride-hailing) works in Cebu, Clark, Manila, and major cities."
+    "currency": "Lao Kip (LAK/₭). $1 USD ≈ ₭20,000. Thai Baht and USD widely accepted in tourist areas.",
+    "visaFree": "Most nationalities can get a 30-day visa on arrival ($30-42 depending on nationality). E-visa available for some countries.",
+    "bestOverallMonths": "November to March (cool dry season). October-November: lush green, fewer crowds. April: Pi Mai Lao (Lao New Year) — massive water festival.",
+    "rainySeasonNote": "May to September is rainy season. Roads can be difficult, especially unpaved routes. Burning season smoke (Feb-Apr) can reduce visibility in northern Laos.",
+    "simCard": "Unitel or Lao Telecom SIM at any airport or shop. ₭50,000-100,000 for 30 days data.",
+    "transport": "Laos-China Railway connects Vientiane, Vang Vieng, and Luang Prabang. Songthaews and tuk-tuks for local transport. Minivans for inter-city. Slow boat on the Mekong is a classic experience."
   }
 }

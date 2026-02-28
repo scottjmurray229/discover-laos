@@ -608,12 +608,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <div class="fe-card">
         <div class="fe-card-icon">📱</div>
         <h3>Everything Offline, One Screen</h3>
-        <p>Directions, restaurant picks, current prices, cultural tips — organized in one place instead of scattered across Viber messages from tita. Works when Smart or Globe signal drops.</p>
+        <p>Directions, restaurant picks, current prices, cultural tips — organized in one place instead of scattered across chat messages. Works when signal drops on remote roads and rivers.</p>
       </div>
       <div class="fe-card">
         <div class="fe-card-icon">📍</div>
         <h3>Beyond the Places You Already Know</h3>
-        <p>Your family knows their province. The Companion fills the gaps — reliable directions to places they've never been either, updated fares, and honest restaurant picks across 40+ destinations.</p>
+        <p>Even seasoned travelers miss things. The Companion fills the gaps — reliable directions to places off the beaten path, updated fares, and honest restaurant picks across 9 destinations.</p>
       </div>
       <div class="fe-card">
         <div class="fe-card-icon">💬</div>
@@ -677,7 +677,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <span class="fe-dest-badge">Bolaven Plateau</span>
       <span class="fe-dest-badge">Pakse</span>
       <span class="fe-dest-badge">Phonsavan</span>
-      <span class="fe-dest-badge">Camiguin</span>
+      <span class="fe-dest-badge">Thakhek</span>
     </div>
     <div class="fe-testimonial-placeholder">
       Testimonials coming soon from our first Founding Explorers
@@ -694,7 +694,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </details>
       <details class="fe-faq-item">
         <summary>I've been to the Laos many times — is this still useful for me?</summary>
-        <div class="fe-faq-answer">Absolutely. Even if you know your partner's home province like the back of your hand, the Companion covers 40+ destinations with current prices, updated directions, and offline access. It's especially useful when you're exploring beyond the places you already know — or when your family sends you on errands in an unfamiliar city.</div>
+        <div class="fe-faq-answer">Absolutely. Even if you've been before, the Companion covers 9 destinations with current prices, updated directions, and offline access. It's especially useful when you're exploring beyond the places you already know — or venturing to more remote areas.</div>
       </details>
       <details class="fe-faq-item">
         <summary>My partner is Lao — can't they just guide me?</summary>
@@ -710,7 +710,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </details>
       <details class="fe-faq-item">
         <summary>I'm Lao and I live in the Laos — should I sign up?</summary>
-        <div class="fe-faq-answer">If you're planning to travel to destinations outside your home area, definitely! The Companion is great for exploring provinces you don't know yet. If you'd rather contribute local knowledge about YOUR area, we'd love that too — ask us about our Local Explorer program.</div>
+        <div class="fe-faq-answer">If you're planning to travel to destinations you haven't explored yet, definitely! The Companion is great for discovering new areas. If you'd rather contribute local knowledge about a place you know well, we'd love that too — ask us about our Local Explorer program.</div>
       </details>
       <details class="fe-faq-item">
         <summary>Can my travel partner sign up too?</summary>
@@ -779,10 +779,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <label class="fe-checkbox-label"><input type="checkbox" name="destinations" value="Vientiane" /> Vientiane</label>
             <label class="fe-checkbox-label"><input type="checkbox" name="destinations" value="Bolaven Plateau" /> Bolaven Plateau</label>
             <label class="fe-checkbox-label"><input type="checkbox" name="destinations" value="Pakse" /> Pakse</label>
-            <label class="fe-checkbox-label"><input type="checkbox" name="destinations" value="Manila" /> Manila</label>
-            <label class="fe-checkbox-label"><input type="checkbox" name="destinations" value="Thakhek / Angeles" /> Thakhek / Angeles</label>
-            <label class="fe-checkbox-label"><input type="checkbox" name="destinations" value="Camiguin" /> Camiguin</label>
-            <label class="fe-checkbox-label"><input type="checkbox" name="destinations" value="Batanes" /> Batanes</label>
+            <label class="fe-checkbox-label"><input type="checkbox" name="destinations" value="Thakhek" /> Thakhek</label>
             <label class="fe-checkbox-label"><input type="checkbox" name="destinations" value="Other" id="fe-dest-other-cb" /> Other</label>
           </div>
           <div class="fe-other-text" id="fe-dest-other-wrap">
@@ -831,7 +828,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <div class="fe-form-row" id="fe-know-areas-wrap" style="display:none;">
           <div class="fe-field">
             <label for="fe-know-areas">Which areas do you already know well? <span style="font-weight:400;color:#94A3B8;">(optional)</span></label>
-            <input type="text" id="fe-know-areas" name="knownAreas" placeholder="e.g., Central Laos, Luang Prabang City, Tagaytay..." />
+            <input type="text" id="fe-know-areas" name="knownAreas" placeholder="e.g., Central Laos, Luang Prabang, Vientiane..." />
           </div>
         </div>
 
@@ -842,7 +839,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
             <label class="fe-radio-label"><input type="radio" name="howHeard" value="Scott told me" required /> Scott told me</label>
             <label class="fe-radio-label"><input type="radio" name="howHeard" value="Scott told me" /> Scott told me</label>
             <label class="fe-radio-label"><input type="radio" name="howHeard" value="Friend or family member" /> Friend or family member</label>
-            <label class="fe-radio-label"><input type="radio" name="howHeard" value="Viber or Messenger group" /> Viber or Messenger group</label>
+            <label class="fe-radio-label"><input type="radio" name="howHeard" value="Chat group" /> Chat or Messenger group</label>
             <label class="fe-radio-label"><input type="radio" name="howHeard" value="Social media" /> Social media</label>
             <label class="fe-radio-label"><input type="radio" name="howHeard" value="Google search" /> Google search</label>
             <label class="fe-radio-label"><input type="radio" name="howHeard" value="Other" /> Other</label>

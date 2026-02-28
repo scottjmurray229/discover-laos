@@ -1,7 +1,7 @@
 {
-  "name": "Trip Companion — Discover Philippines",
+  "name": "Trip Companion — Discover Laos",
   "short_name": "Trip Companion",
-  "description": "Your offline Philippines trip companion with local directions, budget tracking, and insider tips.",
+  "description": "Your offline Laos trip companion with local directions, budget tracking, and insider tips.",
   "start_url": "/companion/app/",
   "display": "standalone",
   "orientation": "portrait",

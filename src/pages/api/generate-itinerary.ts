@@ -4,7 +4,8 @@ import type { APIContext } from 'astro';
 import knowledgeBase from '../../data/destination-knowledge.json';
 import { verifyEmailCookie } from '../../lib/email-cookie';
 import { DESTINATION_COORDS } from '../../data/destination-coords';
-import { LANDMARK_COORDS } from '../../data/landmark-coords';
+// Landmark coords not yet populated for Laos — use empty object
+const LANDMARK_COORDS: Record<string, { lat: number; lng: number }> = {};
 import { logUsage } from '../../lib/usage-tracking';
 import { checkAndAlertAbuse, alertRateLimitHit } from '../../lib/abuse-alerts';
 
@@ -22,7 +23,7 @@ interface RequestBody {
 interface DayItem {
   time: string;
   description: string;
-  pricePhp?: number;
+  priceLak?: number;
   priceUsd?: number;
   category: 'transport' | 'accommodation' | 'activity' | 'food' | 'ferry';
   affiliateType?: 'hotel' | 'tour' | 'transport' | null;
@@ -42,7 +43,7 @@ interface Day {
 interface Itinerary {
   title: string;
   subtitle: string;
-  totalBudget: { php: number; usd: number };
+  totalBudget: { lak: number; usd: number };
   days: Day[];
 }
 
@@ -108,24 +109,24 @@ function extractDestsFromText(text: string): string[] {
 
   // Keyword-based fallback: map common themes to popular destinations
   const themeMap: Record<string, string[]> = {
-    'beach': ['boracay', 'el-nido', 'siargao'],
-    'island': ['el-nido', 'coron', 'boracay'],
-    'snorkel': ['cebu', 'coron', 'bohol'],
-    'dive': ['coron', 'cebu', 'bohol'],
-    'diving': ['coron', 'cebu', 'bohol'],
-    'surf': ['siargao'],
-    'culture': ['cebu', 'bohol', 'siquijor'],
-    'history': ['cebu', 'clark'],
-    'food': ['cebu', 'dumaguete', 'clark'],
-    'relax': ['siquijor', 'siargao', 'boracay'],
-    'adventure': ['el-nido', 'coron', 'siargao'],
-    'family': ['cebu', 'bohol', 'boracay'],
-    'honeymoon': ['el-nido', 'boracay', 'siargao'],
-    'romantic': ['el-nido', 'boracay', 'siquijor'],
-    'budget': ['cebu', 'dumaguete', 'siquijor'],
-    'luxury': ['boracay', 'el-nido', 'coron'],
-    'palawan': ['el-nido', 'coron', 'puerto-princesa'],
-    'visayas': ['cebu', 'bohol', 'siquijor'],
+    'temple': ['luang-prabang', 'vientiane'],
+    'temples': ['luang-prabang', 'vientiane'],
+    'nature': ['vang-vieng', 'nong-khiaw', 'bolaven-plateau'],
+    'adventure': ['vang-vieng', 'thakhek', 'nong-khiaw'],
+    'culture': ['luang-prabang', 'vientiane', 'phonsavan'],
+    'history': ['phonsavan', 'vientiane', 'luang-prabang'],
+    'food': ['luang-prabang', 'vientiane', 'pakse'],
+    'relax': ['4000-islands', 'nong-khiaw', 'vang-vieng'],
+    'river': ['4000-islands', 'nong-khiaw', 'luang-prabang'],
+    'waterfall': ['bolaven-plateau', 'luang-prabang', 'nong-khiaw'],
+    'coffee': ['bolaven-plateau', 'pakse'],
+    'family': ['luang-prabang', 'vientiane', 'vang-vieng'],
+    'honeymoon': ['luang-prabang', '4000-islands', 'nong-khiaw'],
+    'romantic': ['luang-prabang', '4000-islands', 'nong-khiaw'],
+    'budget': ['vang-vieng', 'vientiane', '4000-islands'],
+    'luxury': ['luang-prabang', 'vientiane', 'pakse'],
+    'north': ['luang-prabang', 'nong-khiaw', 'phonsavan'],
+    'south': ['pakse', 'bolaven-plateau', '4000-islands'],
   };
 
   const matched = new Set<string>();
@@ -137,7 +138,7 @@ function extractDestsFromText(text: string): string[] {
   if (matched.size > 0) return [...matched].slice(0, 4);
 
   // Ultimate fallback: popular starter destinations when description exists
-  return ['cebu', 'bohol', 'el-nido'];
+  return ['luang-prabang', 'vang-vieng', 'vientiane'];
 }
 
 async function computeHash(input: string): Promise<string> {
@@ -285,41 +286,41 @@ function buildSystemPrompt(): string {
   return `You are the Discover Laos AI Trip Planner. You generate detailed day-by-day itineraries for Laos travel.
 
 RULES:
-- All prices in BOTH PHP (₱) and USD ($). Use rate: $1 = ₱56.50
+- All prices in BOTH LAK (₭) and USD ($). Use rate: $1 = ₭20,000
 - Include specific restaurant names, hotel recommendations, and transport details
 - Use first-person plural voice: "we recommend...", "you'll love..."
 - Be specific: real place names, real prices, real transport options
 - Tag hotel/tour/transport items with affiliateType and affiliateSlotId for future monetization
-- affiliateSlotId format: "day{N}-{type}-{destination}" e.g. "day1-hotel-cebu"
+- affiliateSlotId format: "day{N}-{type}-{destination}" e.g. "day1-hotel-vientiane"
 
 SCALING BY TRIP LENGTH — this is critical to stay within output limits:
 - 1-7 days: 3-5 items per day, full descriptions (1-2 sentences each)
 - 8-14 days: 2-4 items per day, concise descriptions (1 sentence each)
-- 15+ days: 2-3 items per day, brief descriptions (under 15 words each). Group similar days (e.g. "Days 5-6: Beach days in Samar"). Only include key activities, one meal, and accommodation.
+- 15+ days: 2-3 items per day, brief descriptions (under 15 words each). Group similar days (e.g. "Days 5-6: River days in 4000 Islands"). Only include key activities, one meal, and accommodation.
 
 KNOWLEDGE BASE:
 ${JSON.stringify(knowledgeBase, null, 2)}
 
 RESPONSE FORMAT — Return ONLY valid JSON matching this schema:
 {
-  "title": "string — trip title like '7-Day Northern Laos Island Hopping'",
+  "title": "string — trip title like '7-Day Northern Laos Temple & Nature Trail'",
   "subtitle": "string — budget + month like 'Mid-Range · March 2026'",
-  "totalBudget": { "php": number, "usd": number },
+  "totalBudget": { "lak": number, "usd": number },
   "days": [
     {
       "dayNumber": 1,
       "title": "string — day title like 'Arrive in Luang Prabang City'",
-      "destination": "string — slug like 'cebu'",
+      "destination": "string — slug like 'vientiane'",
       "items": [
         {
           "time": "string — like 'Morning' or '5:30 AM'",
           "description": "string — what to do, with personality",
-          "pricePhp": number_or_null,
+          "priceLak": number_or_null,
           "priceUsd": number_or_null,
           "category": "transport|accommodation|activity|food|ferry",
           "affiliateType": "hotel|tour|transport|null",
           "affiliateSlotId": "string_or_null",
-          "locationName": "string — specific place name for map pin, e.g. 'Nacpan Beach', 'Kawasan Falls', 'Luang Prabang IT Park'. Use real, specific place names."
+          "locationName": "string — specific place name for map pin, e.g. 'Kuang Si Falls', 'Pha That Luang', 'Vang Vieng Blue Lagoon'. Use real, specific place names."
         }
       ]
     }

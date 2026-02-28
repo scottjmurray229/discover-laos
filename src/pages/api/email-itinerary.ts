@@ -8,7 +8,7 @@ const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 interface DayItem {
   time: string;
   description: string;
-  pricePhp?: number;
+  priceLak?: number;
   priceUsd?: number;
   category: string;
   affiliateType?: string | null;
@@ -87,16 +87,16 @@ function buildItineraryEmail(it: Itinerary, tp?: TripParams): string {
 
   for (const day of it.days) {
     let itemsHtml = '';
-    let dayPhp = 0;
+    let dayLak = 0;
     let dayUsd = 0;
 
     for (const item of day.items) {
       const icon = CATEGORY_ICONS[item.category] || '';
       let priceStr = '';
-      if (item.pricePhp) {
-        dayPhp += item.pricePhp;
+      if (item.priceLak) {
+        dayLak += item.priceLak;
         if (item.priceUsd) dayUsd += item.priceUsd;
-        priceStr = ` — ₱${item.pricePhp.toLocaleString()}`;
+        priceStr = ` — ₭${item.priceLak.toLocaleString()}`;
         if (item.priceUsd) priceStr += ` (~$${item.priceUsd} USD)`;
       }
 
@@ -122,7 +122,7 @@ function buildItineraryEmail(it: Itinerary, tp?: TripParams): string {
         </tr>`;
     }
 
-    const subtotalHtml = dayPhp > 0 ? `<tr><td colspan="2" style="text-align:right;font-size:12px;font-weight:600;color:#1A2332;padding-top:8px;border-top:1px solid #EBE4D8;">Day total: ₱${dayPhp.toLocaleString()} (~$${dayUsd} USD)</td></tr>` : '';
+    const subtotalHtml = dayLak > 0 ? `<tr><td colspan="2" style="text-align:right;font-size:12px;font-weight:600;color:#1A2332;padding-top:8px;border-top:1px solid #EBE4D8;">Day total: ₭${dayLak.toLocaleString()} (~$${dayUsd} USD)</td></tr>` : '';
 
     daysHtml += `
       <div style="background:white;border-radius:12px;padding:20px;margin-bottom:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
@@ -135,7 +135,7 @@ function buildItineraryEmail(it: Itinerary, tp?: TripParams): string {
   const budgetHtml = it.totalBudget ? `
     <div style="display:flex;justify-content:space-between;align-items:center;background:#E8F4F5;border-radius:10px;padding:12px 20px;margin-bottom:20px;">
       <span style="font-size:14px;font-weight:600;color:#0D7377;">Estimated Total</span>
-      <span style="font-size:16px;font-weight:800;color:#1A2332;">₱${it.totalBudget.php?.toLocaleString() || '—'} <span style="font-size:13px;font-weight:400;color:#0D7377;">(~$${it.totalBudget.usd?.toLocaleString() || '—'} USD)</span></span>
+      <span style="font-size:16px;font-weight:800;color:#1A2332;">₭${it.totalBudget.php?.toLocaleString() || '—'} <span style="font-size:13px;font-weight:400;color:#0D7377;">(~$${it.totalBudget.usd?.toLocaleString() || '—'} USD)</span></span>
     </div>` : '';
 
   return `<!DOCTYPE html>

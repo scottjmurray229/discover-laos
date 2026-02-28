@@ -11,7 +11,7 @@ import { checkAndAlertAbuse, alertRateLimitHit } from '../../lib/abuse-alerts';
 interface DayItem {
   time: string;
   description: string;
-  pricePhp?: number;
+  priceLak?: number;
   priceUsd?: number;
   category: 'transport' | 'accommodation' | 'activity' | 'food' | 'ferry';
   affiliateType?: 'hotel' | 'tour' | 'transport' | null;
@@ -28,7 +28,7 @@ interface Day {
 interface Itinerary {
   title: string;
   subtitle: string;
-  totalBudget: { php: number; usd: number };
+  totalBudget: { lak: number; usd: number };
   days: Day[];
 }
 
@@ -143,12 +143,12 @@ function buildChatSystemPrompt(): string {
 
 RULES:
 - Return a COMPLETE replacement itinerary — preserve unchanged parts exactly as they are
-- All prices in BOTH PHP (₱) and USD ($). Use rate: $1 = ₱56.50
+- All prices in BOTH LAK (₭) and USD ($). Use rate: $1 = ₭20,000
 - Include specific restaurant names, hotel recommendations, and transport details
 - Use first-person plural voice: "we recommend...", "you'll love..."
 - Be specific: real place names, real prices, real transport options
 - Tag hotel/tour/transport items with affiliateType and affiliateSlotId for future monetization
-- affiliateSlotId format: "day{N}-{type}-{destination}" e.g. "day1-hotel-cebu"
+- affiliateSlotId format: "day{N}-{type}-{destination}" e.g. "day1-hotel-vientiane"
 - When swapping destinations, update transport/ferry items between days
 - When changing budget, adjust hotel and restaurant recommendations accordingly
 - When adding/removing days, renumber all dayNumber fields sequentially
@@ -167,7 +167,7 @@ RESPONSE FORMAT — Return ONLY valid JSON with this schema:
   "itinerary": {
     "title": "string",
     "subtitle": "string",
-    "totalBudget": { "php": number, "usd": number },
+    "totalBudget": { "lak": number, "usd": number },
     "days": [
       {
         "dayNumber": 1,
@@ -177,7 +177,7 @@ RESPONSE FORMAT — Return ONLY valid JSON with this schema:
           {
             "time": "string",
             "description": "string",
-            "pricePhp": number_or_null,
+            "priceLak": number_or_null,
             "priceUsd": number_or_null,
             "category": "transport|accommodation|activity|food|ferry",
             "affiliateType": "hotel|tour|transport|null",

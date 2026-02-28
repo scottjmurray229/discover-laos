@@ -111,15 +111,15 @@ const budgetText = frontmatter.budgetPerDay
   ? `$${frontmatter.budgetPerDay.backpacker}–$${frontmatter.budgetPerDay.luxury}/day`
   : '';
 
-// Derive destination slug from the URL pathname for guideTag (e.g., /destinations/siquijor/ -> siquijor)
+// Derive destination slug from the URL pathname for guideTag (e.g., /destinations/luang-prabang/ -> luang-prabang)
 const destSlug = Astro.url.pathname.replace(/^\/destinations\//, '').replace(/\/$/, '') || frontmatter.title.toLowerCase().replace(/\s+/g, '-');
 
 // Content pillar links for cross-linking section
 const pillarLinks = [
-  { icon: '🤿', label: 'Snorkeling', desc: 'Best snorkeling spots', url: '/snorkeling-philippines/' },
-  { icon: '🎉', label: 'Festivals', desc: 'Celebrations & events', url: '/festivals/' },
+  { icon: '🏛️', label: 'Temples', desc: 'Buddhist temples & heritage', url: '/destinations/luang-prabang/' },
   { icon: '🍴', label: 'Food & Cuisine', desc: `${regionName} food guide`, url: '/cuisine/' },
-  { icon: '🏛️', label: 'WWII Heritage', desc: 'Historical sites', url: '/history/' },
+  { icon: '🌿', label: 'Nature', desc: 'Waterfalls & adventure', url: '/destinations/vang-vieng/' },
+  { icon: '📋', label: 'Travel Tips', desc: 'Practical guide', url: '/practical/' },
 ];
 
 // Gradient CSS variable name based on title (first word, lowercased)

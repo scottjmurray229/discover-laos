@@ -56,7 +56,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
     </div>
     <div class="map-layout">
 
-      <!-- PHILIPPINES MAP -->
+      <!-- LAOS MAP -->
       <div class="map-container" id="mapContainer">
         <div class="map-tooltip" id="mapTooltip">
           <div class="map-tooltip-name" id="tooltipName"></div>
@@ -146,10 +146,10 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
         <label class="form-label" for="tripStyle">Travel style</label>
         <select class="form-select" id="tripStyle">
           <option value="">Select style...</option>
-          <option>Backpacker (&#8369;1,000-2,000/day · ~$18-$35 USD)</option>
-          <option>Budget-comfortable (&#8369;2,000-4,000/day · ~$35-$71 USD)</option>
-          <option>Mid-range (&#8369;4,000-8,000/day · ~$71-$142 USD)</option>
-          <option>Luxury (&#8369;8,000+/day · ~$142+ USD)</option>
+          <option>Backpacker (&#8363;200,000-500,000/day · ~$10-$25 USD)</option>
+          <option>Budget-comfortable (&#8363;500,000-1,000,000/day · ~$25-$50 USD)</option>
+          <option>Mid-range (&#8363;1,000,000-2,000,000/day · ~$50-$100 USD)</option>
+          <option>Luxury (&#8363;2,000,000+/day · ~$100+ USD)</option>
         </select>
       </div>
       <div class="form-group">
@@ -167,8 +167,8 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
     <div class="form-group" style="margin-top: 20px;">
       <label class="form-label" for="budgetSlider">Daily budget</label>
       <div class="budget-display">
-        <input type="range" class="budget-range" id="budgetSlider" min="500" max="15000" step="250" value="3000" />
-        <div class="budget-value" id="budgetDisplay">&#8369;3,000 <span class="budget-usd">(~$53 USD)</span></div>
+        <input type="range" class="budget-range" id="budgetSlider" min="200000" max="4000000" step="100000" value="1000000" />
+        <div class="budget-value" id="budgetDisplay">&#8363;1,000,000 <span class="budget-usd">(~$50 USD)</span></div>
       </div>
     </div>
   </div>
@@ -231,9 +231,9 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
   const budgetDisplay = document.getElementById('budgetDisplay');
   if (slider && budgetDisplay) {
     slider.addEventListener('input', () => {
-      const php = parseInt(slider.value);
-      const usd = (php / 56.5).toFixed(0);
-      budgetDisplay.innerHTML = `\u20B1${php.toLocaleString()} <span class="budget-usd">(~$${usd} USD)</span>`;
+      const lak = parseInt(slider.value);
+      const usd = (lak / 20000).toFixed(0);
+      budgetDisplay.innerHTML = `\u20AD${lak.toLocaleString()} <span class="budget-usd">(~$${usd} USD)</span>`;
     });
   }
 
@@ -378,29 +378,16 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
 
   // Destination display names for affiliate URLs
   const DEST_NAMES: Record<string, string> = {
-    'siquijor':'Nong Khiaw','cebu':'Luang Prabang','bohol':'Vang Vieng','boracay':'Vientiane',
-    'el-nido':'4000 Islands Southern Laos','coron':'Phonsavan Southern Laos','siargao':'Bolaven Plateau',
-    'dumaguete':'Pakse','clark':'Thakhek Central Laos','manila':'Manila',
-    'davao':'Davao','camiguin':'Camiguin','puerto-princesa':'Puerto Princesa',
-    'palawan':'Southern Laos','vigan':'Vigan','sagada':'Sagada','batanes':'Batanes',
-    'legazpi':'Legazpi','tagaytay':'Tagaytay','baguio':'Baguio',
-    'bacolod':'Bacolod','iloilo':'Iloilo','malapascua':'Malapascua',
-    'la-union':'La Union','baler':'Baler','donsol':'Donsol',
-    'puerto-galera':'Puerto Galera','subic':'Subic',
+    'luang-prabang':'Luang Prabang','vientiane':'Vientiane','vang-vieng':'Vang Vieng',
+    'nong-khiaw':'Nong Khiaw','phonsavan':'Phonsavan','pakse':'Pakse',
+    'bolaven-plateau':'Bolaven Plateau','4000-islands':'4000 Islands','thakhek':'Thakhek',
   };
 
-  // 12Go Asia slug mapping (site slug → 12Go city slug)
+  // 12Go Asia slug mapping (site slug -> 12Go city slug)
   const TWELVE_GO_SLUGS: Record<string, string> = {
-    'manila':'manila','cebu':'cebu','bohol':'bohol','siquijor':'siquijor',
-    'dumaguete':'dumaguete','boracay':'boracay','el-nido':'el-nido',
-    'coron':'coron','siargao':'siargao','davao':'davao',
-    'puerto-princesa':'puerto-princesa','camiguin':'camiguin',
-    'iloilo':'iloilo','bacolod':'bacolod','legazpi':'legazpi',
-    'puerto-galera':'puerto-galera','batangas':'batangas',
-    'donsol':'donsol','vigan':'vigan','baguio':'baguio',
-    'sagada':'sagada','clark':'clark','la-union':'san-fernando-la-union',
-    'baler':'baler','pagudpud':'pagudpud','subic':'subic',
-    'malapascua':'malapascua','tagaytay':'tagaytay',
+    'luang-prabang':'luang-prabang','vientiane':'vientiane','vang-vieng':'vang-vieng',
+    'nong-khiaw':'nong-khiaw','pakse':'pakse','thakhek':'thakhek',
+    'phonsavan':'phonsavan','bolaven-plateau':'pakse','4000-islands':'pakse',
   };
 
   // Parse trip form data into booking params
@@ -460,7 +447,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
     }
     if (type === 'transport' || type === 'ferry') {
       const slug12go = TWELVE_GO_SLUGS[destination] || destination.replace(/-/g, '-');
-      return `https://12go.asia/en/travel/${slug12go}?z=15062413&sub_id=discoverph-plan`;
+      return `https://12go.asia/en/travel/${slug12go}?z=15062413&sub_id=discoverlaos-plan`;
     }
     return `https://www.getyourguide.com/s/?q=${enc(destName + ' Laos')}&partner_id=IVN6IQ3&cmp=discover-laos`;
   }
@@ -497,7 +484,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       html += `
         <div class="budget-summary">
           <span class="budget-summary-label">Estimated Total</span>
-          <span class="budget-summary-value">\u20B1${it.totalBudget.php?.toLocaleString() || '—'} <span class="budget-summary-usd">(~$${it.totalBudget.usd?.toLocaleString() || '—'} USD)</span></span>
+          <span class="budget-summary-value">\u20AD${it.totalBudget.lak?.toLocaleString() || '—'} <span class="budget-summary-usd">(~$${it.totalBudget.usd?.toLocaleString() || '—'} USD)</span></span>
         </div>`;
     }
 
@@ -507,15 +494,15 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
         <div class="day-num">Day ${day.dayNumber}</div>
         <div class="day-title">${escapeHtml(day.title)}</div>
         <div class="day-items">`;
-      let dayPhp = 0;
+      let dayLak = 0;
       let dayUsd = 0;
       for (const item of day.items) {
         const icon = CATEGORY_ICONS[item.category] || '';
         let priceHtml = '';
-        if (item.pricePhp) {
-          dayPhp += item.pricePhp;
+        if (item.priceLak) {
+          dayLak += item.priceLak;
           if (item.priceUsd) dayUsd += item.priceUsd;
-          priceHtml = ` <span class="day-price">\u20B1${item.pricePhp.toLocaleString()}`;
+          priceHtml = ` <span class="day-price">\u20AD${item.priceLak.toLocaleString()}`;
           if (item.priceUsd) priceHtml += ` <span class="day-price-usd">(~$${item.priceUsd} USD)</span>`;
           priceHtml += `</span>`;
         }
@@ -540,8 +527,8 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
           <div class="day-desc">${escapeHtml(item.description)}${priceHtml}${affiliateHtml}</div>
         </div>`;
       }
-      if (dayPhp > 0) {
-        html += `<div class="day-subtotal">Day total: \u20B1${dayPhp.toLocaleString()} <span class="day-subtotal-usd">(~$${dayUsd} USD)</span></div>`;
+      if (dayLak > 0) {
+        html += `<div class="day-subtotal">Day total: \u20AD${dayLak.toLocaleString()} <span class="day-subtotal-usd">(~$${dayUsd} USD)</span></div>`;
       }
       html += `</div></div>`;
     }
@@ -731,7 +718,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
         marker.addListener('click', () => {
           const icon = { transport:'🚐', accommodation:'🏨', activity:'🏄', food:'🍴', ferry:'⛴️' }[item.category] || '';
           let priceStr = '';
-          if (item.pricePhp) priceStr = ` · ₱${item.pricePhp.toLocaleString()}`;
+          if (item.priceLak) priceStr = ` · ₭${item.priceLak.toLocaleString()}`;
           itinInfoWindow!.setContent(`
             <div style="font-family:Outfit,sans-serif;max-width:220px;">
               <div style="font-size:11px;font-weight:700;color:#0D7377;">Day ${day.dayNumber} · ${escapeHtml(item.time)}</div>
@@ -906,7 +893,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
         <p class="transport-widget-heading">Book Buses, Ferries & Flights</p>
         <p class="transport-widget-sub">Search routes between Philippine destinations — ferries, buses, vans, and domestic flights.</p>
         <div class="transport-widget-wrap" id="transportWidget"></div>
-        <div class="transport-widget-powered">Powered by <a href="https://12go.asia/?z=15062413&sub_id=discoverph-plan" target="_blank" rel="noopener sponsored">12Go Asia</a></div>
+        <div class="transport-widget-powered">Powered by <a href="https://12go.asia/?z=15062413&sub_id=discoverlaos-plan" target="_blank" rel="noopener sponsored">12Go Asia</a></div>
       </div>
     </div>`;
 
@@ -960,12 +947,12 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       const btn = document.getElementById('copyItinerary');
       const copyIt = currentItinerary || it;
       let text = copyIt.title + '\n' + copyIt.subtitle + '\n\n';
-      if (copyIt.totalBudget) text += `Estimated Total: \u20B1${copyIt.totalBudget.php?.toLocaleString()} (~$${copyIt.totalBudget.usd?.toLocaleString()} USD)\n\n`;
+      if (copyIt.totalBudget) text += `Estimated Total: \u20AD${copyIt.totalBudget.lak?.toLocaleString()} (~$${copyIt.totalBudget.usd?.toLocaleString()} USD)\n\n`;
       for (const day of copyIt.days) {
         text += `--- Day ${day.dayNumber}: ${day.title} ---\n`;
         for (const item of day.items) {
           text += `  ${item.time} \u2014 ${item.description}`;
-          if (item.pricePhp) text += ` (\u20B1${item.pricePhp.toLocaleString()})`;
+          if (item.priceLak) text += ` (\u20AD${item.priceLak.toLocaleString()})`;
           text += '\n';
         }
         text += '\n';
@@ -1038,7 +1025,7 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
       s.dataset.border = '1';
       s.dataset.radius = '8';
       s.dataset.caption = 'Find Transport in the Laos';
-      s.dataset.sub_id = 'discoverph-plan';
+      s.dataset.sub_id = 'discoverlaos-plan';
       s.dataset.domain = '12go.asia';
       widgetWrap.appendChild(s);
     }
@@ -1231,10 +1218,9 @@ const MAPS_KEY = 'AIzaSyDH8mQKwqzyfCrgGZVDdP1-E-346QUiods';
 
     // Region card hover → highlight markers
     var regionBounds = {
-      luzon: { north: 21, south: 13, east: 126, west: 119.5 },
-      visayas: { north: 12.5, south: 9, east: 126, west: 121 },
-      palawan: { north: 13, south: 8.5, east: 121.5, west: 117.5 },
-      mindanao: { north: 10.5, south: 5.5, east: 127, west: 120 },
+      northern: { north: 21.5, south: 19, east: 104, west: 100 },
+      central: { north: 20, south: 17.5, east: 106, west: 101 },
+      southern: { north: 16.5, south: 13.5, east: 107, west: 104 },
     };
 
     document.querySelectorAll('.region-card').forEach(function(card) {

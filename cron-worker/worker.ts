@@ -1,5 +1,5 @@
 /**
- * Cron Worker for Discover Philippines
+ * Cron Worker for Discover Laos
  *
  * Standalone Cloudflare Worker that handles scheduled (cron) triggers.
  * Fires daily at 07:00 UTC to call the daily report endpoint.
@@ -15,7 +15,7 @@ interface Env {
   ADMIN_KEY: string;
 }
 
-const SITE_URL = 'https://discoverphilippines.info';
+const SITE_URL = 'https://discoverlaos.info';
 
 export default {
   async scheduled(
@@ -67,7 +67,7 @@ export default {
       }
     }
 
-    return new Response('Discover Philippines Cron Worker\n\nGET /trigger?key=ADMIN_KEY to manually fire the daily report.', {
+    return new Response('Discover Laos Cron Worker\n\nGET /trigger?key=ADMIN_KEY to manually fire the daily report.', {
       status: 200,
       headers: { 'Content-Type': 'text/plain' },
     });

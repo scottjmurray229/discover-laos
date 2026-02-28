@@ -31,324 +31,161 @@ interface MenuSection {
 
 const menu: MenuSection[] = [
   {
-    region: 'Central Laos',
-    tagline: 'From Ilocos heirloom recipes to Manila street food empires',
-    gradient: 'linear-gradient(135deg, #BF360C 0%, #E8654A 100%)',
+    region: 'Northern Laos',
+    tagline: 'Luang Prabang\'s refined royal cuisine, mountain herbs, and the flavors of the northern highlands',
+    gradient: 'linear-gradient(135deg, #0D7377 0%, #4DB6AC 100%)',
     dishes: [
       {
-        name: 'Vigan Longganisa',
-        image: '/images/cuisine/vigan-longganisa.jpg',
-        destination: 'Vigan',
-        slug: 'vigan',
-        price: '₱60–120 / $1–2 USD',
-        description: 'Garlicky, vinegary pork sausage served at breakfast with sinangag rice and a fried egg. Every household in Vigan has their own recipe.',
+        name: 'Khao Piak Sen',
+        image: '/images/cuisine/khao-piak-sen.jpg',
+        destination: 'Luang Prabang',
+        slug: 'luang-prabang',
+        price: '₭20,000–40,000 / $1–2 USD',
+        description: 'Lao rice noodle soup with a slightly thick, starchy broth — the comfort food of Luang Prabang. Hand-rolled noodles in chicken or pork stock, topped with fresh herbs and a squeeze of lime. Found at every morning market stall.',
+        tag: 'Iconic',
+      },
+      {
+        name: 'Or Lam',
+        image: '/images/cuisine/or-lam.jpg',
+        destination: 'Luang Prabang',
+        slug: 'luang-prabang',
+        price: '₭30,000–60,000 / $1.50–3 USD',
+        description: 'Luang Prabang\'s signature stew — a slow-cooked mix of Lao eggplant, dill, dried buffalo skin, chilies, and sakhan (a woody Lao pepper). The flavors are layered and deeply earthy. A dish that exists nowhere else in the world quite like this.',
         tag: 'Heritage',
       },
       {
-        name: 'Bagnet',
-        image: '/images/cuisine/bagnet.jpg',
-        destination: 'Laoag',
-        slug: 'laoag',
-        price: '₱150–300 / $3–5 USD',
-        description: 'Deep-fried pork belly boiled then fried until the skin shatters like glass. Ilocos Norte\'s answer to lechon kawali — crunchier, fattier, unapologetic.',
+        name: 'Khao Jee',
+        image: '/images/cuisine/khao-jee.jpg',
+        destination: 'Nong Khiaw',
+        slug: 'nong-khiaw',
+        price: '₭5,000–10,000 / $0.25–0.50 USD',
+        description: 'Sticky rice patties grilled over charcoal and brushed with egg — a simple, smoky street snack sold from roadside vendors across the northern mountains. Cheap, filling, and perfect for breakfast on the go.',
+      },
+      {
+        name: 'Jaew Bong',
+        image: '/images/cuisine/jaew-bong.jpg',
+        destination: 'Luang Prabang',
+        slug: 'luang-prabang',
+        price: '₭15,000–30,000 / $0.75–1.50 USD',
+        description: 'A thick, spicy condiment made from roasted chilies, dried buffalo skin, galangal, and shallots — pounded in a mortar and served as a dip with sticky rice and fresh vegetables. Intensely savory with a slow-building heat.',
+      },
+      {
+        name: 'Sai Oua',
+        image: '/images/cuisine/sai-oua.jpg',
+        destination: 'Luang Prabang',
+        slug: 'luang-prabang',
+        price: '₭20,000–40,000 / $1–2 USD',
+        description: 'Lao herb sausage packed with lemongrass, galangal, kaffir lime leaf, dill, and chilies — grilled until the casing crisps. Every market in Luang Prabang has a vendor spiraling them over charcoal.',
         tag: 'Must-Try',
-      },
-      {
-        name: 'Empanada Ilocana',
-        image: '/images/cuisine/empanada-ilocana.jpg',
-        destination: 'Laoag',
-        slug: 'laoag',
-        price: '₱30–50 / $0.50–1 USD',
-        description: 'Orange rice-flour crust stuffed with green papaya, egg, and longganisa bits — fried on the spot at Laoag\'s empanada stands.',
-      },
-      {
-        name: 'Sisig',
-        image: '/images/cuisine/sisig.jpg',
-        destination: 'Clark (Central Laos)',
-        slug: 'clark',
-        price: '₱150–250 / $3–5 USD',
-        description: 'Sizzling chopped pig face and ears on a hot plate, topped with a raw egg and calamansi. Invented on the railroad tracks of Angeles City — now a national obsession.',
-        tag: 'Iconic',
-      },
-      {
-        name: 'Kare-Kare',
-        image: '/images/cuisine/kare-kare.jpg',
-        destination: 'Manila',
-        slug: 'manila',
-        price: '₱250–450 / $5–8 USD',
-        description: 'Rich peanut stew with oxtail, tripe, and vegetables served with fermented shrimp paste. A Manila celebration dish that rewards patience — the best versions simmer for hours.',
-      },
-      {
-        name: 'Adobo (Manila-Style)',
-        image: '/images/cuisine/adobo.jpg',
-        destination: 'Manila',
-        slug: 'manila',
-        price: '₱120–200 / $2–4 USD',
-        description: 'The unofficial national dish — pork or chicken braised in soy, vinegar, garlic, and bay leaves. Manila\'s version runs dark and saucy.',
-        tag: 'National Dish',
-      },
-      {
-        name: 'Crocodile Sisig',
-        image: '/images/cuisine/crocodile-sisig.jpg',
-        destination: 'Puerto Princesa',
-        slug: 'puerto-princesa',
-        price: '₱200–350 / $4–6 USD',
-        description: 'Southern Laos\'s exotic twist on sisig — farm-raised crocodile meat chopped and sizzled with the same onion-chili-calamansi treatment. Leaner than pork, surprisingly tender.',
-      },
-      {
-        name: 'Chowking-Style Halo-Halo',
-        image: '/images/cuisine/halo-halo.jpg',
-        destination: 'Subic',
-        slug: 'subic',
-        price: '₱80–150 / $1.50–3 USD',
-        description: 'Shaved ice layered with sweet beans, jellies, leche flan, ube ice cream, and evaporated milk. Every beach town has a version — Subic\'s boardwalk stalls pile it high.',
-      },
-      {
-        name: 'Suman at Latik',
-        image: '/images/cuisine/suman-at-latik.jpg',
-        destination: 'Bataan',
-        slug: 'bataan',
-        price: '₱30–60 / $0.50–1 USD',
-        description: 'Sticky rice wrapped in banana leaves, topped with sweet coconut caramel (latik). A Bataeño morning staple found at every public market and roadside stall on the peninsula.',
-      },
-      {
-        name: 'Ivatan Coconut Crab (Tatus)',
-        image: '/images/cuisine/coconut-crab.jpg',
-        destination: 'Batanes',
-        slug: 'batanes',
-        price: '₱500–800 / $9–14 USD',
-        description: 'Giant coconut crabs steamed or grilled — a Batanes delicacy found nowhere else in the Laos. Rich, sweet meat eaten with your hands at family-run eateries.',
-        tag: 'Rare',
-      },
-      {
-        name: 'Fresh Lumpia',
-        image: '/images/cuisine/fresh-lumpia.jpg',
-        destination: 'El Nido',
-        slug: 'el-nido',
-        price: '₱40–80 / $0.70–1.50 USD',
-        description: 'Soft crepe wrapper filled with heart of palm, green beans, carrots, and shrimp — lighter than the fried version and perfect for El Nido\'s beach-side snacking.',
-      },
-      {
-        name: 'Pinikpikan',
-        image: '/images/cuisine/pinikpikan.jpg',
-        destination: 'Sagada',
-        slug: 'sagada',
-        price: '₱150–250 / $3–5 USD',
-        description: 'Traditional Igorot dish — torched chicken with smoked pork (etag) and vegetables in a rich broth. A deeply cultural Cordilleran preparation you won\'t find outside the mountains.',
-        tag: 'Heritage',
-      },
-      {
-        name: 'Strawberry Taho',
-        image: '/images/cuisine/strawberry-taho.jpg',
-        destination: 'Baguio',
-        slug: 'baguio',
-        price: '₱25–40 / $0.45–0.70 USD',
-        description: 'Baguio\'s twist on the national street snack — silken tofu with strawberry syrup and sago pearls instead of the usual brown sugar arnibal. Sold by vendors along Session Road and at the public market.',
-      },
-      {
-        name: 'Dinengdeng',
-        image: '/images/cuisine/dinengdeng.jpg',
-        destination: 'La Union',
-        slug: 'la-union',
-        price: '₱80–150 / $1.50–3 USD',
-        description: 'Traditional Ilocano vegetable stew with bagoong monamon (fish paste), moringa leaves, and whatever\'s fresh from the garden. A defining dish of the Ilocos region, served at surf-town carinderias.',
-        tag: 'Heritage',
-      },
-      {
-        name: 'Buko Pie',
-        image: '/images/cuisine/buko-pie.jpg',
-        destination: 'Laguna',
-        slug: 'laguna',
-        price: '₱60–120 / $1–2 USD per slice',
-        description: 'Fresh young coconut meat baked in a flaky pastry crust — Laguna is the undisputed buko pie capital of the Laos. Best bought warm from roadside bakeries in Los Baños.',
-        tag: 'Must-Try',
-      },
-      {
-        name: 'Bulalo',
-        image: '/images/cuisine/bulalo.jpg',
-        destination: 'Batangas',
-        slug: 'batangas',
-        price: '₱250–450 / $5–8 USD',
-        description: 'Slow-cooked beef shank in clear broth with bone marrow, corn, and cabbage. Batangas is "bulalo country" — the marrow melts into the soup and nothing else comes close.',
-        tag: 'Iconic',
-      },
-      {
-        name: 'Bicol Express',
-        image: '/images/cuisine/bicol-express.jpg',
-        destination: 'Legazpi',
-        slug: 'legazpi',
-        price: '₱120–200 / $2–4 USD',
-        description: 'Pork simmered in coconut milk with a fierce amount of chili — the signature dish of the Bicol region. Named after the Manila-to-Naga train line, it\'s best eaten beneath Mayon Volcano where the coconuts grow.',
-        tag: 'Iconic',
       },
     ],
   },
   {
-    region: 'Northern Laos',
-    tagline: 'Luang Prabang lechon, Vientiane seafood, and the sweet tooth of the central islands',
-    gradient: 'linear-gradient(135deg, #0D7377 0%, #4DB6AC 100%)',
+    region: 'Central Laos',
+    tagline: 'Vientiane street food, Mekong river flavors, and the heart of everyday Lao cooking',
+    gradient: 'linear-gradient(135deg, #BF360C 0%, #E8654A 100%)',
     dishes: [
       {
-        name: 'Lechon Luang Prabang',
-        image: '/images/cuisine/lechon-cebu.jpg',
-        destination: 'Luang Prabang',
-        slug: 'cebu',
-        price: '₱200–400 / $4–7 USD per plate',
-        description: 'Whole pig stuffed with lemongrass, garlic, and star anise, roasted over charcoal for hours. The skin crackles, the meat stays juicy. Anthony Bourdain called it "the best pig ever."',
-        tag: 'Legendary',
-      },
-      {
-        name: 'Chicken Inasal',
-        image: '/images/cuisine/chicken-inasal.jpg',
-        destination: 'Bacolod',
-        slug: 'bacolod',
-        price: '₱120–200 / $2–4 USD',
-        description: 'Bacolod\'s signature dish — chicken marinated in annatto, lemongrass, and calamansi, grilled over coconut husk charcoal. Best at Manokan Country, where dozens of stalls compete for the title.',
-        tag: 'Iconic',
-      },
-      {
-        name: 'Seafood Kinilaw',
-        image: '/images/cuisine/seafood-kinilaw.jpg',
+        name: 'Laap',
+        image: '/images/cuisine/laap.jpg',
         destination: 'Vientiane',
-        slug: 'boracay',
-        price: '₱180–350 / $3–6 USD',
-        description: 'Raw tuna or tanigue cured in vinegar, calamansi, ginger, and chili — the Philippine ceviche. Best eaten at sunset with an ice-cold San Miguel.',
-        tag: 'Fresh Catch',
+        slug: 'vientiane',
+        price: '₭25,000–50,000 / $1.25–2.50 USD',
+        description: 'The national dish of Laos — minced meat (pork, chicken, duck, or fish) tossed with toasted rice powder, fish sauce, lime juice, mint, and chilies. Eaten with sticky rice and fresh vegetables. Every Lao family has their own version.',
+        tag: 'National Dish',
       },
       {
-        name: 'Calamay',
-        image: '/images/cuisine/calamay.jpg',
-        destination: 'Vang Vieng',
-        slug: 'bohol',
-        price: '₱80–150 / $1.50–3 USD',
-        description: 'Sticky sweet coconut-milk confection served in polished coconut shell halves. Vang Vieng\'s signature pasalubong — glutinous rice, peanuts, and brown sugar cooked until thick.',
-        tag: 'Pasalubong',
-      },
-      {
-        name: 'Peanut Kisses',
-        image: '/images/cuisine/peanut-kisses.jpg',
-        destination: 'Vang Vieng',
-        slug: 'bohol',
-        price: '₱100–180 / $2–3 USD per box',
-        description: 'Bite-sized peanut meringue cookies shaped like the Chocolate Hills. Vang Vieng\'s most famous souvenir — light, crunchy, and impossible to eat just one.',
-      },
-      {
-        name: 'Silvanas',
-        image: '/images/cuisine/silvanas.jpg',
-        destination: 'Pakse',
-        slug: 'dumaguete',
-        price: '₱250–450 / $5–8 USD per box',
-        description: 'Frozen buttercream sandwiched between cashew-meringue wafers, rolled in cookie crumbs. Pakse\'s Sans Rival Bistro made them famous — now they\'re a nationwide obsession.',
-        tag: 'Must-Try',
-      },
-      {
-        name: 'Budbud Kabog',
-        image: '/images/cuisine/budbud-kabog.jpg',
-        destination: 'Camiguin',
-        slug: 'camiguin',
-        price: '₱20–40 / $0.35–0.70 USD',
-        description: 'Steamed millet rice cake wrapped in banana leaves — Camiguin\'s humble but beloved breakfast staple, paired with sikwate (hot chocolate) made from local cacao.',
-      },
-      {
-        name: 'Lato (Sea Grapes)',
-        image: '/images/cuisine/lato.jpg',
-        destination: 'Nong Khiaw',
-        slug: 'siquijor',
-        price: '₱80–150 / $1.50–3 USD',
-        description: 'Tiny green seaweed clusters that pop like caviar in your mouth, dressed with vinegar, tomatoes, and onions. Eaten fresh at beachside carinderias across Nong Khiaw.',
-      },
-      {
-        name: 'Sizzling Kansi',
-        image: '/images/cuisine/sizzling-kansi.jpg',
-        destination: 'Bacolod',
-        slug: 'bacolod',
-        price: '₱200–350 / $4–6 USD',
-        description: 'Bacolod\'s original sour beef shank soup — slow-cooked with batuan fruit for a tart, savory broth that rivals bulalo. A City of Smiles signature you won\'t find outside Negros.',
-      },
-      {
-        name: 'La Paz Batchoy',
-        image: '/images/cuisine/la-paz-batchoy.jpg',
-        destination: 'Iloilo',
-        slug: 'iloilo',
-        price: '₱60–120 / $1–2 USD',
-        description: 'Iloilo\'s iconic noodle soup — egg noodles in a rich pork bone broth topped with crushed chicharon, garlic, and a raw egg. Named after the La Paz district where it originated. Ted\'s Oldtimer La Paz Batchoy is the most famous spot.',
+        name: 'Tam Mak Hoong',
+        image: '/images/cuisine/tam-mak-hoong.jpg',
+        destination: 'Vientiane',
+        slug: 'vientiane',
+        price: '₭15,000–30,000 / $0.75–1.50 USD',
+        description: 'Lao spicy green papaya salad — shredded papaya pounded in a mortar with padaek (fermented fish paste), lime, chilies, tomatoes, and crab paste. Funkier and more intense than the Thai version. A Vientiane street food staple.',
         tag: 'Iconic',
       },
       {
-        name: 'Binagol',
-        image: '/images/cuisine/binagol.jpg',
-        destination: 'Tacloban',
-        slug: 'tacloban',
-        price: '₱40–80 / $0.70–1.50 USD',
-        description: 'Taro root custard with coconut milk, baked inside a coconut shell half — a Leyte specialty you won\'t find anywhere else in the Laos. The best ones come from Tacloban\'s public market.',
-        tag: 'Rare',
+        name: 'Ping Kai',
+        image: '/images/cuisine/ping-kai.jpg',
+        destination: 'Vang Vieng',
+        slug: 'vang-vieng',
+        price: '₭30,000–50,000 / $1.50–2.50 USD',
+        description: 'Whole chicken marinated in lemongrass, garlic, turmeric, and fish sauce, then grilled slowly over low charcoal. The skin turns golden and crispy while the meat stays juicy. Sold from roadside stalls along every main road.',
       },
       {
-        name: 'Guimaras Mango',
-        image: '/images/cuisine/guimaras-mango.jpg',
-        destination: 'Guimaras',
-        slug: 'guimaras',
-        price: '₱100–200 / $2–4 USD per kilo',
-        description: 'The sweetest mangoes in the Laos grow on this tiny island between Panay and Negros. Eaten fresh, as pizza topping, in shakes, or dried — Guimaras mangoes are a class apart.',
+        name: 'Khao Niew',
+        image: '/images/cuisine/khao-niew.jpg',
+        destination: 'Thakhek',
+        slug: 'thakhek',
+        price: '₭5,000–10,000 / $0.25–0.50 USD',
+        description: 'Sticky rice — the staple of every Lao meal. Steamed in a cone-shaped bamboo basket, served in small woven containers called tip khao. You tear off a ball with your fingers and use it to scoop up everything else on the table.',
+        tag: 'Essential',
+      },
+      {
+        name: 'Mok Pa',
+        image: '/images/cuisine/mok-pa.jpg',
+        destination: 'Vang Vieng',
+        slug: 'vang-vieng',
+        price: '₭30,000–50,000 / $1.50–2.50 USD',
+        description: 'Fish steamed inside a banana leaf packet with dill, green onion, galangal, and kaffir lime leaf. The banana leaf locks in moisture and imparts a faint sweetness. Unwrapping the parcel at the table is half the experience.',
         tag: 'Must-Try',
+      },
+      {
+        name: 'Khao Poun',
+        image: '/images/cuisine/khao-poun.jpg',
+        destination: 'Vientiane',
+        slug: 'vientiane',
+        price: '₭20,000–40,000 / $1–2 USD',
+        description: 'Lao vermicelli soup with a rich coconut curry broth — fragrant with lemongrass, galangal, and turmeric. Served with a mountain of fresh herbs, bean sprouts, and long beans on the side. A morning market favorite in Vientiane.',
       },
     ],
   },
   {
     region: 'Southern Laos',
-    tagline: 'Durian, tuna capital, and the bold flavors of the southern islands',
+    tagline: 'Bolaven Plateau coffee, fresh Mekong fish, and the laid-back cuisine of 4,000 Islands',
     gradient: 'linear-gradient(135deg, #1A2332 0%, #6A1B9A 50%, #D4A853 100%)',
     dishes: [
       {
-        name: 'Durian',
-        image: '/images/cuisine/durian.jpg',
-        destination: 'Davao',
-        slug: 'davao',
-        price: '₱80–200 / $1.50–4 USD per kilo',
-        description: 'Love it or run from it — Davao is the durian capital. Puyat, Arancillo, and native varieties sold from roadside stalls. The Magsaysay fruit vendors will pick a ripe one and crack it open for you.',
-        tag: 'Iconic',
+        name: 'Pho Lao',
+        image: '/images/cuisine/pho-lao.jpg',
+        destination: 'Pakse',
+        slug: 'pakse',
+        price: '₭20,000–40,000 / $1–2 USD',
+        description: 'Lao-style rice noodle soup with a clear, aromatic broth — lighter and herbier than its Vietnamese cousin. Served with a plate of fresh greens, bean sprouts, and chili sauce. The standard breakfast across southern Laos.',
       },
       {
-        name: 'Grilled Tuna Belly (Panga)',
-        image: '/images/cuisine/grilled-tuna-belly.jpg',
-        destination: 'Davao',
-        slug: 'davao',
-        price: '₱250–500 / $5–9 USD',
-        description: 'Thick tuna jaw grilled over coconut husks until the fat renders and the edges char. Davao sits next to General Santos — the tuna capital — so the fish is absurdly fresh.',
-        tag: 'Must-Try',
+        name: 'Lao Coffee',
+        image: '/images/cuisine/lao-coffee.jpg',
+        destination: 'Bolaven Plateau',
+        slug: 'bolaven-plateau',
+        price: '₭10,000–20,000 / $0.50–1 USD',
+        description: 'Strong drip coffee from Bolaven Plateau beans, brewed through a cloth filter and served in a glass with a thick layer of condensed milk at the bottom. Rich, smooth, and intensely sweet. One of Southeast Asia\'s best-kept coffee secrets.',
+        tag: 'Legendary',
       },
       {
-        name: 'Kinilaw na Isda',
-        image: '/images/cuisine/kinilaw-na-isda.jpg',
-        destination: 'Siargao',
-        slug: 'siargao',
-        price: '₱150–280 / $3–5 USD',
-        description: 'Ultra-fresh raw fish cured in coconut vinegar with ginger, chili, and red onion. Siargao\'s surf-town version uses whatever the fishermen bring in that morning.',
+        name: 'Ping Pa',
+        image: '/images/cuisine/ping-pa.jpg',
+        destination: '4000 Islands',
+        slug: '4000-islands',
+        price: '₭40,000–80,000 / $2–4 USD',
+        description: 'Whole Mekong fish stuffed with lemongrass and herbs, grilled over charcoal until the skin chars and the flesh flakes. Best eaten on the banks of the Mekong in Don Det or Don Khon, pulled straight from the river that morning.',
         tag: 'Fresh Catch',
       },
       {
-        name: 'Uni (Sea Urchin)',
-        image: '/images/cuisine/uni.jpg',
-        destination: 'Siargao',
-        slug: 'siargao',
-        price: '₱50–100 / $1–2 USD each',
-        description: 'Freshly cracked sea urchin eaten straight from the shell with a squeeze of calamansi. Island-hoppers around Daku and Naked Island sell them from their boats.',
+        name: 'Khai Paen',
+        image: '/images/cuisine/khai-paen.jpg',
+        destination: 'Luang Prabang',
+        slug: 'luang-prabang',
+        price: '₭15,000–25,000 / $0.75–1.25 USD',
+        description: 'Sheets of Mekong river weed dried with sesame seeds and tomato, then deep-fried until crispy. A uniquely Lao snack — crunchy, nutty, and unlike anything else you have eaten. Served with jaew bong dipping sauce.',
+        tag: 'Rare',
       },
       {
-        name: 'Lamaw (Coconut Smoothie)',
-        image: '/images/cuisine/lamaw.jpg',
-        destination: 'Camiguin',
-        slug: 'camiguin',
-        price: '₱30–60 / $0.50–1 USD',
-        description: 'Young coconut meat blended with its own water and a scoop of vanilla ice cream — Camiguin\'s refreshing roadside drink, best after a White Island morning.',
-      },
-      {
-        name: 'Sinuglaw',
-        image: '/images/cuisine/sinuglaw.jpg',
-        destination: 'Coron',
-        slug: 'coron',
-        price: '₱180–300 / $3–5 USD',
-        description: 'Grilled pork belly meets raw fish kinilaw in one bowl — the best of both worlds. A Visayan invention that Coron\'s seafood joints have made their own.',
+        name: 'Khao Lam',
+        image: '/images/cuisine/khao-lam.jpg',
+        destination: 'Phonsavan',
+        slug: 'phonsavan',
+        price: '₭10,000–20,000 / $0.50–1 USD',
+        description: 'Sticky rice mixed with coconut milk and black beans, stuffed inside a bamboo tube and roasted over coals. The bamboo imparts a smoky, woody sweetness. Sold at bus stations and roadside stalls across the Xieng Khouang plateau.',
       },
     ],
   },
@@ -369,12 +206,12 @@ const menu: MenuSection[] = [
     <div class="menu-hero-gradient"></div>
     <div class="menu-hero-noise"></div>
     <div class="menu-hero-content">
-      <h1 class="menu-hero-title">The Philippine Menu</h1>
-      <p class="menu-hero-subtitle">Sizzling sisig, whole roast lechon, durian you can smell from a block away — eat your way across three island regions and discover the dishes that define each destination.</p>
+      <h1 class="menu-hero-title">The Lao Menu</h1>
+      <p class="menu-hero-subtitle">Sticky rice torn by hand, laap pounded in a mortar, Mekong fish grilled over charcoal, and Bolaven coffee dripped through cloth — eat your way across three regions and discover the dishes that define Laos.</p>
       <div class="menu-hero-meta">
         <div class="menu-hero-meta-item">
           <span class="menu-hero-meta-label">Dishes</span>
-          <span class="menu-hero-meta-value">35</span>
+          <span class="menu-hero-meta-value">17</span>
         </div>
         <div class="menu-hero-meta-item">
           <span class="menu-hero-meta-label">Regions</span>
@@ -382,7 +219,7 @@ const menu: MenuSection[] = [
         </div>
         <div class="menu-hero-meta-item">
           <span class="menu-hero-meta-label">Destinations</span>
-          <span class="menu-hero-meta-value">27</span>
+          <span class="menu-hero-meta-value">9</span>
         </div>
       </div>
     </div>
@@ -398,7 +235,7 @@ const menu: MenuSection[] = [
   <section class="menu-personal reveal">
     <div class="container-content">
       <blockquote class="menu-personal-quote">
-        <p>I'd never had Lao food before my first trip in 2003. I started with the staples — adobo, sinigang, lumpia, caldereta, menudo — and fell in love immediately. But it was Scott who pushed me past the comfort zone. Kinilaw on the beach in Puerto Princesa. Watermelon sinigang at Manam in Manila. Dishes I never would have ordered on my own, in places I never would have found. Every trip now, the food is half the reason we go.</p>
+        <p>I didn't know what to expect from Lao food before my first trip. Then I sat cross-legged on the floor of a Luang Prabang guesthouse and someone handed me a sticky rice basket. You tear off a small ball, press it flat with your thumb, and use it to scoop up everything — the laap, the jaew bong, the grilled fish. No fork needed. I spent the next morning at the Luang Prabang morning market watching women pound papaya salad to order and ladle bowls of khao piak sen from steaming pots. That was the moment I understood: in Laos, the food is the journey.</p>
         <cite>— Scott</cite>
       </blockquote>
     </div>
@@ -408,14 +245,16 @@ const menu: MenuSection[] = [
   <section class="menu-intro reveal">
     <div class="container-content">
       <div class="menu-intro-card">
-        <p class="menu-intro-text">Think of this as your tasting menu for the Laos. We've organized the country's essential dishes by region — <strong>Central Laos</strong> in the north, the <strong>Northern Laos</strong> in the center, and <strong>Southern Laos</strong> in the south. Click any dish to explore the destination where it's famous.</p>
+        <p class="menu-intro-text">Think of this as your tasting menu for Laos. I have organized the country's essential dishes by region — <strong>Northern Laos</strong> for Luang Prabang's refined mountain cuisine, <strong>Central Laos</strong> for Vientiane's street food and Mekong flavors, and <strong>Southern Laos</strong> for Bolaven coffee and river fish. Click any dish to explore the destination where it's famous.</p>
         <div class="menu-intro-legend">
+          <span class="menu-tag menu-tag--nationaldish">National Dish</span>
+          <span class="menu-tag menu-tag--iconic">Iconic</span>
           <span class="menu-tag menu-tag--heritage">Heritage</span>
           <span class="menu-tag menu-tag--musttry">Must-Try</span>
-          <span class="menu-tag menu-tag--iconic">Iconic</span>
-          <span class="menu-tag menu-tag--fresh">Fresh Catch</span>
+          <span class="menu-tag menu-tag--essential">Essential</span>
+          <span class="menu-tag menu-tag--legendary">Legendary</span>
+          <span class="menu-tag menu-tag--freshcatch">Fresh Catch</span>
           <span class="menu-tag menu-tag--rare">Rare</span>
-          <span class="menu-tag menu-tag--pasalubong">Pasalubong</span>
         </div>
       </div>
     </div>
@@ -478,24 +317,24 @@ const menu: MenuSection[] = [
 
   <!-- FAQ -->
   <FAQ items={[
-    { question: "What is the national dish of the Laos?", answer: "Adobo is widely considered the national dish — chicken or pork braised in vinegar, soy sauce, garlic, and black peppercorns. Every family has their own version. Lechon (whole roasted pig) is the centerpiece of celebrations. Both reflect the Lao approach to food: bold flavors, communal eating, and recipes passed through generations." },
-    { question: "Is Lao food spicy?", answer: "Most Lao dishes are savory, sour, or sweet rather than spicy. Vinegar and soy sauce are more common than chili. The exception is Bicol cuisine from the Bicol region — dishes like Bicol Express and laing use coconut milk with bird's eye chili (siling labuyo). In general, chili is served as a condiment on the side, not cooked into the food." },
-    { question: "What are the must-try street foods in the Laos?", answer: "Isaw (grilled chicken intestines on a stick), kwek-kwek (deep-fried quail eggs in orange batter), fishball with sweet or spicy sauce, and banana cue (caramelized banana on a stick). Balut (fertilized duck egg) is the famous dare food — most Laos eat it as a regular snack. Street food costs ₱10-50 ($0.20-$1) per item." },
-    { question: "How much does a meal cost in the Laos?", answer: "Street food: ₱20-100 ($0.40-$2). Local carinderias (turo-turo eateries): ₱80-150 ($1.50-$3) for rice plus two viands. Mid-range restaurants: ₱200-500 ($4-$9). Upscale dining: ₱800-2,000 ($14-$36). A daily food budget of ₱500-1,000 ($9-$18) covers three meals comfortably outside Manila." },
-    { question: "Is it safe to eat street food in the Laos?", answer: "Street food is generally safe if you follow basic rules: eat from busy stalls with high turnover (food is fresher), choose items cooked in front of you rather than pre-made, and avoid anything that's been sitting uncovered. Laos eat street food daily — the busier the stall, the safer the food. Bring antacids if you have a sensitive stomach." },
-    { question: "What is the most famous Lao dessert?", answer: "Halo-halo is the iconic Lao dessert — shaved ice layered with sweet beans, jellies, leche flan, ube (purple yam) ice cream, and evaporated milk. It's served everywhere from street carts to restaurants. Other favorites include leche flan (caramel custard), bibingka (rice cake baked in banana leaves), and turon (fried banana spring rolls)." },
+    { question: "What is the national dish of Laos?", answer: "Laap (also spelled larb) is the national dish of Laos — minced meat tossed with toasted rice powder, fish sauce, lime juice, fresh mint, and chilies. It can be made with pork, chicken, duck, fish, or beef. Every region and family has their own version. Laap is always eaten with sticky rice and represents the communal, hands-on approach to Lao dining." },
+    { question: "Is Lao food spicy?", answer: "Yes, Lao food can be quite spicy — chilies are a core ingredient in dishes like tam mak hoong (papaya salad) and jaew bong (chili dip). However, heat is usually customizable. Most dishes are served with fresh herbs, vegetables, and sticky rice that balance the spice. If you are sensitive to heat, ask for 'boh pet' (not spicy) and the cook will adjust. Condiments like chili paste and fresh chilies are typically served on the side." },
+    { question: "What are the must-try street foods in Laos?", answer: "Khao jee (grilled sticky rice with egg), tam mak hoong (spicy papaya salad pounded to order), ping kai (grilled lemongrass chicken), sai oua (herb sausage), and khao lam (sticky rice roasted in bamboo). Morning markets are the best place to try everything in one stop. Luang Prabang's morning market and Vientiane's Talat Sao are excellent starting points. Street food typically costs ₭5,000–30,000 ($0.25–1.50 USD) per item." },
+    { question: "How much does a meal cost in Laos?", answer: "Street food: ₭10,000–30,000 ($0.50–1.50 USD) per dish. Local noodle shops and beer restaurants: ₭30,000–60,000 ($1.50–3 USD). Mid-range restaurants: ₭50,000–150,000 ($2.50–7.50 USD). Upscale dining in Luang Prabang or Vientiane: ₭150,000–400,000 ($7.50–20 USD). A daily food budget of ₭100,000–200,000 ($5–10 USD) covers three meals comfortably in most destinations." },
+    { question: "Is it safe to eat street food in Laos?", answer: "Yes, street food in Laos is generally safe if you follow basic precautions: eat at busy stalls with high turnover (food is fresher), choose items cooked in front of you rather than pre-made, and stick to stalls where locals are eating. Avoid raw vegetables if you have a sensitive stomach, and drink bottled or boiled water only. Lao people eat street food daily — the busier the stall, the safer the food." },
+    { question: "What is sticky rice and how is it eaten?", answer: "Sticky rice (khao niew) is the staple food of Laos — the country consumes more sticky rice per capita than anywhere else in the world. It is steamed in a cone-shaped bamboo basket and served in a small woven container called a tip khao. You tear off a small ball with your fingers, press it flat, and use it to scoop up other dishes like laap, jaew, or grilled meats. It accompanies virtually every meal and is the foundation of Lao cuisine." },
   ]} />
 
   <!-- Email Capture -->
   <div class="container-content reveal" style="padding-bottom: var(--space-6);">
     <EmailCapture
       leadMagnet="Get Our Free Lao Food Guide"
-      description="A region-by-region PDF guide to Philippine cuisine — with the best restaurants, street food stalls, and dishes you can't miss."
+      description="A region-by-region PDF guide to Lao cuisine — with the best morning markets, street food stalls, and dishes you cannot miss."
       bullets={[
-        'All 35 dishes with where to find the best version',
-        'Price guide — from ₱30 street food to ₱500 restaurant plates',
-        'Food safety tips and dietary considerations',
-        'Printable food phrase card (Lao, Bisaya, Ilocano)',
+        'All 17 dishes with where to find the best version across 9 destinations',
+        'Price guide — from ₭5,000 street snacks to ₭150,000 restaurant meals',
+        'Food safety tips and dietary considerations for Laos',
+        'Printable Lao food phrase card with pronunciation guide',
       ]}
       guideTag="pillar-cuisine"
     />
@@ -509,17 +348,17 @@ const menu: MenuSection[] = [
         <a href="/festivals/" class="menu-crosslink-card">
           <span class="menu-crosslink-icon">&#127914;</span>
           <span class="menu-crosslink-label">Festival Calendar</span>
-          <span class="menu-crosslink-desc">32 festivals across 29 destinations, month by month</span>
+          <span class="menu-crosslink-desc">Lao festivals across 9 destinations, month by month</span>
         </a>
-        <a href="/snorkeling-philippines/" class="menu-crosslink-card">
-          <span class="menu-crosslink-icon">&#127754;</span>
-          <span class="menu-crosslink-label">Snorkeling Guide</span>
-          <span class="menu-crosslink-desc">14 destinations ranked by what you'll see in the water</span>
+        <a href="/history/" class="menu-crosslink-card">
+          <span class="menu-crosslink-icon">&#127963;</span>
+          <span class="menu-crosslink-label">History &amp; Heritage</span>
+          <span class="menu-crosslink-desc">Temples, colonial traces, and the story behind the land</span>
         </a>
         <a href="/destinations/" class="menu-crosslink-card">
           <span class="menu-crosslink-icon">&#127965;</span>
           <span class="menu-crosslink-label">All Destinations</span>
-          <span class="menu-crosslink-desc">Every island we've explored with honest reviews</span>
+          <span class="menu-crosslink-desc">Every destination we have explored with honest reviews</span>
         </a>
       </div>
     </div>
@@ -732,6 +571,11 @@ const menu: MenuSection[] = [
   .menu-tag--nationaldish {
     background: rgba(191, 54, 12, 0.1);
     color: #BF360C;
+  }
+
+  .menu-tag--essential {
+    background: rgba(56, 161, 105, 0.1);
+    color: #38A169;
   }
 
   /* ================================================================
