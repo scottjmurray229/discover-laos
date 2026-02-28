@@ -1,0 +1,296 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Lao History', url: '/history/' },
+];
+
+const pageTitle = 'Lao History — From Lane Xang to the Secret War and Buddhist Heritage';
+const pageDescription = 'Explore Laos\'s layered history — the million-elephant kingdom, French Indochina, the devastating Secret War, UXO legacy, Buddhist traditions, and the mysterious Plain of Jars.';
+
+interface TopicSection {
+  id: string;
+  icon: string;
+  title: string;
+  gradient: string;
+  items: { label: string; text: string }[];
+}
+
+const topics: TopicSection[] = [
+  {
+    id: 'lane-xang',
+    icon: '🐘',
+    title: 'Lane Xang — Kingdom of a Million Elephants',
+    gradient: 'linear-gradient(135deg, #1B5E20 0%, #388E3C 100%)',
+    items: [
+      { label: 'The Founding of Lane Xang (1353)', text: 'Fa Ngum, a Lao prince raised in the Khmer court of Angkor, unified the Lao principalities in 1353, founding the Kingdom of Lane Xang — "Land of a Million Elephants." The kingdom stretched from the Chinese border to the Khorat Plateau, encompassing much of present-day Laos and parts of Thailand. Fa Ngum established Theravada Buddhism as the state religion and made Luang Prabang his capital. The Phra Bang — a sacred gold Buddha image from the Khmer court — became the kingdom\'s most revered object and gives Luang Prabang its name.' },
+      { label: 'Luang Prabang — The Royal Capital', text: 'Luang Prabang served as Lane Xang\'s capital for over 200 years. The city\'s position at the confluence of the Mekong and Nam Khan rivers made it both strategically important and achingly beautiful. Kings built dozens of gilded temples (wats) along the peninsula between the rivers. Wat Xieng Thong (built 1560) remains the finest example of classical Lao temple architecture — its sweeping, multi-tiered roofs nearly touch the ground. The daily alms-giving ceremony (tak bat), where monks collect rice from kneeling devotees at dawn, has continued unbroken for centuries.' },
+      { label: 'Vientiane Becomes Capital (1560)', text: 'King Setthathirath moved the capital from Luang Prabang to Vientiane in 1560, seeking a more defensible and commercially strategic location on the Mekong. He built That Luang — the great golden stupa that remains Laos\'s national symbol — and Haw Phra Kaew (the Temple of the Emerald Buddha, which was later taken by the Siamese). Vientiane flourished as a trading center, but faced repeated invasions from Burma, Siam, and Vietnam over the following centuries.' },
+      { label: 'The Three Kingdoms (1707-1893)', text: 'Lane Xang fractured into three rival kingdoms in 1707: Luang Prabang in the north, Vientiane in the center, and Champasak in the south. The division left the Lao states vulnerable to their powerful neighbors. Siam (Thailand) became the dominant power, sacking Vientiane in 1828 and reducing it to ruins. The Siamese forcibly relocated tens of thousands of Lao people to the Khorat Plateau — which is why northeastern Thailand (Isan) speaks Lao and shares Lao culture to this day.' },
+    ],
+  },
+  {
+    id: 'french-colonial',
+    icon: '🏛️',
+    title: 'French Indochina & Colonial Rule',
+    gradient: 'linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)',
+    items: [
+      { label: 'French Protectorate (1893-1953)', text: 'France established a protectorate over Laos in 1893, incorporating it into French Indochina alongside Vietnam and Cambodia. The French drew Laos\'s modern borders, reclaiming territory from Siam. Colonial rule was relatively light compared to Vietnam — France viewed Laos as a backwater buffer state. The French built limited infrastructure, introduced coffee cultivation on the Bolaven Plateau, and established a small administrative class. Luang Prabang\'s royal family was retained as ceremonial rulers under French authority.' },
+      { label: 'Colonial Architecture', text: 'French colonial influence is still visible in Lao architecture, particularly in Vientiane and Luang Prabang. Vientiane\'s colonial-era buildings line Setthathirath Road and the Mekong riverfront — pastel-colored villas with shuttered windows and balconies, now repurposed as boutique hotels, cafes, and government offices. Luang Prabang\'s UNESCO designation specifically protects the fusion of traditional Lao and colonial French architecture. The morning baguettes sold at Lao markets are a direct legacy of French bread-making traditions.' },
+      { label: 'Coffee & the Bolaven Plateau', text: 'The French introduced Arabica and Robusta coffee to the Bolaven Plateau in the early 1900s. The plateau\'s high altitude (1,000-1,500 meters), volcanic soil, and cool climate proved ideal for coffee cultivation. Today, Bolaven coffee is Laos\'s finest agricultural export, grown by ethnic minority communities (Laven, Alak, Katu) using traditional methods. The Jhai Coffee House and Sinouk Coffee plantations near Pakse offer farm tours. Lao coffee — strong, sweet, and served with condensed milk — is among Southeast Asia\'s most underrated.' },
+      { label: 'Independence & the First Coalition', text: 'Laos gained independence from France in 1953, but immediately found itself pulled between competing forces. The royal government in Vientiane, the communist Pathet Lao movement, and neutralists all vied for control. A series of coalition governments attempted to maintain neutrality in the Cold War, but Laos\'s geographic position — sandwiched between Vietnam, China, Thailand, and Cambodia — made neutrality impossible. The stage was set for the most devastating chapter in Lao history.' },
+    ],
+  },
+  {
+    id: 'secret-war',
+    icon: '💣',
+    title: 'The Secret War & Ho Chi Minh Trail',
+    gradient: 'linear-gradient(135deg, #B71C1C 0%, #D32F2F 100%)',
+    items: [
+      { label: 'The Secret War (1964-1973)', text: 'From 1964 to 1973, the United States conducted a massive covert bombing campaign in Laos — the most heavily bombed country per capita in history. Over 2 million tons of ordnance were dropped on Laos (more than all the bombs dropped on Europe in WWII combined), averaging one planeload of bombs every eight minutes for nine years. The campaign was "secret" because Laos was officially neutral — the US never declared war on Laos. The CIA ran the operation, recruiting Hmong fighters as a proxy army.' },
+      { label: 'The Ho Chi Minh Trail', text: 'The primary US motivation for bombing Laos was the Ho Chi Minh Trail — North Vietnam\'s supply route running through eastern Laos into South Vietnam. The trail was a network of roads, paths, and river crossings through some of the most rugged terrain in Southeast Asia. Despite relentless bombing, the trail was never severed — Vietnamese engineers rebuilt it continuously. The provinces along the trail (Savannakhet, Khammouane, Attapeu, Sekong) absorbed the heaviest bombardment and still bear the scars today.' },
+      { label: 'The Hmong Secret Army', text: 'The CIA recruited and armed an army of 30,000 Hmong highlanders, led by General Vang Pao, to fight the Pathet Lao and North Vietnamese. The Hmong fighters were extraordinarily effective but paid a terrible price — an estimated 10-15% of the Hmong population was killed during the war. When the US withdrew, Hmong communities faced retribution. Tens of thousands fled to refugee camps in Thailand and eventually resettled in the United States (primarily Minnesota and California). The Hmong diaspora remains one of the war\'s most painful legacies.' },
+      { label: 'UXO — The War That Never Ended', text: 'Up to 30% of the bombs dropped on Laos failed to detonate, leaving an estimated 80 million unexploded cluster munitions (bombies) scattered across the country. UXO (unexploded ordnance) continues to kill and maim — over 20,000 casualties since 1973, roughly 40% of them children attracted to the tennis-ball-sized bombies. Clearance organizations (UXO Lao, MAG, HALO Trust) work across the country, but at current rates, it will take centuries to clear all contamination. The UXO Visitor Centre in Luang Prabang and the COPE Visitor Centre in Vientiane are essential stops for understanding this ongoing crisis.' },
+      { label: 'Visiting the Secret War Sites', text: 'The Pathet Lao caves at Vieng Xai (near Sam Neua) are the most powerful Secret War site — a complex of caves where the Pathet Lao leadership lived and governed for nine years while bombs fell above. Guided tours take you through cave offices, hospitals, and living quarters. In Phonsavan, the bomb craters and decommissioned ordnance are everywhere — casings are repurposed as fences, planters, and building supports. The MAG and UXO Lao clearance teams sometimes allow visitors to observe their work.' },
+    ],
+  },
+  {
+    id: 'buddhist-heritage',
+    icon: '🙏',
+    title: 'Buddhist Heritage & Living Traditions',
+    gradient: 'linear-gradient(135deg, #E65100 0%, #FF9800 100%)',
+    items: [
+      { label: 'Theravada Buddhism in Laos', text: 'Laos is one of the most devoutly Buddhist countries in the world. Theravada Buddhism arrived with the founding of Lane Xang in the 14th century and permeates every aspect of Lao life — from the alms ceremony at dawn to the festivals that mark the Buddhist calendar. Every Lao man is expected to ordain as a monk at least once in his life, even if only for a few weeks. Monasteries serve as community centers, schools, and social safety nets. The sangha (monastic community) is the most trusted institution in Lao society.' },
+      { label: 'Luang Prabang\'s Temple Trail', text: 'Luang Prabang has over 30 active temples (wats) in a town of 55,000 people. Wat Xieng Thong (1560) is the masterpiece — its sim (main hall) has a distinctive sweeping roof and intricate glass mosaics depicting the Tree of Life. Wat Visoun (1513) is the oldest functioning temple. Wat Mai Suwannaphumaham has a golden bas-relief facade. The Royal Palace Museum (Haw Kham) contains the Phra Bang Buddha and royal artifacts. Climbing Phousi Hill at sunset provides a panoramic view of the temple-studded peninsula between two rivers.' },
+      { label: 'Tak Bat — The Alms Ceremony', text: 'Every morning before dawn, hundreds of saffron-robed monks walk in silent procession through Luang Prabang\'s streets, collecting sticky rice and food from kneeling devotees. The tak bat ceremony has continued for centuries and is one of the most moving experiences in Southeast Asia. Visitors may observe respectfully: maintain distance, do not use flash photography, dress modestly (cover shoulders and knees), and do not touch the monks. If you wish to participate, purchase rice from a local market — not from the vendors targeting tourists with pre-packaged offerings.' },
+      { label: 'That Luang — Laos\'s National Symbol', text: 'That Luang (the Great Stupa) in Vientiane is Laos\'s most important religious monument and national symbol — it appears on the national seal and currency. Originally built in 1566 by King Setthathirath, the golden stupa has been destroyed and rebuilt multiple times. The current structure dates to the 1930s French restoration. The annual That Luang Festival in November is the country\'s largest religious celebration, drawing thousands of pilgrims who camp around the stupa for three days of ceremonies, processions, and a vibrant night market.' },
+      { label: 'Baci Ceremony & Spirit Traditions', text: 'The baci (or su khwan) ceremony is Laos\'s most distinctive spiritual tradition — a ritual tying of cotton strings around the wrists to bind the 32 spirits (khwan) to the body, blessing health, prosperity, and safe travels. Baci ceremonies mark births, weddings, departures, arrivals, and important life events. You\'ll likely experience one if you stay with Lao families or attend a village celebration. Pre-Buddhist animist beliefs — spirit houses, phi worship, and fortune-telling — coexist naturally alongside Buddhist practice throughout Laos.' },
+    ],
+  },
+  {
+    id: 'plain-of-jars',
+    icon: '🏺',
+    title: 'The Plain of Jars & Ancient Mysteries',
+    gradient: 'linear-gradient(135deg, #4A5568 0%, #718096 100%)',
+    items: [
+      { label: 'What Is the Plain of Jars?', text: 'The Plain of Jars is one of Southeast Asia\'s most enigmatic archaeological sites — thousands of massive stone jars, some weighing over six tons, scattered across the Xieng Khouang Plateau in northeastern Laos. The jars date to approximately 500 BC - 500 AD and were likely associated with ancient burial practices. Their exact purpose remains debated — theories include funerary urns, fermentation vessels, or water storage. UNESCO inscribed the Plain of Jars as a World Heritage Site in 2019.' },
+      { label: 'Visiting the Jar Sites', text: 'There are over 90 jar sites across Xieng Khouang province, but only three are open to visitors (Sites 1, 2, and 3) — the rest remain contaminated with UXO from the Secret War. Site 1 (Thong Hai Hin) near Phonsavan is the largest and most accessible, with over 300 jars including the largest specimen (2.5 meters tall, estimated 6 tons). Site 2 features jars on two forested hilltops with views across the plateau. Site 3 has jars nestled among rice paddies. Stick to marked paths — UXO clearance is ongoing.' },
+      { label: 'The Xieng Khouang Plateau', text: 'The plateau around Phonsavan sits at 1,100 meters elevation, giving it a surprisingly cool climate. The area was devastated during the Secret War — Phonsavan itself is a postwar replacement town (the original provincial capital, Xieng Khouang, was completely destroyed). The landscape is dotted with bomb craters, some now used as fish ponds. The Mines Advisory Group (MAG) Visitor Information Centre in Phonsavan explains the ongoing clearance effort. Despite its violent recent history, the plateau is strikingly beautiful — rolling grasslands, pine forests, and the mysterious jars.' },
+      { label: 'Luang Prabang\'s Royal History', text: 'Luang Prabang was a royal capital for over 600 years — from the founding of Lane Xang in 1353 until the Pathet Lao abolished the monarchy in 1975. The Royal Palace Museum (Haw Kham) preserves the throne room, royal apartments, and diplomatic gifts. King Sisavang Vatthana, the last king, was sent to a "re-education camp" in 1977 and is believed to have died in captivity — the circumstances remain officially unacknowledged. The town\'s UNESCO designation (1995) recognized the unique blend of Lao and French colonial architecture that the former royal capital preserves.' },
+    ],
+  },
+  {
+    id: 'modern-laos',
+    icon: '🇱🇦',
+    title: 'Modern Laos & Looking Forward',
+    gradient: 'linear-gradient(135deg, #0D7377 0%, #4DB6AC 100%)',
+    items: [
+      { label: 'The Lao PDR (1975-Present)', text: 'The Pathet Lao took control of Laos on December 2, 1975, abolishing the 622-year monarchy and establishing the Lao People\'s Democratic Republic. The initial years brought collectivization, re-education camps, and the flight of approximately 10% of the population — including most of the educated class — across the Mekong to Thailand. Since the 1986 "New Economic Mechanism" reforms, Laos has gradually liberalized its economy while maintaining single-party communist rule. The country remains one of Southeast Asia\'s poorest but is growing rapidly.' },
+      { label: 'The Laos-China Railway', text: 'The Laos-China Railway, completed in December 2021, is a $6 billion high-speed rail line connecting Vientiane to Kunming, China, through 75 tunnels and 167 bridges across northern Laos. The journey from Vientiane to Luang Prabang now takes 2 hours (previously 10+ by bus). The railway is transforming travel in Laos — and raising questions about Chinese economic influence, debt sustainability, and environmental impact. For travelers, it\'s a game-changer: comfortable, scenic, and affordable at roughly 200,000 LAK ($10 USD) for the Vientiane-Luang Prabang route.' },
+      { label: 'Dam Building & Environmental Challenges', text: 'Laos has positioned itself as "the Battery of Southeast Asia," building dozens of hydroelectric dams on the Mekong and its tributaries to export electricity to Thailand, Vietnam, and Cambodia. The dams generate crucial revenue but have disrupted fish migration, flooded villages, and altered the Mekong\'s natural flood-drought cycle that millions of downstream farmers depend on. The Xe-Pian Xe-Namnoy dam collapse in 2018 killed dozens and displaced thousands, highlighting the risks of rapid dam construction.' },
+      { label: 'Tourism & Preservation', text: 'Tourism is one of Laos\'s most important industries, but the country is working to balance development with preservation. Luang Prabang\'s UNESCO designation protects its architecture but creates tension between conservation and commercial pressure. Community-based tourism initiatives in villages near Nong Khiaw, the Bolaven Plateau, and Si Phan Don offer visitors authentic experiences while directing revenue to local communities. Laos remains one of Southeast Asia\'s least-visited countries — and that relative obscurity is part of its charm.' },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  schemaData={{ title: pageTitle, description: pageDescription }}
+  breadcrumbs={breadcrumbs}
+>
+  <header class="hist-hero">
+    <div class="hist-hero-gradient"></div>
+    <div class="hist-hero-noise"></div>
+    <div class="hist-hero-content">
+      <h1 class="hist-hero-title">Lao History & Heritage</h1>
+      <p class="hist-hero-subtitle">From the million-elephant kingdom to French Indochina, from the devastating Secret War to living Buddhist traditions and the mysterious Plain of Jars.</p>
+      <div class="hist-hero-meta">
+        <div class="hist-hero-meta-item"><span class="hist-hero-meta-label">Eras</span><span class="hist-hero-meta-value">6</span></div>
+        <div class="hist-hero-meta-item"><span class="hist-hero-meta-label">Timeline</span><span class="hist-hero-meta-value">1353-Today</span></div>
+        <div class="hist-hero-meta-item"><span class="hist-hero-meta-label">UNESCO Sites</span><span class="hist-hero-meta-value">3</span></div>
+      </div>
+    </div>
+    <div class="hist-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <div class="container-content"><Breadcrumb items={breadcrumbs} /></div>
+
+  <section class="hist-personal reveal">
+    <div class="container-content">
+      <blockquote class="hist-personal-quote">
+        <p>I thought I understood the Vietnam War until I visited Laos. Standing in the Vieng Xai caves where the Pathet Lao governed underground for nine years, walking through bomb crater fields in Xieng Khouang, and watching children play near decommissioned cluster munitions — this is a history that most Americans have never heard. But Laos isn't defined by its suffering. The morning alms ceremony in Luang Prabang, the mystery of the Plain of Jars, the golden That Luang at sunset — Laos carries its history with quiet dignity. Understanding that history makes every temple, every village, and every conversation richer.</p>
+        <cite>— Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="hist-quicknav reveal">
+    <div class="container-content">
+      <div class="hist-quicknav-grid">
+        {topics.map((t) => (
+          <a href={`#${t.id}`} class="hist-quicknav-chip">
+            <span class="hist-quicknav-icon">{t.icon}</span>
+            <span class="hist-quicknav-label">{t.title.split(' ').slice(0, 2).join(' ')}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {topics.map((topic) => (
+    <section class="hist-topic reveal" id={topic.id}>
+      <div class="container-content">
+        <div class="hist-topic-header" style={`background: ${topic.gradient};`}>
+          <div class="hist-topic-header-inner">
+            <span class="hist-topic-icon">{topic.icon}</span>
+            <h2 class="hist-topic-title">{topic.title}</h2>
+            <span class="hist-topic-count">{topic.items.length} topics</span>
+          </div>
+        </div>
+        <div class="hist-tip-grid">
+          {topic.items.map((item) => (
+            <div class="hist-tip-card">
+              <h3 class="hist-tip-label">{item.label}</h3>
+              <p class="hist-tip-text" set:html={item.text} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <section class="hist-cta-section reveal">
+    <div class="container-content">
+      <div class="hist-cta-card">
+        <h2 class="hist-cta-heading">Plan a Lao Heritage Trip</h2>
+        <p class="hist-cta-text">Tell our AI planner you're interested in history and it will build a Laos itinerary around ancient temples, the Plain of Jars, Secret War sites, and Buddhist traditions.</p>
+        <a href="/plan/" class="hist-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={[
+    { question: "What was the Secret War in Laos?", answer: "From 1964-1973, the US conducted a covert bombing campaign in Laos, dropping over 2 million tons of ordnance — more than all bombs dropped on Europe in WWII. The bombing targeted the Ho Chi Minh Trail (North Vietnam's supply route through Laos) and Pathet Lao forces. Laos became the most heavily bombed country per capita in history. Up to 30% of the bombs failed to detonate, and UXO continues to kill and injure people today." },
+    { question: "What is the Plain of Jars?", answer: "The Plain of Jars is an archaeological site in Xieng Khouang province featuring thousands of massive stone jars dating from approximately 500 BC to 500 AD. The jars, some weighing over 6 tons, were likely used in ancient burial practices. The site was inscribed as a UNESCO World Heritage Site in 2019. Three jar sites are open to visitors; others remain contaminated with UXO from the Secret War." },
+    { question: "What is the tak bat alms ceremony?", answer: "Tak bat is the daily morning alms-giving ceremony in which Buddhist monks walk in silent procession through town collecting rice and food from kneeling devotees. The tradition is strongest in Luang Prabang, where hundreds of monks from 30+ temples participate daily before dawn. Visitors should observe respectfully: maintain distance, no flash photography, dress modestly, and don't touch the monks." },
+    { question: "What was Lane Xang?", answer: "Lane Xang ('Land of a Million Elephants') was the Lao kingdom founded by Fa Ngum in 1353, with its capital at Luang Prabang. It was one of the largest kingdoms in Southeast Asia, establishing Theravada Buddhism as the state religion. Lane Xang lasted until 1707 when it split into three rival kingdoms (Luang Prabang, Vientiane, Champasak), leaving the Lao states vulnerable to Siamese and Vietnamese domination." },
+    { question: "What is UXO in Laos?", answer: "UXO (unexploded ordnance) refers to the estimated 80 million cluster munitions that failed to detonate during the Secret War. These bombies continue to kill and maim — over 20,000 casualties since 1973, 40% of them children. Clearance organizations work across Laos, but at current rates it will take centuries to fully clear the contamination. The COPE Visitor Centre in Vientiane and UXO Visitor Centre in Luang Prabang explain the ongoing crisis." },
+    { question: "When is the best time to visit Laos's historical sites?", answer: "The dry season (October-April) is best for historical sites across Laos. Luang Prabang is beautiful year-round but less rainy from November to March. The Plain of Jars is best visited November-February when the plateau is cool and dry. Avoid the burning season (February-April) when smoke from agricultural fires reduces visibility. The That Luang Festival in November is the best time to experience living Buddhist heritage." },
+  ]} />
+
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get Our Free Lao Heritage Trail Guide"
+      description="A printable PDF guide to Laos's most significant historical sites — temples, Secret War sites, the Plain of Jars, and Buddhist traditions."
+      bullets={[
+        'Luang Prabang temple trail with all 30 wats mapped',
+        'Plain of Jars visitor guide with safety information',
+        'Secret War sites: Vieng Xai caves, COPE Centre, UXO sites',
+        'Buddhist festival calendar with dates and locations',
+      ]}
+      guideTag="pillar-history"
+    />
+  </div>
+
+  <section class="hist-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="hist-crosslinks-heading">Explore More</h3>
+      <div class="hist-crosslinks-grid">
+        <a href="/cuisine/" class="hist-crosslink-card">
+          <span class="hist-crosslink-icon">&#127860;</span>
+          <span class="hist-crosslink-label">Lao Cuisine</span>
+          <span class="hist-crosslink-desc">Sticky rice, laap, and the food of the Mekong</span>
+        </a>
+        <a href="/practical/" class="hist-crosslink-card">
+          <span class="hist-crosslink-icon">&#127890;</span>
+          <span class="hist-crosslink-label">Travel Tips</span>
+          <span class="hist-crosslink-desc">Visa, money, transport, and cultural etiquette</span>
+        </a>
+        <a href="/destinations/" class="hist-crosslink-card">
+          <span class="hist-crosslink-icon">&#127796;</span>
+          <span class="hist-crosslink-label">All Destinations</span>
+          <span class="hist-crosslink-desc">9 destinations from Luang Prabang to Si Phan Don</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver((entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else { document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible')); }
+</script>
+
+<style>
+  .hist-hero { position: relative; min-height: 55vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 5rem var(--space-6) 60px; overflow: hidden; background: linear-gradient(135deg, #1B5E20 0%, #E65100 50%, #B71C1C 100%); }
+  .hist-hero-gradient { position: absolute; inset: 0; z-index: 1; background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%); }
+  .hist-hero-noise { position: absolute; inset: 0; z-index: 2; background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E"); pointer-events: none; }
+  .hist-hero-content { position: relative; z-index: 3; max-width: 720px; }
+  .hist-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.1; margin: 0 0 var(--space-3); }
+  .hist-hero-subtitle { font-size: clamp(1rem, 2vw, 1.15rem); color: rgba(255, 255, 255, 0.85); line-height: 1.6; margin: 0 0 var(--space-5); max-width: 580px; }
+  .hist-hero-meta { display: flex; gap: var(--space-5); flex-wrap: wrap; }
+  .hist-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .hist-hero-meta-label { font-size: 0.65rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.5); }
+  .hist-hero-meta-value { font-size: 1.1rem; font-weight: var(--weight-bold); color: #fff; }
+  .hist-scroll-hint { position: absolute; bottom: 16px; right: var(--space-6); z-index: 3; font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.15em; color: rgba(255, 255, 255, 0.35); text-align: center; animation: histBounce 2s ease-in-out infinite; }
+  @keyframes histBounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+
+  .hist-personal { padding-block: var(--space-8); }
+  .hist-personal-quote { max-width: 680px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid var(--color-warm-coral); background: var(--color-sky); border-radius: 0 12px 12px 0; }
+  .hist-personal-quote p { font-size: var(--text-body); color: var(--color-heading); line-height: var(--leading-body); font-style: italic; margin-bottom: var(--space-3); }
+  .hist-personal-quote cite { font-size: var(--text-caption); color: var(--color-warm-coral); font-weight: var(--weight-semibold); font-style: normal; }
+
+  .hist-quicknav { padding: 0 0 var(--space-6); }
+  .hist-quicknav-grid { display: flex; justify-content: center; gap: var(--space-2); flex-wrap: wrap; }
+  .hist-quicknav-chip { display: inline-flex; align-items: center; gap: 6px; padding: 8px 16px; background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 40px; font-size: 0.8rem; font-weight: var(--weight-medium); color: var(--color-slate); text-decoration: none; transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease; }
+  .hist-quicknav-chip:hover { background: var(--color-sky); color: var(--color-ocean-teal); transform: translateY(-2px); }
+  .hist-quicknav-icon { font-size: 1rem; }
+  .hist-quicknav-label { white-space: nowrap; }
+
+  .hist-topic { padding: var(--space-4) 0 var(--space-6); scroll-margin-top: 80px; }
+  .hist-topic-header { position: relative; border-radius: 20px; padding: var(--space-5) var(--space-6); margin-bottom: var(--space-5); overflow: hidden; }
+  .hist-topic-header-inner { position: relative; z-index: 1; display: flex; align-items: center; gap: var(--space-3); flex-wrap: wrap; }
+  .hist-topic-icon { font-size: 1.6rem; }
+  .hist-topic-title { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: var(--weight-bold); color: #fff; margin: 0; line-height: 1.2; flex: 1; min-width: 200px; }
+  .hist-topic-count { font-size: 0.7rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.55); background: rgba(255, 255, 255, 0.1); padding: 4px 12px; border-radius: 20px; }
+
+  .hist-tip-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); }
+  @media (max-width: 768px) { .hist-tip-grid { grid-template-columns: 1fr; } }
+  .hist-tip-card { background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 14px; padding: var(--space-5); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .hist-tip-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+  .hist-tip-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); margin: 0 0 var(--space-2); line-height: 1.3; }
+  .hist-tip-text { font-size: 0.85rem; color: var(--color-slate); line-height: 1.65; margin: 0; }
+
+  .hist-cta-section { padding: var(--space-6) 0 var(--space-8); }
+  .hist-cta-card { background: linear-gradient(135deg, var(--color-deep-night) 0%, #2D3748 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .hist-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .hist-cta-text { font-size: 1rem; color: rgba(255, 255, 255, 0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .hist-cta-button { display: inline-block; background: var(--color-warm-coral); color: #fff; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .hist-cta-button:hover { background: #d4553b; transform: translateY(-2px); }
+
+  .hist-crosslinks { padding: 0 0 var(--space-10); }
+  .hist-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night); text-align: center; margin: 0 0 var(--space-4); }
+  .hist-crosslinks-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-4); max-width: 800px; margin: 0 auto; }
+  @media (max-width: 640px) { .hist-crosslinks-grid { grid-template-columns: 1fr; } }
+  .hist-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white); border: 1px solid rgba(0, 0, 0, 0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .hist-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08); }
+  .hist-crosslink-icon { font-size: 1.8rem; }
+  .hist-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night); }
+  .hist-crosslink-desc { font-size: 0.78rem; color: var(--color-slate); line-height: 1.4; }
+
+  @media (max-width: 640px) {
+    .hist-hero { min-height: 50vh; padding: 0 var(--space-4) 40px; }
+    .hist-hero-meta { gap: var(--space-4); }
+    .hist-scroll-hint { display: none; }
+    .hist-topic-header { padding: var(--space-4) var(--space-4); }
+  }
+</style>

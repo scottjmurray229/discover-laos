@@ -1,0 +1,987 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'The Finer Things', url: '/finer-things/' },
+];
+
+const pageTitle = 'The Finer Things — Luxury Laos: Boutique Hotels, River Cruises & Elevated Experiences';
+const pageDescription = 'Amantaka in Luang Prabang, luxury Mekong cruises, Rosewood spa treatments, private waterfall excursions, silk weaving workshops, and the refined side of Laos travel.';
+
+interface TopicSection {
+  id: string;
+  icon: string;
+  title: string;
+  gradient: string;
+  items: { label: string; text: string; link?: string }[];
+}
+
+const topics: TopicSection[] = [
+  {
+    id: 'luxury-hotels',
+    icon: '\u{1F3E8}',
+    title: 'Boutique Hotels & Luxury Stays',
+    gradient: 'linear-gradient(135deg, #4C1D95 0%, #7C3AED 100%)',
+    items: [
+      { label: 'Amantaka, Luang Prabang', text: 'Aman\'s Laos property occupies a restored French colonial hospital in the heart of the UNESCO heritage zone. 24 suites surrounding a courtyard pool, each with teak floors, freestanding bathtubs, and views of Mount Phousi. From $800/night (3,200,000 LAK). The inclusion of daily spa treatments, guided excursions, and all meals makes this genuinely all-inclusive luxury. The morning alms-giving ceremony is steps from the front door.', link: '/destinations/luang-prabang/' },
+      { label: 'Rosewood Luang Prabang', text: 'Set on a hillside above the Nam Khan River with private waterfall access. 23 tented and hilltop villas blend into the jungle canopy. From $600/night (2,400,000 LAK). The Waterfall Pool Villa has a private plunge pool fed by natural spring water. The Sense spa uses traditional Lao herbal treatments. This is where the jungle meets absolute refinement.', link: '/destinations/luang-prabang/' },
+      { label: 'Sofitel Luang Prabang', text: 'A beautifully restored French Governor\'s residence with 25 rooms across heritage buildings and modern garden pavilions. Colonial architecture meets Lao silk and teak furnishings. From $250/night (1,000,000 LAK). The pool garden is a private oasis in the center of town. The French-Lao fusion restaurant is one of the best in the city.', link: '/destinations/luang-prabang/' },
+      { label: 'The Belle Rive Boutique Hotel, Luang Prabang', text: 'A riverside boutique hotel with Mekong views from every room. Intimate, stylish, and perfectly positioned between the Night Market and the Royal Palace Museum. From $120/night (480,000 LAK). The rooftop terrace at sunset, with a Beerlao in hand and the Mekong below, is one of the best moments in Laos.', link: '/destinations/luang-prabang/' },
+      { label: 'Kiridara Hotel, Luang Prabang', text: 'Perched on a hill with panoramic views of the Mekong and Nam Khan confluence. The infinity pool seems to pour into the river below. French-Lao design with modern comforts. From $150/night (600,000 LAK). The sunset views from the pool are arguably the best in Luang Prabang \u2014 and that\'s saying something in a town full of great vantage points.', link: '/destinations/luang-prabang/' },
+    ],
+  },
+  {
+    id: 'river-cruises',
+    icon: '\u{1F6F3}\u{FE0F}',
+    title: 'Luxury Mekong River Cruises',
+    gradient: 'linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)',
+    items: [
+      { label: 'Heritage Line Anouvong', text: 'The most luxurious Mekong river cruise in Laos. A colonial-era-inspired vessel with 12 suites, a pool deck, spa, and French-Lao dining room. The 3-night upstream journey from Luang Prabang to the Golden Triangle covers Pak Ou Caves, remote villages, and the Mekong\'s most dramatic bends. From $1,200 per person. This transforms the Mekong slow boat experience into something extraordinary.', link: '/destinations/luang-prabang/' },
+      { label: 'Luang Say Mekong Cruises', text: 'A 2-day/1-night cruise between Luang Prabang and Huay Xai (Thai border). Teak-paneled cabins, Lao cuisine served on deck, and an overnight at the Luang Say Lodge in Pakbeng \u2014 a charming riverside eco-lodge. From $350 per person. This is the classic Mekong journey, elevated from backpacker slow boat to boutique river trip.' },
+      { label: 'Mekong Kingdoms', text: 'Premium slow boat journeys with handcrafted teak vessels, onboard chef, and curated village stops. Routes from Luang Prabang south toward Vientiane or north to the Golden Triangle. Day cruises from $150, multi-day from $400 per person. The vessels are small enough to dock at villages that larger boats can\'t reach.', link: '/destinations/luang-prabang/' },
+      { label: 'Private Longtail Boat Charters', text: 'For a more intimate experience, charter a private longtail boat from Luang Prabang. A full-day charter to Pak Ou Caves with a riverside picnic lunch runs 400,000\u2013600,000 LAK ($20\u201330). Not luxury in the five-star sense, but the privacy and flexibility make it special. Ask your hotel to arrange a captain and packed lunch.' },
+      { label: 'Vat Phou River Cruise', text: 'A 3-day cruise from Pakse to the ancient Khmer temple of Vat Phou in southern Laos. Boutique vessel, fewer than 20 guests, with stops at silk-weaving villages and the 4,000 Islands region. From $500 per person. This is the uncrowded alternative to Angkor Wat \u2014 a UNESCO World Heritage temple reached by river.', link: '/destinations/pakse/' },
+    ],
+  },
+  {
+    id: 'fine-dining',
+    icon: '\u{1F37D}\u{FE0F}',
+    title: 'Fine Dining & Culinary Experiences',
+    gradient: 'linear-gradient(135deg, #1A2332 0%, #78350F 100%)',
+    items: [
+      { label: 'Paste Laos, Luang Prabang', text: 'From the team behind Paste Bangkok (Michelin-starred), this restaurant reinvents traditional Lao cuisine with modern technique. A tasting menu featuring laap reimagined, Mekong river fish with herbs you\'ve never encountered, and sticky rice presented as art. Tasting menu 600,000\u2013800,000 LAK ($30\u201340). The most ambitious restaurant in the country.', link: '/destinations/luang-prabang/' },
+      { label: 'Manda de Laos, Luang Prabang', text: 'Set in a restored royal residence with lily-pond dining. Traditional Lao cuisine \u2014 or lam (stew), ping kai (grilled chicken), and fresh Mekong fish \u2014 served in an atmosphere that feels like a private garden party. Mains 120,000\u2013250,000 LAK ($6\u201312). The setting alone makes this one of the most romantic restaurants in Southeast Asia.', link: '/destinations/luang-prabang/' },
+      { label: 'L\'Elephant, Luang Prabang', text: 'French-Lao fine dining in a restored colonial villa. The wine list is the best in the country. Duck confit with Lao herbs, Mekong prawns with tamarind, and a cheese course sourced from a French artisan in Vientiane. Mains 200,000\u2013400,000 LAK ($10\u201320). This is where Luang Prabang\'s French heritage meets its Lao soul.', link: '/destinations/luang-prabang/' },
+      { label: 'Kualao Restaurant, Vientiane', text: 'Vientiane\'s most respected traditional Lao restaurant, set in a teak house with garden seating. Royal Lao cuisine \u2014 dishes once served to the court, refined and presented with care. The set menu for 300,000 LAK ($15) is a journey through Lao culinary heritage. The sticky rice here sets the standard.', link: '/destinations/vientiane/' },
+      { label: 'Tamarind Cooking School, Luang Prabang', text: 'The luxury version of street food education. A half-day class starting at the morning market, learning Lao cooking from a local chef in a riverside kitchen. 400,000\u2013600,000 LAK ($20\u201330) per person. You\'ll learn to make laap, jeow (dipping sauces), and the proper way to steam sticky rice in a bamboo basket. Take the skills home.', link: '/destinations/luang-prabang/' },
+    ],
+  },
+  {
+    id: 'spa-wellness',
+    icon: '\u{1F9D6}',
+    title: 'Spa & Traditional Wellness',
+    gradient: 'linear-gradient(135deg, #0D7377 0%, #14B8A6 100%)',
+    items: [
+      { label: 'Sense Spa at Rosewood', text: 'Treatments inspired by traditional Lao healing practices \u2014 herbal compresses, lemongrass body wraps, and medicinal plant facials using ingredients from the resort\'s own garden. Signature treatments $80\u2013150 (320,000\u2013600,000 LAK). The treatment rooms are open-air pavilions overlooking the jungle canopy. The post-treatment tea service on the terrace is pure peace.', link: '/destinations/luang-prabang/' },
+      { label: 'Amantaka Spa', text: 'Aman\'s signature wellness experience in a garden pavilion setting. Traditional Lao massage combined with Aman\'s global spa expertise. Included in room rate for overnight guests. Non-resident treatments from $100 (400,000 LAK). The couples\' treatment room overlooks a private garden with lotus ponds.', link: '/destinations/luang-prabang/' },
+      { label: 'Traditional Lao Massage (Luang Prabang)', text: 'The Red Cross Sauna and Massage on Sisavangvong Road offers authentic Lao herbal sauna followed by a traditional massage for just 60,000\u201380,000 LAK ($3\u20134). Not luxury in the hotel sense, but the herbal steam \u2014 lemongrass, galangal, eucalyptus \u2014 and the skilled massage technique are genuinely therapeutic. This is how Laotians have been healing for centuries.', link: '/destinations/luang-prabang/' },
+      { label: 'Spa Lao at Sofitel', text: 'French spa technique meets Lao botanicals. The signature treatment uses rice bran, turmeric, and Lao honey in a full-body ritual. Treatments $50\u2013120 (200,000\u2013480,000 LAK). The colonial-era treatment rooms with their high ceilings and wooden shutters create an atmosphere of timeless calm.', link: '/destinations/luang-prabang/' },
+    ],
+  },
+  {
+    id: 'cultural-experiences',
+    icon: '\u{1F3AD}',
+    title: 'Exclusive Cultural Experiences',
+    gradient: 'linear-gradient(135deg, #78350F 0%, #D4A574 100%)',
+    items: [
+      { label: 'Private Alms-Giving Ceremony Experience', text: 'Every dawn in Luang Prabang, hundreds of monks walk silently through the streets collecting rice from locals. Hotels like Amantaka and Rosewood arrange private guided experiences where you prepare offerings with a local family and participate respectfully at a quieter location away from the tourist crowds. Included with luxury hotel stays, or 200,000\u2013400,000 LAK ($10\u201320) arranged independently. This is one of the most moving experiences in all of Southeast Asia.', link: '/destinations/luang-prabang/' },
+      { label: 'Silk Weaving Workshops', text: 'Ock Pop Tok (East Meets West) in Luang Prabang offers luxury textile workshops on the banks of the Mekong. Learn traditional Lao silk weaving techniques from master weavers in a riverside studio. Half-day workshop 500,000\u2013800,000 LAK ($25\u201340). The pieces you create are yours to keep. Their gallery shop sells museum-quality textiles from across Laos.', link: '/destinations/luang-prabang/' },
+      { label: 'Private Kuang Si Waterfall Excursion', text: 'Skip the minibus. A private car to Kuang Si Waterfall (45 minutes from Luang Prabang) with a guide, packed gourmet lunch, and early arrival before the crowds costs 600,000\u20131,000,000 LAK ($30\u201350). Swim in the turquoise pools with near-total privacy before 10am. Include a stop at the bear rescue center on the grounds.', link: '/destinations/luang-prabang/' },
+      { label: 'Baci Ceremony', text: 'The Baci (also Basi) is a traditional Lao string-tying ceremony performed for blessings, welcomes, and celebrations. Luxury hotels can arrange a private Baci ceremony with a local shaman for 400,000\u2013600,000 LAK ($20\u201330). White strings are tied around your wrists while blessings are chanted. Wear them for three days before removing \u2014 cutting them is considered bad luck.' },
+      { label: 'Pak Ou Caves by Private Boat', text: 'The sacred caves at the confluence of the Mekong and Nam Ou rivers are filled with thousands of Buddha images left by pilgrims over centuries. A private longtail boat from Luang Prabang (2 hours upstream) with lunch and whisky village stop runs 500,000\u2013800,000 LAK ($25\u201340). The river journey is half the experience \u2014 limestone karsts, fishing villages, and a Mekong landscape that hasn\'t changed in generations.', link: '/destinations/luang-prabang/' },
+    ],
+  },
+  {
+    id: 'wine-spirits',
+    icon: '\u{1F37A}',
+    title: 'Drinks & Nightlife',
+    gradient: 'linear-gradient(135deg, #7C2D12 0%, #B91C1C 100%)',
+    items: [
+      { label: 'Beerlao', text: 'Consistently ranked among Asia\'s best beers, Beerlao is brewed with Lao rice and French brewing expertise (Carlsberg partnership). The original lager is crisp and clean. Beerlao Gold is the premium version. Beerlao Dark is a richer Munich-style lager. 15,000\u201320,000 LAK ($0.75\u20131) at a restaurant. At these prices, drink the good stuff. Beerlao Gold on the Mekong at sunset \u2014 that\'s the moment.' },
+      { label: 'Lao-Lao (Rice Whisky)', text: 'Laos\' national spirit \u2014 distilled from sticky rice, ranging from rough village moonshine to surprisingly smooth commercially produced bottles. The Lao Lao from the "whisky village" of Ban Xang Hai near Luang Prabang is the most famous. 20,000\u201350,000 LAK ($1\u20132.50) per bottle. Try it as a Lao-Lao sour with lime and honey \u2014 the local cocktail scene is building on this base spirit.' },
+      { label: 'Icon Klub & Utopia, Luang Prabang', text: 'Luang Prabang\'s nightlife is mellow by Southeast Asian standards \u2014 the 11:30pm curfew sees to that. <strong>Utopia</strong> is the sunset bar legend: cushions on a riverside deck, cocktails, and one of the best views in town. <strong>Icon Klub</strong> is the closest thing to a proper bar with craft cocktails. Both close by midnight. The night market food stalls are the pre-game.', link: '/destinations/luang-prabang/' },
+      { label: 'Cocktail Scene', text: 'A small but growing cocktail scene is emerging in Luang Prabang and Vientiane. Bars are infusing Lao-Lao with lemongrass, galangal, and pandan for creative cocktails. <strong>525 Cocktails & Tapas</strong> in Luang Prabang and <strong>Chao Fa Ngum</strong> in Vientiane lead the way. Cocktails 60,000\u2013100,000 LAK ($3\u20135) \u2014 a fraction of Bangkok or Singapore prices for comparable quality.' },
+    ],
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  breadcrumbs={breadcrumbs}
+>
+  <!-- Hero -->
+  <header class="ft-hero">
+    <div class="ft-hero-gradient"></div>
+    <div class="ft-hero-noise"></div>
+    <div class="ft-hero-content">
+      <h1 class="ft-hero-title">The Finer Things</h1>
+      <p class="ft-hero-subtitle">Aman and Rosewood properties in a UNESCO town, luxury Mekong river cruises past limestone karsts, French-Lao fusion dining, traditional spa rituals, private waterfall excursions, silk weaving workshops, and a Beerlao at sunset on the Mekong that costs less than a dollar.</p>
+      <div class="ft-hero-meta">
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Topics</span>
+          <span class="ft-hero-meta-value">7</span>
+        </div>
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Destinations</span>
+          <span class="ft-hero-meta-value">9</span>
+        </div>
+        <div class="ft-hero-meta-item">
+          <span class="ft-hero-meta-label">Luxury Picks</span>
+          <span class="ft-hero-meta-value">30+</span>
+        </div>
+      </div>
+    </div>
+    <div class="ft-scroll-hint">Scroll<br />&#8595;</div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <!-- Personal intro -->
+  <section class="ft-personal ft-reveal">
+    <div class="container-content">
+      <blockquote class="ft-personal-quote">
+        <p>Laos is luxury redefined. Not the gilded, over-the-top kind. The kind where you wake up in a teak villa overlooking the Mekong, watch monks collect alms in total silence, eat the best sticky rice on earth, and then float in a turquoise waterfall pool before anyone else arrives. The top hotels here rival anything in Southeast Asia, but the prices haven't caught up to Bali or Thailand yet. Luang Prabang in particular punches so far above its weight it's almost unfair to the competition.</p>
+        <cite>&mdash; Scott</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Quick Facts Strip -->
+  <section class="ft-quickfacts ft-reveal">
+    <div class="container-content">
+      <div class="ft-quickfacts-bar">
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Luxury Hotel</span>
+          <span class="ft-quickfact-value">$250&ndash;800/nt</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Fine Dining</span>
+          <span class="ft-quickfact-value">$10&ndash;40</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">River Cruise</span>
+          <span class="ft-quickfact-value">$350&ndash;1,200</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Spa Treatment</span>
+          <span class="ft-quickfact-value">$3&ndash;150</span>
+        </div>
+        <div class="ft-quickfact-divider"></div>
+        <div class="ft-quickfact">
+          <span class="ft-quickfact-label">Beerlao</span>
+          <span class="ft-quickfact-value">$0.75&ndash;1</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Nav -->
+  <section class="ft-quicknav ft-reveal">
+    <div class="container-content">
+      <div class="ft-quicknav-grid">
+        {topics.map((t) => (
+          <a href={`#${t.id}`} class="ft-quicknav-chip">
+            <span class="ft-quicknav-icon">{t.icon}</span>
+            <span class="ft-quicknav-label">{t.title.split(' ').slice(0, 2).join(' ')}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Topic Sections -->
+  {topics.map((topic) => (
+    <section class="ft-topic ft-reveal" id={topic.id}>
+      <div class="container-content">
+        <div class="ft-topic-header" style={`background: ${topic.gradient};`}>
+          <div class="ft-topic-header-inner">
+            <span class="ft-topic-icon">{topic.icon}</span>
+            <h2 class="ft-topic-title">{topic.title}</h2>
+            <span class="ft-topic-count">{topic.items.length} picks</span>
+          </div>
+        </div>
+
+        <div class="ft-tip-grid">
+          {topic.items.map((item) => (
+            <div class="ft-tip-card">
+              <h3 class="ft-tip-label">{item.label}</h3>
+              <p class="ft-tip-text" set:html={item.text} />
+              {item.link && (
+                <a href={item.link} class="ft-tip-link">Explore {item.label.split(',')[0]} &rarr;</a>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+
+  <!-- Scott's Pro Tips -->
+  <section class="ft-protips ft-reveal">
+    <div class="container-content">
+      <div class="ft-protips-card">
+        <h2 class="ft-protips-heading">Scott's Pro Tips</h2>
+        <div class="scott-tips">
+          <ul>
+            <li><strong>Best Season:</strong> October through March is the sweet spot \u2014 dry weather, cool mornings, and the Mekong at its most photogenic. November and February are peak months for luxury travelers. April is the hottest month and best avoided for high-end trips.</li>
+            <li><strong>Burning Season Warning:</strong> February through April brings agricultural burning that blankets northern Laos in haze. If air quality and visibility matter to your experience (and at luxury prices they should), book October\u2013January instead.</li>
+            <li><strong>Alms-Giving Etiquette:</strong> The morning alms ceremony is sacred, not a photo op. Stand back, do not use flash photography, and do not touch the monks. If you want to give offerings, your luxury hotel can arrange this respectfully. Never buy offerings from street vendors who pressure tourists \u2014 the quality is poor and it commercializes the ceremony.</li>
+            <li><strong>Currency Strategy:</strong> Laos operates on a three-currency system \u2014 LAK, USD, and Thai Baht all circulate. Luxury hotels quote in USD. Restaurants use LAK. ATMs (BCEL is the most reliable) dispense LAK. Carry both USD and LAK. Do not accept worn or marked US bills \u2014 they\'ll be refused.</li>
+            <li><strong>Tipping:</strong> Tipping is not traditionally expected in Laos, but luxury hotels follow international norms. 10% at upscale restaurants, 50,000\u2013100,000 LAK ($2.50\u20135) per day for hotel staff and guides. Small gestures go a long way in a country where the average monthly income is $200\u2013300.</li>
+            <li><strong>Getting There:</strong> Luang Prabang International Airport (LPQ) has direct flights from Bangkok, Hanoi, Siem Reap, and Chiang Mai. The Laos-China Railway now connects Vientiane to Luang Prabang in 2 hours \u2014 a scenic alternative to flying. Luxury hotels arrange airport and station transfers.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="ft-faq ft-reveal">
+    <div class="container-content">
+      <h2 class="ft-faq-heading">Frequently Asked Questions</h2>
+      <div class="ft-faq-list">
+        <details class="ft-faq-item">
+          <summary class="ft-faq-question">Is Laos really a luxury travel destination?</summary>
+          <p class="ft-faq-answer">Absolutely. Luang Prabang has Aman and Rosewood properties \u2014 two of the world's most prestigious hotel brands. The luxury infrastructure is concentrated in Luang Prabang and along the Mekong, but the quality rivals anywhere in Southeast Asia. What makes it special is the contrast: world-class hotels in a town where monks still walk barefoot at dawn.</p>
+        </details>
+        <details class="ft-faq-item">
+          <summary class="ft-faq-question">How many days do I need for a luxury Laos trip?</summary>
+          <p class="ft-faq-answer">Five to seven days is ideal. Spend 3\u20134 nights in Luang Prabang (hotel, dining, cultural experiences, Kuang Si), then 2\u20133 nights on a Mekong river cruise. Add Vientiane for a night if you want the capital city experience. A 3-day Mekong cruise combined with 3 nights at Amantaka or Rosewood is the ultimate Laos itinerary.</p>
+        </details>
+        <details class="ft-faq-item">
+          <summary class="ft-faq-question">Is it safe for luxury travelers?</summary>
+          <p class="ft-faq-answer">Laos is one of the safest countries in Southeast Asia. Violent crime against tourists is extremely rare. The main concerns are petty theft (keep valuables secure) and road quality outside major routes. Luxury hotel transfers eliminate the road risk. UXO (unexploded ordnance) is a concern in eastern provinces \u2014 stick to established paths when hiking.</p>
+        </details>
+        <details class="ft-faq-item">
+          <summary class="ft-faq-question">What should I pack for luxury travel in Laos?</summary>
+          <p class="ft-faq-answer">Modest clothing that covers shoulders and knees for temple visits (required, even for luxury travelers). Light, breathable fabrics for the heat. A good pair of walking shoes for cobblestone streets. Mosquito repellent for evenings. A light rain jacket for shoulder season. Fine dining dress code in Luang Prabang is smart casual at most.</p>
+        </details>
+        <details class="ft-faq-item">
+          <summary class="ft-faq-question">How does Laos compare to Thailand for luxury travel?</summary>
+          <p class="ft-faq-answer">Laos offers a more intimate, authentic experience at similar or lower price points. Thailand has more options and more infrastructure, but Laos has less commercialization and smaller crowds. Luang Prabang is what Chiang Mai was 20 years ago \u2014 before the masses arrived. If you want polished luxury with a raw, genuine cultural experience underneath, Laos wins.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom CTA -->
+  <section class="ft-cta-section ft-reveal">
+    <div class="container-content">
+      <div class="ft-cta-card">
+        <h2 class="ft-cta-heading">Plan Your Luxury Laos Trip</h2>
+        <p class="ft-cta-text">Tell our AI planner your dates and interests \u2014 it'll build a custom itinerary with the best hotels, river cruises, and cultural experiences across Laos.</p>
+        <a href="/plan/" class="ft-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Email Capture -->
+  <div class="container-content ft-reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get My Free Laos Luxury Travel Guide"
+      description="Boutique hotels, Mekong cruises, dining, and cultural experiences — packed into one PDF."
+      bullets={[
+        'Complete guide to Luang Prabang luxury hotels with pricing',
+        'Mekong river cruise comparison and booking tips',
+        'Best restaurants from fine dining to authentic Lao cuisine',
+        'Private excursion itineraries with insider pricing',
+      ]}
+      guideTag="pillar-finer-things"
+    />
+  </div>
+
+  <!-- Cross-links -->
+  <section class="ft-crosslinks ft-reveal">
+    <div class="container-content">
+      <h3 class="ft-crosslinks-heading">Explore More</h3>
+      <div class="ft-crosslinks-grid">
+        <a href="/cuisine/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#127860;</span>
+          <span class="ft-crosslink-label">Food & Cuisine</span>
+          <span class="ft-crosslink-desc">Sticky rice, laap, and the flavors of Lao cooking</span>
+        </a>
+        <a href="/practical/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#128218;</span>
+          <span class="ft-crosslink-label">Practical Guide</span>
+          <span class="ft-crosslink-desc">Visas, money, transport, and essential Laos travel tips</span>
+        </a>
+        <a href="/destinations/" class="ft-crosslink-card">
+          <span class="ft-crosslink-icon">&#127759;</span>
+          <span class="ft-crosslink-label">All Destinations</span>
+          <span class="ft-crosslink-desc">9 destinations across northern, central, and southern Laos</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+</BaseLayout>
+
+<!-- Scroll Reveal Observer (uses ft-reveal/ft-visible to avoid Tailwind .visible conflict) -->
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const ftRevealObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            e.target.classList.add('ft-visible');
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.ft-reveal').forEach((el) => ftRevealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.ft-reveal').forEach((el) => el.classList.add('ft-visible'));
+  }
+</script>
+
+<style>
+  /* ================================================================
+     HERO
+     ================================================================ */
+  .ft-hero {
+    position: relative;
+    min-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5rem var(--space-6) 60px;
+    overflow: hidden;
+  }
+
+  .ft-hero-gradient {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(135deg, #1A2332 0%, #065F46 40%, #D4A574 100%);
+  }
+
+  .ft-hero-noise {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  .ft-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 720px;
+  }
+
+  .ft-hero-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    line-height: 1.1;
+    margin: 0 0 var(--space-3);
+  }
+
+  .ft-hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    margin: 0 0 var(--space-5);
+    max-width: 580px;
+  }
+
+  .ft-hero-meta {
+    display: flex;
+    gap: var(--space-5);
+    flex-wrap: wrap;
+  }
+
+  .ft-hero-meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .ft-hero-meta-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .ft-hero-meta-value {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: #fff;
+  }
+
+  .ft-scroll-hint {
+    position: absolute;
+    bottom: 16px;
+    right: var(--space-6);
+    z-index: 3;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: rgba(255, 255, 255, 0.35);
+    text-align: center;
+    animation: ftBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes ftBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(6px); }
+  }
+
+  /* ================================================================
+     PERSONAL INTRO
+     ================================================================ */
+  .ft-personal {
+    padding-block: var(--space-8);
+  }
+
+  .ft-personal-quote {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: var(--space-6) var(--space-8);
+    border-left: 4px solid #D4A574;
+    background: var(--color-sky);
+    border-radius: 0 12px 12px 0;
+  }
+
+  .ft-personal-quote p {
+    font-size: var(--text-body);
+    color: var(--color-heading);
+    line-height: var(--leading-body);
+    font-style: italic;
+    margin-bottom: var(--space-3);
+  }
+
+  .ft-personal-quote cite {
+    font-size: var(--text-caption);
+    color: #78350F;
+    font-weight: var(--weight-semibold);
+    font-style: normal;
+  }
+
+  /* ================================================================
+     QUICK FACTS STRIP
+     ================================================================ */
+  .ft-quickfacts {
+    padding: 0 0 var(--space-4);
+  }
+
+  .ft-quickfacts-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-5);
+    background: var(--color-sky);
+    border-radius: 16px;
+    padding: var(--space-4) var(--space-6);
+    flex-wrap: wrap;
+  }
+
+  .ft-quickfact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    text-align: center;
+  }
+
+  .ft-quickfact-label {
+    font-size: 0.65rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-slate);
+  }
+
+  .ft-quickfact-value {
+    font-size: 1.05rem;
+    font-weight: var(--weight-extrabold);
+    color: var(--color-deep-night);
+  }
+
+  .ft-quickfact-divider {
+    width: 1px;
+    height: 28px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  /* ================================================================
+     QUICK NAV
+     ================================================================ */
+  .ft-quicknav {
+    padding: 0 0 var(--space-6);
+  }
+
+  .ft-quicknav-grid {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+  }
+
+  .ft-quicknav-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 40px;
+    font-size: 0.8rem;
+    font-weight: var(--weight-medium);
+    color: #4A5568;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  }
+
+  .ft-quicknav-chip:hover {
+    background: #FDF8F0;
+    color: #78350F;
+    transform: translateY(-2px);
+  }
+
+  .ft-quicknav-icon {
+    font-size: 1rem;
+  }
+
+  .ft-quicknav-label {
+    white-space: nowrap;
+  }
+
+  /* ================================================================
+     TOPIC SECTION
+     ================================================================ */
+  .ft-topic {
+    padding: var(--space-4) 0 var(--space-6);
+    scroll-margin-top: 80px;
+  }
+
+  .ft-topic-header {
+    position: relative;
+    border-radius: 20px;
+    padding: var(--space-5) var(--space-6);
+    margin-bottom: var(--space-5);
+    overflow: hidden;
+  }
+
+  .ft-topic-header-inner {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    flex-wrap: wrap;
+  }
+
+  .ft-topic-icon {
+    font-size: 1.6rem;
+  }
+
+  .ft-topic-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: #fff;
+    margin: 0;
+    line-height: 1.2;
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .ft-topic-count {
+    font-size: 0.7rem;
+    font-weight: var(--weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  /* ================================================================
+     TIP CARDS
+     ================================================================ */
+  .ft-tip-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4);
+  }
+
+  @media (max-width: 768px) {
+    .ft-tip-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ft-tip-card {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    padding: var(--space-5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ft-tip-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .ft-tip-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    margin: 0 0 var(--space-2);
+    line-height: 1.3;
+  }
+
+  .ft-tip-text {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  .ft-tip-text :global(a) {
+    color: #78350F;
+    font-weight: var(--weight-semibold);
+    text-decoration: underline;
+    text-decoration-color: rgba(120, 53, 15, 0.3);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .ft-tip-text :global(a:hover) {
+    text-decoration-color: #78350F;
+  }
+
+  .ft-tip-link {
+    display: inline-block;
+    margin-top: var(--space-3);
+    font-size: 0.8rem;
+    font-weight: var(--weight-semibold);
+    color: #78350F;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .ft-tip-link:hover {
+    color: #D4A574;
+  }
+
+  /* ================================================================
+     SCOTT'S PRO TIPS
+     ================================================================ */
+  .ft-protips {
+    padding: var(--space-4) 0 var(--space-6);
+  }
+
+  .ft-protips-card {
+    background: linear-gradient(135deg, #1A2332 0%, #2D3748 100%);
+    border-radius: 20px;
+    padding: var(--space-6) var(--space-6);
+  }
+
+  .ft-protips-heading {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: #D4A574;
+    margin: 0 0 var(--space-4);
+  }
+
+  .ft-protips-card .scott-tips {
+    background: transparent;
+    border-left: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ft-protips-card .scott-tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .ft-protips-card .scott-tips li {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.65;
+    padding-left: var(--space-4);
+    position: relative;
+  }
+
+  .ft-protips-card .scott-tips li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #D4A574;
+  }
+
+  .ft-protips-card .scott-tips :global(strong) {
+    color: #D4A574;
+    font-weight: var(--weight-semibold);
+  }
+
+  .ft-protips-card .scott-tips :global(a) {
+    color: #FB923C;
+    font-weight: var(--weight-semibold);
+    text-decoration: underline;
+    text-decoration-color: rgba(251, 146, 60, 0.4);
+    text-underline-offset: 2px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .ft-protips-card .scott-tips :global(a:hover) {
+    text-decoration-color: #FB923C;
+  }
+
+  /* ================================================================
+     FAQ SECTION
+     ================================================================ */
+  .ft-faq {
+    padding: var(--space-4) 0 var(--space-6);
+  }
+
+  .ft-faq-heading {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-5);
+  }
+
+  .ft-faq-list {
+    max-width: 720px;
+    margin: 0 auto;
+    display: grid;
+    gap: var(--space-3);
+  }
+
+  .ft-faq-item {
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .ft-faq-question {
+    padding: var(--space-4) var(--space-5);
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    cursor: pointer;
+    list-style: none;
+  }
+
+  .ft-faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .ft-faq-question::after {
+    content: '+';
+    float: right;
+    font-size: 1.2rem;
+    color: var(--color-slate);
+    transition: transform 0.2s ease;
+  }
+
+  .ft-faq-item[open] .ft-faq-question::after {
+    content: '\2212';
+  }
+
+  .ft-faq-answer {
+    padding: 0 var(--space-5) var(--space-4);
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    line-height: 1.65;
+    margin: 0;
+  }
+
+  /* ================================================================
+     BOTTOM CTA
+     ================================================================ */
+  .ft-cta-section {
+    padding: var(--space-6) 0 var(--space-8);
+  }
+
+  .ft-cta-card {
+    background: linear-gradient(135deg, #065F46 0%, #D4A574 100%);
+    border-radius: 20px;
+    padding: var(--space-8) var(--space-6);
+    text-align: center;
+    color: #fff;
+  }
+
+  .ft-cta-heading {
+    font-size: clamp(1.3rem, 3vw, 1.8rem);
+    font-weight: var(--weight-bold);
+    margin: 0 0 var(--space-3);
+    color: #fff;
+  }
+
+  .ft-cta-text {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 520px;
+    margin: 0 auto var(--space-5);
+    line-height: 1.6;
+  }
+
+  .ft-cta-button {
+    display: inline-block;
+    background: var(--color-deep-night);
+    color: #D4A574;
+    font-size: 0.9rem;
+    font-weight: var(--weight-semibold);
+    padding: 12px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.2s ease;
+  }
+
+  .ft-cta-button:hover {
+    background: #0D1117;
+    transform: translateY(-2px);
+  }
+
+  /* ================================================================
+     CROSS-LINKS
+     ================================================================ */
+  .ft-crosslinks {
+    padding: 0 0 var(--space-10);
+  }
+
+  .ft-crosslinks-heading {
+    font-size: 1.1rem;
+    font-weight: var(--weight-bold);
+    color: var(--color-deep-night);
+    text-align: center;
+    margin: 0 0 var(--space-4);
+  }
+
+  .ft-crosslinks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-4);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 640px) {
+    .ft-crosslinks-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .ft-crosslink-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-5) var(--space-4);
+    background: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ft-crosslink-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .ft-crosslink-icon {
+    font-size: 1.8rem;
+  }
+
+  .ft-crosslink-label {
+    font-size: 0.95rem;
+    font-weight: var(--weight-bold);
+    color: #1A2332;
+  }
+
+  .ft-crosslink-desc {
+    font-size: 0.78rem;
+    color: #4A5568;
+    line-height: 1.4;
+  }
+
+  /* ================================================================
+     SCROLL REVEAL
+     ================================================================ */
+  .ft-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .ft-reveal.ft-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @keyframes ftRevealFallback {
+    to { opacity: 1; transform: none; }
+  }
+
+  .ft-reveal {
+    animation: ftRevealFallback 0s 3s forwards;
+  }
+
+  /* ================================================================
+     RESPONSIVE
+     ================================================================ */
+  @media (max-width: 640px) {
+    .ft-hero {
+      min-height: 50vh;
+      padding: 0 var(--space-4) 40px;
+    }
+
+    .ft-hero-meta {
+      gap: var(--space-4);
+    }
+
+    .ft-scroll-hint {
+      display: none;
+    }
+
+    .ft-topic-header {
+      padding: var(--space-4) var(--space-4);
+    }
+
+    .ft-quickfacts-bar {
+      gap: var(--space-3);
+      padding: var(--space-3) var(--space-4);
+    }
+
+    .ft-quickfact-divider {
+      display: none;
+    }
+
+    .ft-quickfact {
+      min-width: 80px;
+    }
+
+    .ft-personal-quote {
+      padding: var(--space-4) var(--space-5);
+    }
+
+    .ft-protips-card {
+      padding: var(--space-5) var(--space-4);
+    }
+  }
+</style>
