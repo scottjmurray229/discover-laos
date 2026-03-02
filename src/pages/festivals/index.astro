@@ -1,0 +1,338 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../components/Breadcrumb.astro';
+import EmailCapture from '../../components/EmailCapture.astro';
+import FAQ from '../../components/FAQ.astro';
+
+const breadcrumbs = [
+  { name: 'Home', url: '/' },
+  { name: 'Laos Festival Calendar', url: '/festivals/' },
+];
+
+const pageTitle = 'Laos Festival Calendar 2026 — Boun, Pi Mai & Cultural Events';
+const pageDescription = "Pi Mai water festival, That Luang's golden spire ceremonies, the Rocket Festival, and boat races on the Mekong — Laos celebrates with Buddhist devotion and pure joy. Here's when to go.";
+
+const festivals = [
+  {
+    name: 'Pi Mai — Lao New Year',
+    location: 'Luang Prabang (most spectacular), Vientiane',
+    dates: 'April 13–15 (occasionally varies)',
+    description: 'Lao New Year is the most important celebration in the country — three days of water throwing, sand stupas, temple ceremonies, and the ceremonial bathing of Buddha images. Luang Prabang is the most dramatic setting: the entire UNESCO old city participates, monks parade at dawn, and the Royal Palace grounds host elaborate rituals. Bring clothes you don\'t mind soaking — the water throwing begins the moment you leave your guesthouse. Luang Prabang accommodation books out 3–4 months ahead for Pi Mai. It\'s worth every bit of the planning.',
+    tag: 'Most Important',
+    gradient: 'linear-gradient(135deg, #C62828 0%, #FF7043 100%)',
+  },
+  {
+    name: 'That Luang Festival (Boun That Luang)',
+    location: 'Vientiane',
+    dates: 'November full moon (3 days)',
+    description: 'The most sacred Buddhist festival in Laos — the full-moon celebration at Pha That Luang, Laos\'s national monument and holiest site. Thousands of monks and laypeople circumambulate the golden stupa by candlelight on the full moon night in a ceremony of extraordinary beauty. Daytime events include a trade fair, traditional performances, and offerings. The wax castle procession on the first evening is stunning. Vientiane\'s That Luang Festival is the spiritual heart of Lao Buddhism made visible.',
+    tag: 'Sacred',
+    gradient: 'linear-gradient(135deg, #F57F17 0%, #FBC02D 100%)',
+  },
+  {
+    name: 'Boun Bang Fai — Rocket Festival',
+    location: 'Vientiane & towns across Laos',
+    dates: 'May (before the monsoon rains)',
+    description: 'The most irreverent and spectacular of Lao festivals — communities fire enormous homemade rockets (bang fai) into the sky to encourage the celestial gods to send rain for the rice planting season. The rockets can be 10+ meters long and the competition to see whose launches highest is taken very seriously. The festival\'s daytime parade features ribald humor, elaborate costumes, and dancing. At night, the rockets fly. Vientiane\'s celebration is large; smaller provincial towns offer more intimate experiences.',
+    tag: 'Spectacular',
+    gradient: 'linear-gradient(135deg, #E65100 0%, #FFB300 100%)',
+  },
+  {
+    name: 'Boun Awk Phansa — Boat Racing Festival',
+    location: 'Vientiane, Luang Prabang, Savannakhet',
+    dates: 'October (end of Buddhist Lent, full moon)',
+    description: 'At the end of Buddhist Lent (Vassa), Laos explodes with boat races, floating candles, and celebration. Long wooden racing boats — 50–60 rowers to a vessel — race on the Mekong and Nam Khan rivers as thousands of spectators line the banks. The evening before the races, miniature illuminated boats (krathong) are released on the river in the Lai Heua Fai ceremony — thousands of tiny lights floating downstream in the dark is one of the most beautiful things I\'ve ever seen. Free to attend.',
+    tag: 'River Festival',
+    gradient: 'linear-gradient(135deg, #1565C0 0%, #42A5F5 100%)',
+  },
+  {
+    name: 'Hmong New Year',
+    location: 'Luang Prabang, Vang Vieng, highland villages',
+    dates: 'December – January (varies by community)',
+    description: 'Hmong New Year (Noj Peb Caug) celebrates the end of the harvest and the beginning of a new year according to the Hmong lunar calendar. The three-day celebration includes traditional courtship ball-tossing games, elaborate embroidered traditional dress, music, feasting, and dancing. Highland villages accessible from Luang Prabang and Phonsali celebrate with communities that have maintained these traditions for centuries. Some celebrations near Luang Prabang are accessible without a guide; remote villages require arrangements through local operators.',
+    tag: 'Cultural Heritage',
+    gradient: 'linear-gradient(135deg, #4A148C 0%, #7B1FA2 100%)',
+  },
+  {
+    name: 'Boun Khao Padap Din (Festival of the Dead)',
+    location: 'Vientiane, across Laos',
+    dates: 'August (waning moon of the 9th Lao month)',
+    description: 'A Buddhist ceremony when spirits of the deceased are believed to return to earth. Families prepare food offerings for departed relatives and monks perform blessings. Not a public spectacle but a deeply felt community observance — if you\'re in Laos during this period, you\'ll see families gathering at temple grounds in early morning to make offerings. A quiet, solemn, and moving experience of Lao Buddhist practice.',
+    tag: 'Buddhist',
+    gradient: 'linear-gradient(135deg, #1B5E20 0%, #388E3C 100%)',
+  },
+  {
+    name: 'Luang Prabang Film Festival',
+    location: 'Luang Prabang',
+    dates: 'December (5 days)',
+    description: 'A small, intimate film festival that showcases Southeast Asian cinema to an international audience in one of the world\'s most beautiful small cities. Screenings happen in the gardens of historic French colonial buildings and at the National Museum. Strong representation from Lao, Thai, Vietnamese, and Cambodian filmmakers alongside international selections. Free or very low-cost entry to most screenings. The festival draws cinephiles who discover Luang Prabang as a bonus.',
+    tag: 'Film & Arts',
+    gradient: 'linear-gradient(135deg, #006064 0%, #00ACC1 100%)',
+  },
+  {
+    name: 'That Ing Hang Festival',
+    location: 'Savannakhet Province',
+    dates: 'February (two weekends)',
+    description: 'That Ing Hang is one of Laos\'s most venerated Buddhist sites — a 16th-century stupa in Savannakhet Province believed to contain sacred relics. The annual festival draws pilgrims from across Laos and northeastern Thailand for two weekends of worship, offerings, and celebration. Savannakhet is Laos\'s second-largest city and the crossing point for travelers between Thailand and Vietnam. The festival is genuinely devotional rather than tourist-oriented and offers extraordinary insight into Lao Buddhist practice.',
+    tag: 'Pilgrimage',
+    gradient: 'linear-gradient(135deg, #880E4F 0%, #C2185B 100%)',
+  },
+];
+---
+<BaseLayout
+  title={pageTitle}
+  description={pageDescription}
+  pageType="destination"
+  breadcrumbs={breadcrumbs}
+>
+
+<style>
+  .fest-hero {
+    position: relative;
+    min-height: 70vh;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 var(--space-6) 60px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #7B1C1C 0%, #C62828 40%, #F57F17 100%);
+  }
+  .fest-hero-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.35; }
+  .fest-hero-gradient { position: absolute; inset: 0; background: linear-gradient(to top, rgba(123,28,28,0.95) 0%, rgba(123,28,28,0.3) 60%, transparent 100%); }
+  .fest-hero-content { position: relative; z-index: 2; max-width: 760px; }
+  .fest-hero-eyebrow { font-size: 0.72rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.12em; color: #FFD54F; margin-bottom: var(--space-3); }
+  .fest-hero-title { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: var(--weight-bold); color: #fff; line-height: 1.15; margin: 0 0 var(--space-4); }
+  .fest-hero-subtitle { font-size: clamp(1rem, 2vw, 1.2rem); color: rgba(255,255,255,0.82); line-height: 1.6; margin: 0 0 var(--space-6); max-width: 600px; }
+  .fest-hero-meta { display: flex; gap: var(--space-6); flex-wrap: wrap; }
+  .fest-hero-meta-item { display: flex; flex-direction: column; gap: 2px; }
+  .fest-hero-meta-label { font-size: 0.68rem; font-weight: var(--weight-semibold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.5); }
+  .fest-hero-meta-value { font-size: 1.4rem; font-weight: var(--weight-bold); color: #fff; }
+
+  .fest-personal { padding-block: var(--space-8); }
+  .fest-personal-quote { max-width: 720px; margin: 0 auto; padding: var(--space-6) var(--space-8); border-left: 4px solid #C62828; background: var(--color-sky, #fff8e1); border-radius: 0 12px 12px 0; }
+  .fest-personal-quote p { font-size: var(--text-body, 1.05rem); color: var(--color-heading, #1a2332); line-height: 1.7; font-style: italic; margin-bottom: var(--space-3); }
+  .fest-personal-quote cite { font-size: 0.85rem; color: #C62828; font-weight: var(--weight-semibold); font-style: normal; }
+
+  .fest-section { padding: var(--space-6) 0 var(--space-10); }
+  .fest-section-heading { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); margin: 0 0 var(--space-2); text-align: center; }
+  .fest-section-sub { font-size: 1rem; color: var(--color-slate, #5a6a7a); text-align: center; margin: 0 0 var(--space-8); }
+
+  .fest-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: var(--space-6); }
+  .fest-card { border-radius: 20px; overflow: hidden; background: var(--color-white, #fff); box-shadow: 0 4px 20px rgba(0,0,0,0.07); transition: transform 0.3s ease, box-shadow 0.3s ease; display: flex; flex-direction: column; }
+  .fest-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(0,0,0,0.12); }
+  .fest-card-header { padding: var(--space-5) var(--space-5) var(--space-4); min-height: 130px; display: flex; flex-direction: column; justify-content: flex-end; }
+  .fest-card-tag { display: inline-block; font-size: 0.65rem; font-weight: var(--weight-bold); text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255,255,255,0.9); background: rgba(255,255,255,0.18); backdrop-filter: blur(4px); padding: 3px 10px; border-radius: 20px; margin-bottom: var(--space-2); width: fit-content; }
+  .fest-card-name { font-size: 1.15rem; font-weight: var(--weight-bold); color: #fff; line-height: 1.3; margin: 0 0 4px; }
+  .fest-card-location { font-size: 0.78rem; color: rgba(255,255,255,0.75); font-weight: var(--weight-medium); }
+  .fest-card-body { padding: var(--space-4) var(--space-5) var(--space-5); flex: 1; display: flex; flex-direction: column; gap: var(--space-3); }
+  .fest-card-dates { display: flex; align-items: center; gap: var(--space-2); font-size: 0.8rem; font-weight: var(--weight-semibold); color: #C62828; }
+  .fest-card-dates::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #C62828; flex-shrink: 0; }
+  .fest-card-desc { font-size: 0.88rem; color: var(--color-body, #3d4d5e); line-height: 1.65; flex: 1; }
+
+  .fest-tips { padding: var(--space-8) 0; background: linear-gradient(135deg, #7B1C1C 0%, #C62828 100%); }
+  .fest-tips-inner { max-width: 820px; margin: 0 auto; padding: 0 var(--space-6); }
+  .fest-tips-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); color: #fff; margin: 0 0 var(--space-6); text-align: center; }
+  .fest-tips-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: var(--space-4); }
+  .fest-tip-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: var(--space-4) var(--space-5); }
+  .fest-tip-icon { font-size: 1.5rem; margin-bottom: var(--space-2); }
+  .fest-tip-title { font-size: 0.9rem; font-weight: var(--weight-bold); color: #fff; margin-bottom: var(--space-2); }
+  .fest-tip-text { font-size: 0.82rem; color: rgba(255,255,255,0.72); line-height: 1.6; }
+
+  .fest-cta-section { padding: var(--space-8) 0; }
+  .fest-cta-card { background: linear-gradient(135deg, #7B1C1C 0%, #F57F17 100%); border-radius: 20px; padding: var(--space-8) var(--space-6); text-align: center; color: #fff; }
+  .fest-cta-heading { font-size: clamp(1.3rem, 3vw, 1.8rem); font-weight: var(--weight-bold); margin: 0 0 var(--space-3); color: #fff; }
+  .fest-cta-text { font-size: 1rem; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto var(--space-5); line-height: 1.6; }
+  .fest-cta-button { display: inline-block; background: #FFD54F; color: #7B1C1C; font-size: 0.9rem; font-weight: var(--weight-semibold); padding: 12px 28px; border-radius: 40px; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .fest-cta-button:hover { background: #FFCA28; transform: translateY(-2px); }
+
+  .fest-crosslinks { padding: 0 0 var(--space-10); }
+  .fest-crosslinks-heading { font-size: 1.1rem; font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); text-align: center; margin: 0 0 var(--space-4); }
+  .fest-crosslinks-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-4); max-width: 640px; margin: 0 auto; }
+  .fest-crosslink-card { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); padding: var(--space-5) var(--space-4); background: var(--color-white, #fff); border: 1px solid rgba(0,0,0,0.06); border-radius: 16px; text-decoration: none; color: inherit; text-align: center; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+  .fest-crosslink-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+  .fest-crosslink-icon { font-size: 1.8rem; }
+  .fest-crosslink-label { font-size: 0.95rem; font-weight: var(--weight-bold); color: var(--color-deep-night, #1a2332); }
+  .fest-crosslink-desc { font-size: 0.78rem; color: var(--color-slate, #5a6a7a); line-height: 1.4; }
+
+  @media (max-width: 640px) {
+    .fest-crosslinks-grid { grid-template-columns: 1fr; }
+    .fest-grid { grid-template-columns: 1fr; }
+    .fest-hero { padding: 0 var(--space-4) 40px; min-height: 55vh; }
+  }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+</style>
+
+  <header class="fest-hero">
+    <video class="fest-hero-video" autoplay muted loop playsinline preload="metadata">
+      <source src="/videos/pillar/festivals-hero.mp4" type="video/mp4" />
+    </video>
+    <div class="fest-hero-gradient"></div>
+    <div class="fest-hero-content">
+      <p class="fest-hero-eyebrow">Laos Events & Boun Calendar</p>
+      <h1 class="fest-hero-title">Laos Festival Calendar 2026</h1>
+      <p class="fest-hero-subtitle">Pi Mai's water-soaked streets, candlelit processions around golden stupas, rockets fired at the sky to bring rain, and luminous boats released on the Mekong at dusk — Laos celebrates with both Buddhist devotion and pure joy.</p>
+      <div class="fest-hero-meta">
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Festivals</span>
+          <span class="fest-hero-meta-value">8</span>
+        </div>
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Best Month</span>
+          <span class="fest-hero-meta-value">April / Nov</span>
+        </div>
+        <div class="fest-hero-meta-item">
+          <span class="fest-hero-meta-label">Best City</span>
+          <span class="fest-hero-meta-value">Luang Prabang</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-content">
+    <Breadcrumb items={breadcrumbs} />
+  </div>
+
+  <section class="fest-personal reveal">
+    <div class="container-content">
+      <blockquote class="fest-personal-quote">
+        <p>Lao festivals are rooted in Buddhist practice and agricultural life — most of the major boun (festivals) mark Buddhist calendar events, seasonal transitions, or harvest celebrations. What makes them special for travelers is how genuinely participatory they are. Pi Mai water throwing is not a tourist attraction layered onto normal life — it IS normal life for those three days. Monks at dawn, water guns at noon, Baci ceremonies in the evening. The Lai Heua Fai floating candle ceremony on the Mekong at the end of Buddhist Lent is one of the most quietly beautiful things you can witness anywhere in Southeast Asia. Time your trip right and Laos becomes a completely different experience.</p>
+        <cite>— Scott Murray, Discover Laos</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="fest-section reveal">
+    <div class="container-content">
+      <h2 class="fest-section-heading">Laos's Major Boun & Festivals</h2>
+      <p class="fest-section-sub">Buddhist calendar determines most dates — April and October are the peak festival months for travelers.</p>
+      <div class="fest-grid">
+        {festivals.map((fest) => (
+          <div class="fest-card reveal">
+            <div class="fest-card-header" style={`background: ${fest.gradient};`}>
+              {fest.tag && <span class="fest-card-tag">{fest.tag}</span>}
+              <h3 class="fest-card-name">{fest.name}</h3>
+              <div class="fest-card-location">{fest.location}</div>
+            </div>
+            <div class="fest-card-body">
+              <div class="fest-card-dates">{fest.dates}</div>
+              <p class="fest-card-desc">{fest.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="fest-tips reveal">
+    <div class="fest-tips-inner">
+      <h2 class="fest-tips-heading">Scott's Laos Festival Tips</h2>
+      <div class="fest-tips-grid">
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#128167;</div>
+          <div class="fest-tip-title">Pi Mai: protect your electronics</div>
+          <p class="fest-tip-text">During Pi Mai water throwing (April 13–15), assume everything will get soaked. Waterproof phone case or dry bag is essential. Wear clothes you don't mind ruining. The water throwing can start early morning and run late into the evening — the main streets of Luang Prabang turn into a 3-day water battle.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127983;</div>
+          <div class="fest-tip-title">That Luang: come for the candlelight procession</div>
+          <p class="fest-tip-text">The most beautiful moment at That Luang Festival in Vientiane is the candlelit circumambulation on the full moon night. Thousands of people carry candles around the golden stupa after dark. Arrive by 6pm to find a good viewing position. The wax castle procession earlier in the evening is also extraordinary.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127754;</div>
+          <div class="fest-tip-title">Boat Race Festival: watch from the riverside</div>
+          <p class="fest-tip-text">The Mekong River bank fills with locals and food vendors for boat racing day. Arrive early and claim a riverside spot. The evening Lai Heua Fai (floating candle boats) ceremony is quieter and more intimate — find a spot upriver from the main crowds to watch the lights float past.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#127970;</div>
+          <div class="fest-tip-title">Book Luang Prabang months ahead for Pi Mai</div>
+          <p class="fest-tip-text">Luang Prabang has limited accommodation by design — the UNESCO zone limits development. Pi Mai fills the guesthouses in the old city 3–4 months out. Book in January for April travel. Stay in the old city (Sakkarine Road area) to be walkable to everything without a tuk-tuk during festival crowds.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#129689;</div>
+          <div class="fest-tip-title">Rocket Festival: go to a smaller town</div>
+          <p class="fest-tip-text">The Vientiane Rocket Festival is the largest but the most touristic. Provincial towns around Vang Vieng and in Khammouane Province have genuinely local celebrations — bamboo rockets 10+ meters tall, community parades, and festival food that isn't specifically aimed at foreigners. Ask your guesthouse for recommendations.</p>
+        </div>
+        <div class="fest-tip-card">
+          <div class="fest-tip-icon">&#128327;</div>
+          <div class="fest-tip-title">Temple etiquette during religious festivals</div>
+          <p class="fest-tip-text">During Buddhist festivals, dress modestly at all temple sites — cover shoulders and knees regardless of heat. Remove shoes before entering any building or shrine. Don't cross in front of people making offerings. Photography at temples is usually permitted but ask first during active ceremonies. The Tak Bat (alms-giving) in Luang Prabang should be observed from a distance — participate only if guided properly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fest-cta-section reveal">
+    <div class="container-content">
+      <div class="fest-cta-card">
+        <h2 class="fest-cta-heading">Plan Your Laos Festival Trip</h2>
+        <p class="fest-cta-text">Build a Laos itinerary timed around Pi Mai, the boat races, or That Luang — combined with the Mekong slow boat, Vang Vieng, and the Plain of Jars.</p>
+        <a href="/plan/" class="fest-cta-button">Start Planning &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <FAQ items={[
+    { question: "When is Pi Mai (Lao New Year) and where should I celebrate it?", answer: "Pi Mai falls on April 13–15 (occasionally April 14–16 depending on the lunar calendar). Luang Prabang is the most spectacular location — the entire UNESCO old city participates with dawn alms-giving, water throwing all day, sand stupas along the Mekong, and evening ceremonies at the Royal Palace. Vientiane's Pi Mai is also large and energetic. Book Luang Prabang accommodation in January for April travel — it fills completely." },
+    { question: "What is Boun Bang Fai (Rocket Festival) in Laos?", answer: "Boun Bang Fai is a pre-Buddhist rain ceremony adopted into Lao Buddhist tradition, held before the monsoon planting season in May. Communities construct enormous bamboo rockets (some 10+ meters long) and fire them skyward to implore the heavens for rain. The festival includes a daytime parade with ribald humor and elaborate costumes, followed by the rocket competition. Vientiane hosts the largest celebration; provincial towns offer more authentic community experiences." },
+    { question: "What is the Lai Heua Fai ceremony?", answer: "Lai Heua Fai ('floating fire boats') is a ceremony held on the last night of the Boat Racing Festival, at the end of Buddhist Lent (Vassa) in October. Small illuminated boats — often made of banana leaves holding candles or lotus flowers — are released on the river to carry away misfortune and honor the Naga (river spirits). In Luang Prabang, thousands of these tiny lights float down the Mekong and Nam Khan rivers after dark. It's one of Southeast Asia's most beautiful annual events." },
+    { question: "Is the That Luang Festival open to visitors?", answer: "Yes — the That Luang Festival in Vientiane is fully public. The festival runs for 3 days around the November full moon. The main events are the evening candlelit circumambulation of Pha That Luang (arrive by 6pm for good positioning) and the wax castle procession. The daytime trade fair around the stupa grounds is more casual. Dress modestly, remove shoes at temple structures, and be respectful during the religious ceremonies." },
+    { question: "When is the best time to visit Laos for festivals?", answer: "April (Pi Mai) and October–November (Boat Races and That Luang) are the two peak festival windows. Both coincide with good travel weather: April is hot (35°C+) but dry, and the water throwing is part of the appeal. October–November is cooler (25–30°C), post-monsoon, and the rivers are high for the races. December–February is peak tourist season with no major festivals but perfect weather. Avoid July–August (peak monsoon, some roads impassable in the north)." },
+    { question: "Are there dress code requirements for Lao festivals?", answer: "Yes. At any temple during a religious festival: cover shoulders and knees, remove shoes before entering buildings, and dress conservatively overall. During Pi Mai water throwing, wear light, quick-dry clothing that you don't mind soaking — many people wear sarongs. The Tak Bat alms-giving ceremony in Luang Prabang requires maintaining distance (minimum 10 meters) — observe but don't participate unless guided by someone with proper knowledge of the tradition." },
+  ]} />
+
+  <div class="container-content reveal" style="padding-bottom: var(--space-6);">
+    <EmailCapture
+      leadMagnet="Get the Laos Festival Travel Guide"
+      description="Month-by-month Laos festival calendar with travel logistics, temple etiquette, and how to combine the best celebrations with the Mekong slow boat."
+      bullets={[
+        'Pi Mai planning guide — where to stay, what to expect, what to protect',
+        'Buddhist Lent festival calendar — all boun dates for 2026',
+        'Luang Prabang vs Vientiane — which city for which festival',
+        'Combining Laos festivals with Thailand or Vietnam border crossings',
+      ]}
+      guideTag="pillar-festivals-laos"
+    />
+  </div>
+
+  <section class="fest-crosslinks reveal">
+    <div class="container-content">
+      <h3 class="fest-crosslinks-heading">Keep Exploring Laos</h3>
+      <div class="fest-crosslinks-grid">
+        <a href="/destinations/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127983;</span>
+          <span class="fest-crosslink-label">All Destinations</span>
+          <span class="fest-crosslink-desc">Luang Prabang, Vientiane, Vang Vieng — every destination reviewed</span>
+        </a>
+        <a href="/cuisine/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127836;</span>
+          <span class="fest-crosslink-label">Lao Cuisine</span>
+          <span class="fest-crosslink-desc">Laap, sticky rice, and the flavors of the Mekong Valley</span>
+        </a>
+        <a href="/practical/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#9992;</span>
+          <span class="fest-crosslink-label">Getting Around</span>
+          <span class="fest-crosslink-desc">Slow boat, buses, and navigating Laos on any budget</span>
+        </a>
+        <a href="/history/" class="fest-crosslink-card">
+          <span class="fest-crosslink-icon">&#127963;</span>
+          <span class="fest-crosslink-label">Laos History</span>
+          <span class="fest-crosslink-desc">Buddhist kingdoms, French Indochina, and the context behind the culture</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<script>
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const revealObserver = new IntersectionObserver(
+      (entries) => { entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); }); },
+      { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => revealObserver.observe(el));
+  } else {
+    document.querySelectorAll('.reveal').forEach((el) => el.classList.add('visible'));
+  }
+</script>
