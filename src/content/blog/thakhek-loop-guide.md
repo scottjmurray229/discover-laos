@@ -2,6 +2,7 @@
 title: "The Thakhek Loop: Complete Guide to Laos' Best Motorbike Route"
 description: "Everything you need to ride the Thakhek Loop — what to expect at Kong Lor Cave, where to sleep, what to eat, how long it takes, and the mistakes to avoid on the 450km circuit."
 pubDate: 2026-02-22
+dateModified: 2026-03-08
 author: "Scott Murray"
 heroImage: ""
 category: "Adventure"

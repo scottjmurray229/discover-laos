@@ -2,6 +2,7 @@
 title: "Luang Prabang First Timer: What to Do, See, Eat, and Expect"
 description: "An honest first-timer's guide to Luang Prabang — the morning alms ceremony, Kuang Si Falls, the night market, where to eat, where to stay, and how long to spend."
 pubDate: 2026-02-24
+dateModified: 2026-03-08
 author: "Scott Murray"
 heroImage: ""
 category: "Planning"

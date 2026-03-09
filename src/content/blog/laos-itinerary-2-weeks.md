@@ -2,6 +2,7 @@
 title: "The Perfect 2-Week Laos Itinerary (With Real Timing)"
 description: "A realistic two-week Laos itinerary covering the north and south — Luang Prabang, Vang Vieng, Vientiane, Thakhek, Pakse, and the 4000 Islands, with real transport times and budget estimates."
 pubDate: 2026-02-26
+dateModified: 2026-03-08
 author: "Scott Murray"
 heroImage: ""
 category: "Itineraries"

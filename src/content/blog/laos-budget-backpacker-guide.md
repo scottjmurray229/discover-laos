@@ -2,6 +2,7 @@
 title: "Laos on $30/Day: The Honest Budget Backpacker Guide"
 description: "Real daily budgets, actual costs for transport, food, accommodation, and activities across Laos in 2026 — what $20, $30, and $60 per day actually gets you on the ground."
 pubDate: 2026-02-20
+dateModified: 2026-03-08
 author: "Scott Murray"
 heroImage: ""
 category: "Planning"
