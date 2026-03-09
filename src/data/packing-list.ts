@@ -24,7 +24,7 @@ export const LAOS_CONFIG: PackingConfig = {
   currency: 'LAK',
   plugType: 'Type A/B/C/E/F',
   plugVoltage: '230V',
-  affiliateTag: 'discovermore-20',
+  affiliateTag: 'discoverphili-20',
   destinationEssentials: LAOS_ESSENTIALS,
   gearRecommendations: LAOS_GEAR_RECOMMENDATIONS,
 };
