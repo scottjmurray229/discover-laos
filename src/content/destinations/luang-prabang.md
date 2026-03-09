@@ -20,6 +20,17 @@ highlights:
   - "Morning alms-giving ceremony with hundreds of saffron-robed monks at dawn"
   - "Kuang Si Falls with turquoise cascading pools perfect for swimming"
   - "UNESCO-listed old town blending Lao temple architecture and French colonial buildings"
+scottTips:
+  - topic: "Alms Ceremony"
+    tip: "Observe the morning alms ceremony from a respectful distance — stand back, no flash, no selfies. Tourists who crowd monks and thrust cameras in their faces have genuinely disrupted this sacred practice. Watch from 10+ meters away."
+  - topic: "Best Time"
+    tip: "November through February is ideal — cool, dry, and pleasant for walking the old town. October and March are good shoulder months. April (Lao New Year) is spectacular for celebrations but packed and hot."
+  - topic: "Getting Around"
+    tip: "The old town is entirely walkable. Rent a bicycle ($3-5/day) for Kuang Si Falls prep rides and exploring the peninsula. For Kuang Si Falls itself, the shared minivan ($2.50 each way) is far better value than a tuk-tuk."
+  - topic: "Money"
+    tip: "ATMs dispense LAK (Lao Kip). Most tourist restaurants and hotels also accept USD. Current rate is roughly 21,000 LAK per USD. Bring adequate USD cash from Thailand or elsewhere — exchange rates in Luang Prabang are decent but not exceptional."
+  - topic: "Slow Boat"
+    tip: "The 2-day slow boat from Huay Xai (Thai border) to Luang Prabang is one of Southeast Asia's great journeys — two days on the Mekong through limestone mountains and riverside villages. Book a seat ticket in advance, take snacks, and enjoy."
 gradientColors: "linear-gradient(135deg, #FF8C00 0%, #FFD700 50%, #2E8B57 100%)"
 relatedDestinations:
   - "nong-khiaw"
@@ -30,6 +41,10 @@ faqItems:
   - { question: "Is the morning alms ceremony still authentic?", answer: "Yes, the ceremony remains a genuine daily religious practice for hundreds of monks. However, tourism has created issues. Observe respectfully from a distance, do not use flash photography, and if you wish to give alms, purchase sticky rice from local vendors that morning rather than using pre-packaged tourist offerings." }
   - { question: "When is the best time to visit Kuang Si Falls?", answer: "Visit on a weekday morning to avoid crowds. Arrive by 9:30 AM for the best experience. During dry season (November-April), water flow is moderate but the pools are clearest. Rainy season brings thundering cascades but murkier water. The falls are beautiful year-round." }
   - { question: "Is Luang Prabang expensive compared to the rest of Laos?", answer: "Yes, Luang Prabang is the most expensive destination in Laos due to its UNESCO status and popularity. Accommodation and restaurant prices are notably higher than Vientiane or southern Laos. However, it remains very affordable by global standards, and budget travelers can still manage on $30-50 per day." }
+  - { question: "How do I get to Kuang Si Falls?", answer: "Shared minivans depart from the corner of Sisavangvong Road and Kitsalat Road from approximately 8:30am-10am and cost around 50,000 LAK ($2.50) each way. Tuk-tuks cost $12-15 round trip but give you more flexibility on timing. The falls are 30km south of town and the drive takes about 45 minutes each way. Entry is 40,000 LAK ($2). Plan on a full morning — arriving by 9:30am beats the worst of the tour groups." }
+  - { question: "What is the best temple in Luang Prabang?", answer: "Wat Xieng Thong, at the northern tip of the peninsula where the Mekong and Nam Khan rivers meet, is the most important and beautiful temple in the city. Built in 1560 and one of the few not destroyed by invaders, it features the classic sweeping roofline that nearly touches the ground, a stunning mosaic of the Tree of Life, and a red funeral chariot used for royal cremations. Visit early morning when monks are present and the light is golden." }
+  - { question: "Can I take the train between Luang Prabang and Vientiane?", answer: "Yes — the Laos-China Railway runs the route in approximately 2 hours (the old bus journey was 9-10 hours). Trains run multiple times daily and tickets cost around 200,000-250,000 LAK ($10-12) for a seat in second class. Book online via the Lao National Railway website or at Luang Prabang train station. The station is about 10km north of the old town — allow 30 minutes for the tuk-tuk transfer." }
+  - { question: "Is there a cooking class in Luang Prabang worth taking?", answer: "Yes — Tamarind Restaurant's cooking class is the most respected in the city. A half-day class covers market shopping, traditional Lao recipes (sticky rice, larb, mok pa fish in banana leaf), and dining on what you cook. Cost is around $35-45. Tum Tum Cheng and the Living Land Farm also offer excellent alternatives. Book ahead — classes fill quickly during high season." }
 draft: false
 contentStatus: "published"
 lastVerified: "2026-02-27"
@@ -37,6 +52,7 @@ fmContentType: "destination"
 affiliatePicks:
   - { name: "Avani+ Luang Prabang", type: "hotel", price: "$120-200/night", personalNote: "Stunning riverside location with infinity pool overlooking the Nam Khan river and impeccable service.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=luang+prabang+laos&lang=en-us", badge: "" }
   - { name: "Kuang Si Falls & Local Villages Tour", type: "tour", price: "$30-50", personalNote: "Full-day tour including falls, bear rescue centre, and visits to local weaving villages with lunch included.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
+  - { name: "Mekong Sunset Cruise", type: "tour", price: "$15-25", personalNote: "A 2-hour sunset boat ride on the Mekong with drinks and views of the golden riverbank temples. The light on Luang Prabang from the water at dusk is one of the most beautiful things I have seen in Southeast Asia.", affiliateUrl: "https://www.viator.com/luang-prabang?pid=P00290009", badge: "" }
 ---
 
 # Luang Prabang: Southeast Asia's Most Enchanting Town
@@ -48,6 +64,8 @@ I have been to Luang Prabang three times now, and each visit has deepened my con
 The town is small enough to walk end to end in thirty minutes, yet dense enough to keep you exploring for days. Every street reveals another temple entrance, another hidden garden restaurant, another view of the river through the trees. The Night Market stretches the length of the main street each evening, a kaleidoscope of handwoven textiles, paper lanterns, and the aroma of grilled meats and fresh herbs.
 
 What strikes me most about Luang Prabang is how it balances preservation with vitality. This is not a museum town frozen in amber. It is a living, breathing community where monks study in monasteries, fishermen cast nets in the Mekong at dawn, and grandmothers weave silk on looms beneath their stilted homes. Tourism has brought change, certainly, but the town's spiritual core remains intact.
+
+<ImmersiveBreak videoSrc="/videos/destinations/luang-prabang-hero.mp4" />
 
 ## What Makes Luang Prabang Different
 

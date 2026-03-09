@@ -20,6 +20,17 @@ highlights:
   - "That Luang, the golden stupa and national symbol of Laos"
   - "Patuxai Victory Monument with panoramic city views from the top"
   - "Buddha Park (Xieng Khuan) with over 200 Hindu and Buddhist sculptures"
+scottTips:
+  - topic: "Right-sized Expectations"
+    tip: "Vientiane is Southeast Asia's quietest capital — embrace it. Don't try to rush through 20 things in a day. Two or three sights, a long riverside lunch, and an evening at the Night Market is a perfect day here."
+  - topic: "Getting Around"
+    tip: "Rent a bicycle ($3-5/day) — Vientiane is flat, traffic is manageable, and the main attractions cluster within 5km. Tuk-tuks are available but negotiate price before you get in. Grab operates in Vientiane for reliable, metered rides."
+  - topic: "COPE Centre"
+    tip: "The COPE Visitor Centre (free entry) explaining Laos' UXO crisis is essential context for understanding modern Laos. Spend an hour here before anything else — it reframes everything you see."
+  - topic: "Food"
+    tip: "Don't miss the baguettes — the French colonial legacy left Vientiane with excellent bread, and the local baguettes filled with Lao-style pâté and vegetables are one of the great cheap breakfasts of Southeast Asia. Buy from market vendors, not cafes."
+  - topic: "Day Trip"
+    tip: "Buddha Park (Xieng Khuan) is genuinely worth the 25km trip south — hire a tuk-tuk ($12-15 round trip) or take Bus 14. The bizarre collection of Hindu and Buddhist sculptures is unlike anything else in Southeast Asia."
 gradientColors: "linear-gradient(135deg, #D4AF37 0%, #F5E6CC 50%, #8B4513 100%)"
 relatedDestinations:
   - "vang-vieng"
@@ -30,6 +41,10 @@ faqItems:
   - { question: "How do I get from Vientiane to Luang Prabang?", answer: "The Laos-China Railway connects Vientiane to Luang Prabang in about 2 hours for around 200,000 LAK (~$10). Buses take 9-10 hours. Domestic flights take 45 minutes but cost significantly more." }
   - { question: "What is the best area to stay in Vientiane?", answer: "The riverfront area along Fa Ngum Road is ideal for first-time visitors, with easy access to the Night Market, restaurants, and Mekong sunset views. The Nam Phu fountain area is central to most attractions." }
   - { question: "Is Vientiane safe for solo travelers?", answer: "Vientiane is one of the safest capital cities in Southeast Asia. Petty theft can occur but violent crime against tourists is extremely rare. The main hazards are uneven sidewalks and crossing busy roads." }
+  - { question: "What is the best time to visit Vientiane?", answer: "November through February is the sweet spot — temperatures stay around 25-30°C, the air is clear, and the Mekong riverside is pleasant in the evenings. March-April gets hot (35-40°C). May-October is wet season with occasional flooding but also greener temples and fewer tourists. The That Luang Festival in November draws huge crowds — spectacular if you plan around it, frustrating if you don't." }
+  - { question: "What should I eat in Vientiane?", answer: "Laap (Lao minced meat salad with toasted rice powder and herbs), khao piak sen (rice noodle soup), and or lam (Luang Prabang-style stew with buffalo meat and wood ear mushrooms) are the Lao staples worth trying. For locations: the Talat Sao morning market food stalls serve excellent cheap Lao food. Makphet (near the fountain) is a social enterprise restaurant with outstanding Lao cooking. The night market riverfront stalls offer grilled meats and fresh spring rolls at street prices." }
+  - { question: "How do I cross from Thailand into Laos at Vientiane?", answer: "The Thai-Lao Friendship Bridge crosses from Nong Khai, Thailand to Vientiane. Take a train from Bangkok to Nong Khai (overnight, ~$15-25), then a tuk-tuk to the border bridge. Buses cross the bridge regularly ($1.50). On the Lao side, visa-on-arrival is available for most nationalities for $30-42 (depending on nationality). The process typically takes 30-60 minutes. You can also get a 30-day e-visa before you travel at laoevisa.gov.la." }
+  - { question: "Is the Laos-China Railway worth taking from Vientiane?", answer: "Yes — it is one of the best value train journeys in Southeast Asia. Vientiane to Luang Prabang takes about 2 hours (versus 9-10 hours by bus) and costs $10-12 in second class. The train is modern, air-conditioned, and comfortable. Book at the station or on the Lao National Railway website. Note that Vientiane's train station (Vientiane Train Station) is about 15km from the city center — allow 30-40 minutes to get there." }
 draft: false
 contentStatus: "published"
 lastVerified: "2026-02-27"
@@ -37,6 +52,7 @@ fmContentType: "destination"
 affiliatePicks:
   - { name: "Barn1920s Hotel", type: "hotel", price: "$45-75/night", personalNote: "Beautifully restored colonial building with modern comforts right in the historic center.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=vientiane+laos&lang=en-us", badge: "" }
   - { name: "Vientiane City Tour", type: "tour", price: "$25-40", personalNote: "Half-day guided tour covering That Luang, Patuxai, and key temples with hotel pickup included.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
+  - { name: "Buddha Park and Mekong Day Tour", type: "tour", price: "$35-50", personalNote: "Combines the surreal Buddha Park sculpture garden with a sunset Mekong boat ride and riverside dinner. The two sites complement each other perfectly — weird sculptures in the afternoon, beautiful river at dusk.", affiliateUrl: "https://www.viator.com/vientiane?pid=P00290009", badge: "" }
 ---
 
 # Vientiane: The World's Most Unassuming Capital
@@ -48,6 +64,8 @@ Vientiane sits on a broad curve of the Mekong River, directly across from Thaila
 I have visited Vientiane multiple times now, and each visit reveals something new. A tiny noodle shop tucked behind a temple. A gallery showcasing contemporary Lao art. A coffee roaster experimenting with Bolaven Plateau beans. The city is evolving, with new restaurants and boutique hotels appearing regularly, yet it retains that fundamental Lao quality of unhurried contentment that drew me here in the first place.
 
 Many travelers treat Vientiane as a quick stopover before heading north to Luang Prabang or south to the 4000 Islands. I would argue that shortchanging the capital means missing out on some of the most authentic urban experiences in mainland Southeast Asia. Give Vientiane at least two or three days, and you will understand why so many expats have quietly made this place home.
+
+<ImmersiveBreak videoSrc="/videos/destinations/vientiane-hero.mp4" />
 
 ## What Makes Vientiane Different
 

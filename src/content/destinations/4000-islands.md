@@ -20,6 +20,17 @@ highlights:
   - "Spotting rare Irrawaddy dolphins in the Mekong near Don Khon"
   - "Khone Phapheng Falls, the largest waterfall by volume in Southeast Asia"
   - "Ultimate hammock time on tranquil Don Det island with no cars and no stress"
+scottTips:
+  - topic: "Pace Yourself"
+    tip: "The 4000 Islands will seduce you into staying longer than planned. Budget for flexibility — a minimum of 3 nights, ideally 4-5. There is nothing urgent here, and that is the entire point."
+  - topic: "Don Det vs Don Khon"
+    tip: "Stay on Don Det if you want to meet other travelers and enjoy a social scene. Stay on Don Khon if you want peace, slightly better accommodation, and the Irrawaddy dolphin boat trips right from your doorstep. Both islands are easy to explore by bicycle."
+  - topic: "Cash"
+    tip: "Bring all your cash from Pakse. No reliable ATMs on the islands. Budget $15-25/day as a backpacker (dorm + food + activities) or $50-80 for a mid-range stay. Many guesthouses are cash-only."
+  - topic: "Dolphin Spotting"
+    tip: "The Irrawaddy dolphin population in this stretch of the Mekong is critically small — fewer than 10 individuals. Book the boat trip ($10-15) but go with zero expectation. When you do see them, it is genuinely moving precisely because they are so rare."
+  - topic: "Khone Phapheng Falls"
+    tip: "Go to the falls early morning (before 9am) when the light is good and crowds are thin. The falls are the largest by volume in Southeast Asia — the scale is impressive. Combine with the Li Phi Falls on Don Khon for a full waterfall day."
 gradientColors: "linear-gradient(135deg, #4169E1 0%, #90EE90 50%, #FFD700 100%)"
 relatedDestinations:
   - "pakse"
@@ -30,6 +41,9 @@ faqItems:
   - { question: "Can I really see Irrawaddy dolphins in the 4000 Islands?", answer: "Yes, though sightings are not guaranteed. The best chances are during dry season (December-May) when the dolphins congregate in deeper pools near Don Khon. Book a boat trip in the late afternoon for the best odds. The population is critically small (estimated under 10 individuals in this section), making each sighting precious." }
   - { question: "Is there ATM access on the islands?", answer: "ATM availability on the islands is unreliable at best. Withdraw all the cash you need in Pakse before coming. Budget 200,000-500,000 LAK (~$10-25) per day depending on your style. Some upscale guesthouses accept cards, but the vast majority of businesses are cash only." }
   - { question: "How do I get from the 4000 Islands to Cambodia?", answer: "The Lao-Cambodia border crossing at the southern tip of Don Khon is accessible by boat. Minivan services run from Nakasang to the border and onward to Stung Treng or Siem Reap in Cambodia. The crossing is straightforward; you can get a Cambodian visa on arrival. Many guesthouses sell through-tickets." }
+  - { question: "What is there to do in the 4000 Islands?", answer: "The main activities are: cycling Don Det and Don Khon by bicycle ($2-3/day rental), boat trips to see Irrawaddy dolphins ($10-15), visiting Khone Phapheng Falls (the largest waterfall by volume in Southeast Asia, $5 entry), swimming at Li Phi Falls on Don Khon ($5 entry), kayaking the channels between islands, and genuinely doing nothing. The 4000 Islands is the best place in Laos to practice the art of purposeful idleness." }
+  - { question: "How many days should I spend in the 4000 Islands?", answer: "Minimum 3 nights to genuinely settle in and experience the place rather than just passing through. Four to five nights is ideal — you will fill your days without trying. One or two nights feels rushed and you will leave wondering what the fuss was about. The islands reward those who stop rushing." }
+  - { question: "What is the food like in the 4000 Islands?", answer: "Simple and good. The Mekong river fish (grilled whole with herbs) is excellent and fresh. Laap, sticky rice, and basic noodle dishes are available everywhere. Most guesthouses have their own small restaurant or bar serving Lao and Western comfort food. Prices are the lowest in Laos — a full meal with beer costs $3-5. Don Det has more restaurant variety; Don Khon has fewer options but a few excellent spots at La Folie Lodge." }
 draft: false
 contentStatus: "published"
 lastVerified: "2026-02-27"
@@ -37,6 +51,7 @@ fmContentType: "destination"
 affiliatePicks:
   - { name: "La Folie Lodge Don Khon", type: "hotel", price: "$60-120/night", personalNote: "The most atmospheric accommodation on the islands, with beautiful bungalows right on the Mekong and incredible sunset views.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=4000+islands+laos&lang=en-us", badge: "" }
   - { name: "Dolphin Watching & Falls Tour", type: "tour", price: "$15-25", personalNote: "Full-day tour combining dolphin spotting, Khone Phapheng Falls, and Li Phi Falls with lunch included.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
+  - { name: "Don Det Island Kayak Tour", type: "tour", price: "$15-25", personalNote: "Half-day kayak through the channels between the 4000 Islands — a different perspective on the Mekong than any boat gives you. The flooded forest channels between islands are meditative and beautiful.", affiliateUrl: "https://www.viator.com/si-phan-don?pid=P00290009", badge: "" }
 ---
 
 # 4000 Islands: The End of the Road in the Best Possible Way
@@ -48,6 +63,8 @@ Si Phan Don -- literally "Four Thousand Islands" in Lao -- is the name for a str
 I reached the 4000 Islands after weeks of traveling through Laos, and it felt like arriving at exactly the right place at exactly the right time. The pace of life here is measured not in hours but in hammock swings, sunsets, and the gradual progression of a cold Beer Lao from full to empty. There are things to see and do, certainly -- Irrawaddy dolphins, massive waterfalls, colonial ruins -- but the real attraction is the absence of urgency.
 
 The landscape is flat, green, and watery, the sky enormous. Rice paddies and coconut palms line the dirt paths that serve as roads. Chickens wander freely, children splash in the shallows, and fishermen check their nets in the golden late-afternoon light. If you are coming from the intensity of Bangkok or Hanoi, the 4000 Islands will feel like someone turned the world's volume dial to near zero. And after the initial adjustment, you will wonder why anyone ever turns it up.
+
+<ImmersiveBreak videoSrc="/videos/destinations/4000-islands-hero.mp4" />
 
 ## What Makes the 4000 Islands Different
 

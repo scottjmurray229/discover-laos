@@ -20,6 +20,17 @@ highlights:
   - "Plain of Jars UNESCO World Heritage Site with thousands of mysterious ancient stone jars"
   - "UXO Visitor Centre documenting Laos' devastating history as the most bombed country per capita"
   - "Hmong and Khmu hill-tribe villages accessible from town with authentic cultural encounters"
+scottTips:
+  - topic: "UXO Awareness"
+    tip: "Laos is the most heavily bombed country per capita in history — an estimated 30% of the bombs dropped during the Secret War (1964-1973) did not explode and remain dangerous. Never leave marked paths at the jar sites or anywhere in Xieng Khouang Province."
+  - topic: "Visit the UXO Centre First"
+    tip: "Spend an hour at the MAG (Mines Advisory Group) UXO Visitor Centre before seeing the Plain of Jars — it provides context that makes the entire region more meaningful. The centre is free and the storytelling is powerful."
+  - topic: "Jar Site Logistics"
+    tip: "Sites 1, 2, and 3 can be visited in a single day by tuk-tuk or rented motorbike. Site 1 is the most accessible and impressive. Sites 2 and 3 are less visited and more atmospheric. A guide adds real historical depth — book through your guesthouse ($20-30)."
+  - topic: "Cold Nights"
+    tip: "Phonsavan sits at 1,100 meters elevation. December and January nights can drop to 5-10°C. Pack a warm layer — the guesthouses are not always well heated and the morning jar site visits can be genuinely cold."
+  - topic: "Getting There"
+    tip: "Flying from Vientiane (30 min, ~$80) beats the 10-11 hour bus ride dramatically. If you're coming from Luang Prabang, the 7-8 hour bus through mountain roads is the only direct option — doable but tiring. Book a window seat."
 gradientColors: "linear-gradient(135deg, #696969 0%, #DAA520 50%, #556B2F 100%)"
 relatedDestinations:
   - "luang-prabang"
@@ -30,6 +41,9 @@ faqItems:
   - { question: "Is it safe to visit the Plain of Jars given the UXO situation?", answer: "The main jar sites (Sites 1, 2, and 3) have been thoroughly cleared of unexploded ordnance and are completely safe to visit on marked paths. However, you must never wander off designated trails anywhere in Xieng Khouang Province. The clearance work is ongoing, and areas outside the marked zones may still contain live ordnance." }
   - { question: "How many days do I need in Phonsavan?", answer: "Two days is sufficient to visit the main jar sites, the UXO Visitor Centre, and a Hmong village. Three days allows a more relaxed pace and the addition of more remote jar sites or a longer village trek. One day feels rushed, as the jar sites are spread out and deserve unhurried exploration." }
   - { question: "How do I get from Phonsavan to Luang Prabang?", answer: "Direct buses run from Phonsavan to Luang Prabang, taking 7-8 hours through mountain roads. The journey is scenic but winding; take motion sickness medication if you are prone. Minivans are slightly faster and more comfortable. There is no direct train connection, though you can bus to Luang Prabang's train station area." }
+  - { question: "What is the UXO Visitor Centre and should I visit?", answer: "The MAG (Mines Advisory Group) UXO Visitor Centre in Phonsavan documents the devastating impact of unexploded ordnance on Laos — the country received more than 2 million tons of bombs during the Vietnam War era (1964-1973), making it the most heavily bombed country per capita in history. The centre is free, thoughtfully curated, and deeply moving. Visit before the jar sites — the historical context transforms how you understand the entire region. Donations to MAG's ongoing clearance work are gratefully received." }
+  - { question: "Are there Hmong village visits available near Phonsavan?", answer: "Yes — several guesthouses arrange day trips to Hmong and Khmu hill-tribe villages surrounding Phonsavan. These visits are most worthwhile with a knowledgeable local guide who can provide cultural context and ensure your presence benefits rather than disrupts the community. Expect to pay $15-25 for a half-day guided village visit. The traditional weaving and silver craft work in Hmong villages is extraordinary." }
+  - { question: "Is there anything to do in Phonsavan town itself?", answer: "Beyond the UXO centre, the town is primarily a logistics hub. The morning market is excellent — local produce, smoked meats, river fish, and highland vegetables. The town's collection of bomb casings repurposed as fence posts, planters, and decorative elements throughout the region is a quietly powerful visual reminder of the war's scale. Craters Hotel is a reliable restaurant with good Lao food and English-speaking staff who can help arrange tours." }
 draft: false
 contentStatus: "published"
 lastVerified: "2026-02-27"
@@ -37,6 +51,7 @@ fmContentType: "destination"
 affiliatePicks:
   - { name: "Nice Guesthouse Phonsavan", type: "hotel", price: "$20-40/night", personalNote: "The most reliable mid-range option in Phonsavan with clean rooms, hot water, and owners who can arrange jar site tours.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=phonsavan+laos&lang=en-us", badge: "" }
   - { name: "Plain of Jars Guided Tour", type: "tour", price: "$25-45", personalNote: "Full-day guided tour covering Jar Sites 1, 2, and 3 with historical context that brings the mystery to life.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
+  - { name: "Hmong Village and War History Tour", type: "tour", price: "$20-35", personalNote: "A half-day combining a Hmong village visit with stops at bomb craters and war-era sites. The guide's personal family connection to the Secret War bombing period gave this tour an emotional weight I was not prepared for.", affiliateUrl: "https://www.viator.com/phonsavan?pid=P00290009", badge: "" }
 ---
 
 # Phonsavan: Where History and Mystery Collide
@@ -48,6 +63,8 @@ Phonsavan is the capital of Xieng Khouang Province in northeastern Laos, a high-
 My first visit to Phonsavan was driven by curiosity about the Plain of Jars, one of Southeast Asia's most enigmatic archaeological sites. What I discovered was a destination that demands engagement on a deeper level than most places in Laos. You cannot visit the jar sites without walking past bomb craters. You cannot admire the plateau's beauty without knowing what happened here. And you cannot meet the local Hmong and Lao communities without being moved by their resilience.
 
 This is not an easy destination in the conventional sense. There are no pristine waterfalls or luxury resorts. The town itself is dusty and unassuming. But Phonsavan offers something that polished tourist destinations cannot: an encounter with history that is raw, unmediated, and profoundly important. Everyone who travels through Laos should spend time here. What you learn will change how you see the rest of the country.
+
+<ImmersiveBreak videoSrc="/videos/destinations/phonsavan-hero.mp4" />
 
 ## What Makes Phonsavan Different
 

@@ -20,6 +20,17 @@ highlights:
   - "The Thakhek Loop, a 450km motorbike route through karst mountains and limestone caves"
   - "Kong Lor Cave, a 7.5-kilometer underground river passage through a mountain"
   - "Charming French colonial riverfront overlooking the Mekong and Thailand beyond"
+scottTips:
+  - topic: "Kong Lor Cave"
+    tip: "Kong Lor Cave is non-negotiable. The 7.5km underground river passage through a mountain is one of the most extraordinary natural experiences in all of Southeast Asia. Allow a full day from Thakhek including the 2-hour drive each way — or stay overnight in Tha Lang village near the cave entrance."
+  - topic: "Motorbike Hire"
+    tip: "Rent from Mr Ku at Thakhek Travel Lodge — it's the most established rental operation with reliable bikes and good local knowledge for the Loop. Check tire pressure, brakes, and lights before departing. Get a paper map as GPS coverage on the Loop is unreliable."
+  - topic: "Loop Timing"
+    tip: "November through February is perfect — dry roads, comfortable temperatures. March and April are hot but dry. Avoid June through September when rain makes some sections dangerous and river crossings unreliable. The Loop can be cut short in emergencies but plan for the full 3-4 days."
+  - topic: "Colonial Thakhek"
+    tip: "Spend your pre-Loop evening walking the colonial riverfront. The central square with its faded French buildings, the Mekong views toward Thailand, and the absence of any tourist infrastructure make Thakhek one of the most authentic towns in Laos."
+  - topic: "Budget"
+    tip: "The Loop is genuinely cheap: motorbike rental $8-12/day, petrol $5-8/day, guesthouse $8-15/night, food $5-10/day. Budget $35-50/day all-in for a self-guided Loop. Kong Lor Cave entry is $15 plus the mandatory guide fee of ~$8 for the boat."
 gradientColors: "linear-gradient(135deg, #4682B4 0%, #D2B48C 50%, #556B2F 100%)"
 relatedDestinations:
   - "vientiane"
@@ -30,6 +41,10 @@ faqItems:
   - { question: "What is Kong Lor Cave and is it worth the detour?", answer: "Kong Lor Cave is a 7.5-kilometer-long river cave that passes completely through a limestone mountain. You travel through it in a motorized longboat, in near-total darkness for stretches, emerging on the other side in a different valley. It is one of the most extraordinary natural experiences in Southeast Asia and the undisputed highlight of the Thakhek Loop. It is absolutely worth the detour." }
   - { question: "What kind of motorbike do I need for the Thakhek Loop?", answer: "A 110-125cc semi-automatic scooter is the standard choice available in Thakhek. The main roads on the loop are paved, but the stretch to Kong Lor Cave has some rough sections, and rain can make gravel patches tricky. A stronger bike (150cc+) offers more confidence on hills and rough roads. Check brakes, tires, and lights before departing." }
   - { question: "Is Thakhek worth visiting if I do not want to do the Loop?", answer: "Thakhek town itself is pleasant for a day with its colonial architecture, Mekong riverfront, and morning market. The nearby Buddha Cave and Xe Bang Fai River cave are accessible as day trips. However, the Thakhek Loop is the main draw, and if you have no interest in motorbike travel, there are limited alternatives for exploring the surrounding caves and karst scenery independently." }
+  - { question: "Can I do the Thakhek Loop on a bicycle?", answer: "Some experienced cyclists have completed the Loop on mountain bikes (3-5 days), but the distances and some steep sections make it challenging. The Loop is far better suited to a motorbike. If cycling appeals, the short loop around Tham Kong Lor can be done from rented bikes in Tha Lang village, which is more manageable terrain." }
+  - { question: "What are the best caves on the Thakhek Loop?", answer: "Kong Lor Cave is the undisputed highlight — 7.5km underground, navigated by motorized longboat, with cathedral-scale caverns and total darkness between the entry and exit valleys. Tham Xieng Liap is a dramatic cave with a stream running through it. Tham En (Swallow Cave) is filled at dusk with thousands of swallows exiting in synchronized spirals — an extraordinary natural spectacle. The Xe Bang Fai river cave near Mahaxai, accessible as a day trip from Thakhek, has been called one of the world's largest river caves." }
+  - { question: "Where should I stay in Thakhek?", answer: "Thakhek Travel Lodge (the guesthouse operated by Mr Ku) is the standard base for Loop riders — it arranges bike rental, provides detailed route information, and posts up-to-date road conditions from returning riders. Inthira Thakhek Hotel on the riverfront is the mid-range/upscale option with the best location. Budget travelers can find clean, simple guesthouses around the central square for $8-15/night." }
+  - { question: "How do I get to Thakhek from Vientiane?", answer: "The most common route is a bus along Route 13 South from Vientiane's Southern Bus Terminal (6-7 hours, 100,000-120,000 LAK / ~$5-6). VIP buses with reclining seats run overnight for about the same price. Alternatively, take the train south to Savannakhet (1-2 hours, $5-8) and a 2-hour bus north along the Mekong — slower overall but the train section is comfortable." }
 draft: false
 contentStatus: "published"
 lastVerified: "2026-02-27"
@@ -37,6 +52,7 @@ fmContentType: "destination"
 affiliatePicks:
   - { name: "Inthira Thakhek Hotel", type: "hotel", price: "$35-65/night", personalNote: "Beautifully restored colonial building right on the Mekong riverfront with stylish rooms and a great restaurant.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=thakhek+laos&lang=en-us", badge: "" }
   - { name: "Thakhek Loop Guided Tour", type: "tour", price: "$45-80/day", personalNote: "Guided 3-4 day motorbike loop with all accommodation, meals, and an experienced guide who knows every cave.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
+  - { name: "Kong Lor Cave Day Trip from Thakhek", type: "tour", price: "$35-50", personalNote: "A full day to the cave and back — 2 hours each way by vehicle, then the 45-minute boat journey through 7.5km of underground river. If you cannot do the full Loop, this day trip captures the most extraordinary single experience on it.", affiliateUrl: "https://www.viator.com/thakhek?pid=P00290009", badge: "Bucket List" }
 ---
 
 # Thakhek: The Greatest Motorbike Loop You Have Never Heard Of
@@ -48,6 +64,8 @@ Thakhek is a sleepy Mekong river town in Khammouane Province, central Laos, roug
 I arrived in Thakhek after a bus ride down from Vientiane, checked into a guesthouse overlooking the Mekong, and spent the evening walking along the colonial riverfront eating grilled chicken from a street vendor. Thailand was visible just across the water, close enough to read the signs on the opposite bank. The next morning, I rented a motorbike and set off on what would become one of the defining experiences of my travels in Laos.
 
 The Thakhek Loop deserves its growing reputation. Over three to four days, it takes you through a landscape of limestone towers, hidden caves, river valleys, and villages where tourism is still a novelty rather than an industry. The roads range from smooth blacktop to potholed gravel. The caves range from small grottoes to Kong Lor, one of the largest river caves on Earth. And the sense of adventure -- of genuinely not knowing what is around the next bend -- is something that mainstream tourism has made increasingly rare.
+
+<ImmersiveBreak videoSrc="/videos/destinations/thakhek-hero.mp4" />
 
 ## What Makes Thakhek Different
 
