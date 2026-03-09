@@ -3,6 +3,7 @@ title: "4000 Islands (Si Phan Don)"
 description: "Relax in the 4000 Islands of southern Laos: hammock time on Don Det, Irrawaddy dolphins, Khone Phapheng Falls, and Mekong island life."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Mekong River islands and wooden bungalows at Don Det, southern Laos"
 tagline: "Where the Mekong Stands Still"
 region: south
 bestMonths: ["November", "December", "January", "February", "March"]

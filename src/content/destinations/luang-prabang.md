@@ -3,6 +3,7 @@ title: "Luang Prabang"
 description: "Discover Luang Prabang, a UNESCO World Heritage city where saffron-robed monks, French colonial charm, and stunning Kuang Si Falls converge."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Saffron-robed monks alms procession past French colonial villas, Luang Prabang, Laos"
 tagline: "Where Monks Meet Mountains"
 region: north
 bestMonths: ["November", "December", "January", "February", "March"]

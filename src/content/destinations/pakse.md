@@ -3,6 +3,7 @@ title: "Pakse"
 description: "Discover Pakse, southern Laos' largest city and gateway to the Bolaven Plateau, Wat Phou temple, and the 4000 Islands region."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Mekong and Xe Don river confluence viewed from Pakse's colonial bridge, Laos"
 tagline: "Gateway to the Wild South"
 region: south
 bestMonths: ["November", "December", "January", "February"]

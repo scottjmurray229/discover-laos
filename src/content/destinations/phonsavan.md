@@ -3,6 +3,7 @@ title: "Phonsavan"
 description: "Visit Phonsavan and the mysterious Plain of Jars UNESCO site, learn about Laos' wartime history at the UXO centre, and explore Hmong hill-tribe villages."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Mysterious ancient stone jars scattered across the plateau at Phonsavan, Laos"
 tagline: "Ancient Mysteries on Scarred Earth"
 region: north
 bestMonths: ["November", "December", "January", "February", "March"]

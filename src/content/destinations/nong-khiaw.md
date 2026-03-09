@@ -3,6 +3,7 @@ title: "Nong Khiaw"
 description: "Discover Nong Khiaw, a riverside village nestled among dramatic limestone cliffs in northern Laos with stunning viewpoints, trekking, and caves."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Karst limestone peaks framing the Nam Ou River at Nong Khiaw, northern Laos"
 tagline: "Cliffs, River, and Pure Silence"
 region: north
 bestMonths: ["October", "November", "December", "January", "February", "March", "April"]

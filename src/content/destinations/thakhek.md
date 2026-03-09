@@ -3,6 +3,7 @@ title: "Thakhek"
 description: "Explore Thakhek and the legendary Loop: limestone caves, karst scenery, Kong Lor Cave, and French colonial charm on the Mekong in central Laos."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Konglor Cave boat journey through an underground limestone river, Thakhek, Laos"
 tagline: "The Loop Less Traveled"
 region: central
 bestMonths: ["November", "December", "January", "February", "March"]

@@ -3,6 +3,7 @@ title: "Vientiane"
 description: "Explore Vientiane, Laos' laid-back capital city. Visit That Luang golden stupa, Patuxai monument, and Buddha Park along the Mekong riverside."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Pha That Luang golden stupa reflecting in a pond at sunset, Vientiane, Laos"
 tagline: "Asia's Most Relaxed Capital"
 region: central
 bestMonths: ["November", "December", "January", "February"]

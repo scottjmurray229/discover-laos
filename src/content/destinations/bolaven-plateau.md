@@ -3,6 +3,7 @@ title: "Bolaven Plateau"
 description: "Explore the Bolaven Plateau by motorbike: thundering waterfalls, world-class coffee plantations, ethnic villages, and cool mountain air in southern Laos."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Tad Fane twin waterfall plunging through dense jungle, Bolaven Plateau, Laos"
 tagline: "Waterfalls, Coffee, and Open Road"
 region: south
 bestMonths: ["November", "December", "January", "February", "March"]

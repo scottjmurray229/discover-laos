@@ -3,6 +3,7 @@ title: "Vang Vieng"
 description: "Experience Vang Vieng's dramatic karst landscapes, turquoise Blue Lagoons, river tubing, cave exploration, and hot air balloon rides in central Laos."
 heroVideo: ""
 heroImage: ""
+heroAlt: "Karst limestone mountains rising above the Nam Song River, Vang Vieng, Laos"
 tagline: "Karst Landscapes and River Dreams"
 region: central
 bestMonths: ["November", "December", "January", "February"]
