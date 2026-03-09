@@ -65,6 +65,14 @@ affiliatePicks:
 
 # 4000 Islands: The End of the Road in the Best Possible Way
 
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #064E3B 0%, #065F46 35%, #10B981 65%, #064E3B 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">The Mekong broadens to fourteen kilometers wide, the islands appear between the braided channels, and the pace of life drops to something close to zero — in the best possible way.</p>
+  </div>
+</div>
+
 I knew I had found something special when I realized I had been lying in a hammock for two hours watching the Mekong slide past and had not once reached for my phone. The 4000 Islands does that to you. It gently removes every urgent impulse, every need to be somewhere else, every flicker of FOMO, and replaces them with the simple satisfaction of being exactly where you are, doing exactly nothing, and finding it deeply fulfilling.
 
 Si Phan Don -- literally "Four Thousand Islands" in Lao -- is the name for a stretch of the Mekong River in far southern Laos where the river broadens to 14 kilometers wide during the rainy season, splitting around thousands of islands and islets. Most of these are tiny, uninhabited sandbars that emerge and disappear with the seasons. The ones that matter to travelers are Don Det and Don Khon, two adjacent islands connected by a French colonial railway bridge that now carries only bicycles and pedestrians.
@@ -74,6 +82,14 @@ I reached the 4000 Islands after weeks of traveling through Laos, and it felt li
 The landscape is flat, green, and watery, the sky enormous. Rice paddies and coconut palms line the dirt paths that serve as roads. Chickens wander freely, children splash in the shallows, and fishermen check their nets in the golden late-afternoon light. If you are coming from the intensity of Bangkok or Hanoi, the 4000 Islands will feel like someone turned the world's volume dial to near zero. And after the initial adjustment, you will wonder why anyone ever turns it up.
 
 <ImmersiveBreak videoSrc="/videos/destinations/4000-islands-hero.mp4" />
+
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #14532D 0%, #15803D 35%, #84CC16 65%, #14532D 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">What To Explore</h2>
+    <p class="ib-text">Irrawaddy dolphins at Khone, the Khone Phapheng Falls, French colonial railway ruins, and endless channels to explore by bicycle and kayak.</p>
+  </div>
+</div>
 
 ## What Makes the 4000 Islands Different
 
@@ -140,6 +156,14 @@ The most popular sundowner spot on the island, with cushions laid out on the riv
 ### Morning Glory Bakery (Don Det)
 A small bakery near the boat landing that opens early and serves fresh pastries, banana bread, and strong coffee. Pastries cost 10,000-20,000 LAK (~$0.50-1), and the coffee (15,000 LAK / ~$0.75) is solid. Grab breakfast here before cycling or catching a boat.
 
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #0E4D5C 0%, #0369A1 35%, #38BDF8 65%, #0E4D5C 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Where to Stay</h2>
+    <p class="ib-text">Hammock guesthouses on the riverbank, bamboo bungalows overlooking the Mekong, and a few genuinely lovely mid-range options that cost a fraction of anywhere else in Southeast Asia.</p>
+  </div>
+</div>
+
 ## Where to Stay in the 4000 Islands
 
 ### Budget: Mr. Phao's Riverside Bungalows (Don Det)
@@ -150,6 +174,14 @@ Comfortable wooden bungalows on Don Khon with private bathrooms, fans or air-con
 
 ### Luxury: La Folie Lodge (Don Khon)
 The most refined accommodation in the 4000 Islands, La Folie offers beautiful hardwood bungalows with private terraces overlooking the Mekong. The design blends colonial nostalgia with modern comfort, and the restaurant serves excellent French-Lao fusion cuisine. Rooms start at 2,000,000 LAK (~$100). Watching the sunset from La Folie's deck with a glass of wine is the most civilized experience in Si Phan Don.
+
+<div class="immersive-break-inline" id="essentials">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #78350F 0%, #92400E 35%, #D97706 65%, #78350F 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Before You Go</h2>
+    <p class="ib-text">How to reach Don Det from Pakse, the right season for dolphin watching, and why five days here feels like ten anywhere else.</p>
+  </div>
+</div>
 
 ## Scott's Pro Tips
 

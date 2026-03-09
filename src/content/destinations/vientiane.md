@@ -66,6 +66,14 @@ affiliatePicks:
 
 # Vientiane: The World's Most Unassuming Capital
 
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #78350F 0%, #92400E 35%, #D97706 65%, #78350F 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">A capital city running at small-town speed — French baguettes, golden temples, an aerobics class on the Mekong promenade, and a quiet that seeps into your bones by the second day.</p>
+  </div>
+</div>
+
 I remember the first time I walked along the Mekong promenade in Vientiane at sunset, watching the sky turn amber over the river while locals practiced aerobics to blasting pop music in the park. It struck me that this was a capital city operating at the pace of a small town, and I mean that as the highest compliment. Vientiane does not try to impress you with skyscrapers or frantic energy. It earns your affection through golden temples catching the afternoon light, baguettes that rival anything in Paris, and a gentleness that seeps into your bones after a day or two.
 
 Vientiane sits on a broad curve of the Mekong River, directly across from Thailand's Nong Khai province. As the political, economic, and cultural heart of Laos, it carries none of the chaos you might expect from a Southeast Asian capital. The population hovers around one million, and the city center feels walkable, human-scaled, and surprisingly quiet. French colonial architecture lines the boulevards alongside glittering Buddhist temples, creating a visual blend that exists nowhere else in quite this way.
@@ -75,6 +83,14 @@ I have visited Vientiane multiple times now, and each visit reveals something ne
 Many travelers treat Vientiane as a quick stopover before heading north to Luang Prabang or south to the 4000 Islands. I would argue that shortchanging the capital means missing out on some of the most authentic urban experiences in mainland Southeast Asia. Give Vientiane at least two or three days, and you will understand why so many expats have quietly made this place home.
 
 <ImmersiveBreak videoSrc="/videos/destinations/vientiane-hero.mp4" />
+
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #14532D 0%, #15803D 35%, #84CC16 65%, #14532D 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">What To Explore</h2>
+    <p class="ib-text">That Luang, Patuxai, COPE Visitor Centre, the Buddha Park, and the single greatest baguette sandwich scene outside of France — Vientiane does not rush, but it delivers.</p>
+  </div>
+</div>
 
 ## What Makes Vientiane Different
 
@@ -139,6 +155,14 @@ A tiny juice bar and fruit shake shop near the Morning Market that has earned a 
 ### Le Banneton
 French bakery culture runs deep in Vientiane, and Le Banneton is the finest expression of it. Crusty baguettes, flaky croissants, and proper pain au chocolat emerge from the ovens daily. Pastries run 15,000-30,000 LAK (~$0.75-1.50), and a full French breakfast costs around 60,000 LAK (~$3). It is a reminder of the lasting French influence on Lao culinary culture.
 
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #4A1D96 0%, #6D28D9 35%, #C084FC 65%, #4A1D96 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Where to Stay</h2>
+    <p class="ib-text">Boutique hotels in French colonial buildings, riverside guesthouses, and an emerging mid-range scene that makes Vientiane better value than most Southeast Asian capitals.</p>
+  </div>
+</div>
+
 ## Where to Stay in Vientiane
 
 ### Budget: Funky Monkey Hostel
@@ -149,6 +173,14 @@ Housed in a beautifully restored 1920s colonial building, this boutique hotel of
 
 ### Luxury: Settha Palace Hotel
 The grand dame of Vientiane hotels, the Settha Palace occupies a meticulously restored 1930s colonial mansion with lush gardens, a swimming pool, and impeccable service. Rooms start around 3,000,000 LAK (~$150) and rise from there. The hotel restaurant is excellent, and afternoon tea on the terrace is a lovely tradition. This is where visiting dignitaries stay, and you can see why.
+
+<div class="immersive-break-inline" id="essentials">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #064E3B 0%, #065F46 35%, #10B981 65%, #064E3B 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Before You Go</h2>
+    <p class="ib-text">The COPE museum is essential, the morning market at Talat Sao is worth getting up for, and nobody regrets spending three days in Vientiane instead of rushing through in one.</p>
+  </div>
+</div>
 
 ## Scott's Pro Tips
 

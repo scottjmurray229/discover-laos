@@ -63,6 +63,14 @@ affiliatePicks:
   - { name: "Hmong Village and War History Tour", type: "tour", price: "$20-35", personalNote: "A half-day combining a Hmong village visit with stops at bomb craters and war-era sites. The guide's personal family connection to the Secret War bombing period gave this tour an emotional weight I was not prepared for.", affiliateUrl: "https://www.viator.com/phonsavan?pid=P00290009", badge: "" }
 ---
 
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #7C2D12 0%, #B45309 35%, #F59E0B 65%, #7C2D12 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">A high plateau with massive stone jars nobody fully understands, bomb craters from the most intensive air campaign in history, and a sky so blue it feels like a different country.</p>
+  </div>
+</div>
+
 # Phonsavan: Where History and Mystery Collide
 
 I stood on a grassy hilltop in the high plateau of Xieng Khouang Province, surrounded by massive stone jars that no one can fully explain, on ground that was carpet-bombed within living memory, under a sky so blue and peaceful it seemed to mock the violence that scarred this land. Phonsavan is a place of contradictions. Ancient mystery sits alongside modern tragedy. Breathtaking natural beauty coexists with the buried legacy of war. And out of all of it, a resilient community has built a life that is simultaneously haunted and hopeful.
@@ -74,6 +82,14 @@ My first visit to Phonsavan was driven by curiosity about the Plain of Jars, one
 This is not an easy destination in the conventional sense. There are no pristine waterfalls or luxury resorts. The town itself is dusty and unassuming. But Phonsavan offers something that polished tourist destinations cannot: an encounter with history that is raw, unmediated, and profoundly important. Everyone who travels through Laos should spend time here. What you learn will change how you see the rest of the country.
 
 <ImmersiveBreak videoSrc="/videos/destinations/phonsavan-hero.mp4" />
+
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #064E3B 0%, #065F46 35%, #10B981 65%, #064E3B 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">What To Explore</h2>
+    <p class="ib-text">The three main Plain of Jars sites, the UXO Lao visitors centre, Hmong villages, and the war-scarred landscape that makes this one of the most unexpectedly moving destinations in Laos.</p>
+  </div>
+</div>
 
 ## What Makes Phonsavan Different
 
@@ -137,6 +153,14 @@ The town's morning market is small but excellent for breakfast and people-watchi
 ### Craters Bar & Restaurant
 A traveler-oriented bar and restaurant with a dark sense of humor reflected in its name. The food is decent, with a menu spanning burgers, pasta, and Lao dishes (40,000-80,000 LAK / ~$2-4). The real draw is the social atmosphere and the bar's collection of defused ordnance-turned-decor, which sets a tone appropriate for the location.
 
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #14532D 0%, #15803D 35%, #84CC16 65%, #14532D 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Where to Stay</h2>
+    <p class="ib-text">Phonsavan is a functional town rather than a tourist resort — the guesthouses are simple, clean, and affordable, and the best ones arrange guided Plain of Jars tours directly.</p>
+  </div>
+</div>
+
 ## Where to Stay in Phonsavan
 
 ### Budget: Kong Keo Guesthouse
@@ -147,6 +171,14 @@ The most reliable mid-range option in Phonsavan, with comfortable rooms, hot wat
 
 ### Luxury: Anoulack Khen Lao Hotel
 The best hotel in Phonsavan, offering modern rooms with air conditioning, hot water, and breakfast included. The standard is modest by international luxury standards but represents the most comfortable option in town. Rooms start at 2,000,000 LAK (~$100). The on-site restaurant serves decent Lao and Western food, and the hotel can arrange all tours and transport.
+
+<div class="immersive-break-inline" id="essentials">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #4A1D96 0%, #6D28D9 35%, #C084FC 65%, #4A1D96 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Before You Go</h2>
+    <p class="ib-text">Visit the UXO centre before the jars, hire a knowledgeable local guide, and allow yourself the silence that the Plain of Jars sites deserve — they carry a weight that casual tourism misses entirely.</p>
+  </div>
+</div>
 
 ## Scott's Pro Tips
 

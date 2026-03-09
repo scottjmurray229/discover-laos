@@ -63,6 +63,14 @@ affiliatePicks:
   - { name: "4000 Islands Day Trip from Pakse", type: "tour", price: "$35-50", personalNote: "A full-day trip south to Don Det and Don Khon with time for the Li Phi Falls and dolphin boat trip — perfect if you can't spare multiple nights on the islands but want a taste of the Mekong island life.", affiliateUrl: "https://www.viator.com/pakse?pid=P00290009", badge: "" }
 ---
 
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #78350F 0%, #92400E 35%, #D97706 65%, #78350F 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">Two rivers meet, a morning market spreads across the streets, and southern Laos opens up in every direction — the 4000 Islands to the south, the Bolaven Plateau rising to the east.</p>
+  </div>
+</div>
+
 # Pakse: Southern Laos Starts Here
 
 I almost skipped Pakse. That is the mistake most travelers make, treating this Mekong river town as nothing more than a bus transfer between the Bolaven Plateau and the 4000 Islands. I am glad I gave it a proper chance, because Pakse turned out to be one of those unpolished Lao towns where genuine daily life plays out without a single concession to tourism, and that authenticity is increasingly rare and precious in Southeast Asia.
@@ -74,6 +82,14 @@ The history of this region runs deep. Champasak was once the seat of a powerful 
 My first morning in Pakse, I wandered into the Dao Heuang Morning Market and was immediately overwhelmed in the best possible way. Vendors selling river fish still flopping in buckets, piles of fresh herbs I could not identify, steaming pots of noodle soup, grilled meats on sticks, and the heady aroma of Bolaven coffee being brewed on portable stoves. This is southern Laos distilled into a single, chaotic, magnificent market.
 
 <ImmersiveBreak videoSrc="/videos/destinations/pakse-hero.mp4" />
+
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #064E3B 0%, #065F46 35%, #10B981 65%, #064E3B 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">What To Explore</h2>
+    <p class="ib-text">Wat Phu Champasak, the Pakse morning market, Champasak riverside villages, and the gateway to both the Bolaven Plateau circuit and the 4000 Islands.</p>
+  </div>
+</div>
 
 ## What Makes Pakse Different
 
@@ -129,6 +145,14 @@ A Vietnamese-Lao restaurant near the river serving generous portions of pho, spr
 ### Night Market Food Stalls
 Each evening, food vendors set up along the Mekong riverfront near the main bridge. Grilled chicken, sticky rice, som tam (papaya salad), and fresh fruit shakes are all available for 15,000-30,000 LAK (~$0.75-1.50). Grab a Beer Lao (10,000-15,000 LAK / ~$0.50-0.75) and eat riverside as the sun goes down.
 
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #4A1D96 0%, #6D28D9 35%, #C084FC 65%, #4A1D96 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Where to Stay</h2>
+    <p class="ib-text">French colonial guesthouses, riverside boutique hotels, and central town options that put you within walking distance of the market and the best khao piak restaurants.</p>
+  </div>
+</div>
+
 ## Where to Stay in Pakse
 
 ### Budget: Sabaidee 2 Guesthouse
@@ -139,6 +163,14 @@ The best mid-range hotel in Pakse, offering comfortable rooms with river views, 
 
 ### Luxury: Athena Hotel
 The most upscale option in Pakse with modern rooms, a spa, swimming pool, and polished service. Rooms start at 2,000,000 LAK (~$100). While Pakse does not have the luxury hotel scene of Luang Prabang, Athena provides genuine comfort and a good restaurant. It is popular with business travelers and those wanting a reliable base for exploring the region.
+
+<div class="immersive-break-inline" id="essentials">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #14532D 0%, #15803D 35%, #84CC16 65%, #14532D 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Before You Go</h2>
+    <p class="ib-text">Pakse rewards those who give it a proper day or two rather than treating it as a transit hub — the morning market alone is worth the extra night.</p>
+  </div>
+</div>
 
 ## Scott's Pro Tips
 

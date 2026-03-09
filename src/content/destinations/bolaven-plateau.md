@@ -64,6 +64,14 @@ affiliatePicks:
   - { name: "Coffee Plantation and Waterfall Day Tour", type: "tour", price: "$30-45", personalNote: "A Pakse day trip covering Sinouk Coffee plantation, Tad Fane, and Tad Yuang falls. The best single-day introduction to the plateau for those without motorbike experience.", affiliateUrl: "https://www.viator.com/bolaven-plateau?pid=P00290009", badge: "" }
 ---
 
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #14532D 0%, #15803D 35%, #84CC16 65%, #14532D 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">Coffee, waterfalls, and mountain cool — the Bolaven Plateau is the Laos road trip that most visitors don't take, and the one that most who do take call the highlight of the country.</p>
+  </div>
+</div>
+
 # The Bolaven Plateau: Laos' Most Underrated Road Trip
 
 The mist was so thick on the first morning that I could hear the waterfall before I could see it. Then the clouds parted for just a moment, and there it was: Tad Fane, twin columns of white water dropping 120 meters straight into a jungle gorge so deep the bottom was invisible. I was standing on the rim with a cup of freshly brewed Bolaven Arabica in my hand, and I remember thinking that this might be the single greatest coffee-with-a-view moment of my life.
@@ -75,6 +83,14 @@ I spent three days on the big loop, riding through landscapes that shifted from 
 The plateau owes its fertility and its coffee to its volcanic origins. Rich, red basaltic soils combined with high elevation and abundant rainfall create perfect growing conditions for both Arabica and Robusta coffee. The Laven, Alak, Katu, and other ethnic minority groups who call the plateau home have cultivated this land for centuries, and their villages dot the loop route, offering glimpses into ways of life that have changed remarkably little.
 
 <ImmersiveBreak videoSrc="/videos/destinations/bolaven-plateau-hero.mp4" />
+
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #064E3B 0%, #065F46 35%, #10B981 65%, #064E3B 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">What To Explore</h2>
+    <p class="ib-text">Tad Fane twin waterfalls at 120 meters, Sinouk Coffee estate, Tad Yuang jungle pool, and the complete 200-kilometer circuit by motorbike through ethnic minority villages.</p>
+  </div>
+</div>
 
 ## What Makes the Bolaven Plateau Different
 
@@ -139,6 +155,14 @@ Several simple noodle shops in Tad Lo village serve hearty bowls of pho and khao
 ### Sabaidee Restaurant (Paksong)
 A simple but reliable restaurant on Paksong's main street serving standard Lao dishes at local prices. Fried rice, laap, and noodle soups all cost 25,000-40,000 LAK (~$1.25-2). It is nothing fancy, but it fills the tank between waterfalls.
 
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #78350F 0%, #92400E 35%, #D97706 65%, #78350F 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Where to Stay</h2>
+    <p class="ib-text">Pakse as a base for day trips, or guesthouses in Paksong at altitude for the cooler nights and morning mist — staying on the plateau feels like a different country from lowland Laos.</p>
+  </div>
+</div>
+
 ## Where to Stay on the Bolaven Plateau
 
 ### Budget: Tad Lo Guesthouse
@@ -149,6 +173,14 @@ Bungalows perched on the rim of Tad Fane gorge with direct views of the twin wat
 
 ### Luxury: Sinouk Coffee Resort
 Set among rows of coffee trees with views of the surrounding highland landscape, Sinouk Coffee Resort offers the most comfortable and stylish accommodation on the plateau. The villas feature high-end furnishings, private terraces, and a sense of refined rusticity. Rooms start at 2,400,000 LAK (~$120). The spa and restaurant are both excellent, and the plantation tour is included.
+
+<div class="immersive-break-inline" id="essentials">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #4A1D96 0%, #6D28D9 35%, #C084FC 65%, #4A1D96 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Before You Go</h2>
+    <p class="ib-text">Rent a motorbike in Pakse, buy coffee at source rather than in town, pack a rain jacket for the afternoon showers, and give yourself three days minimum for the full circuit.</p>
+  </div>
+</div>
 
 ## Scott's Pro Tips
 

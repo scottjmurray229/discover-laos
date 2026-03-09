@@ -64,6 +64,14 @@ affiliatePicks:
   - { name: "Kong Lor Cave Day Trip from Thakhek", type: "tour", price: "$35-50", personalNote: "A full day to the cave and back — 2 hours each way by vehicle, then the 45-minute boat journey through 7.5km of underground river. If you cannot do the full Loop, this day trip captures the most extraordinary single experience on it.", affiliateUrl: "https://www.viator.com/thakhek?pid=P00290009", badge: "Bucket List" }
 ---
 
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #064E3B 0%, #065F46 35%, #10B981 65%, #064E3B 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">The Mekong town that launches the most dramatic motorbike loop in Laos — four days through limestone karsts, underground rivers, and the deepest cave in Southeast Asia.</p>
+  </div>
+</div>
+
 # Thakhek: The Greatest Motorbike Loop You Have Never Heard Of
 
 The boat emerged from darkness into blinding daylight, and I sat in the bow blinking, unable to speak. Behind me lay 7.5 kilometers of underground river, a passage through the heart of a limestone mountain so vast that our headlamps could not reach the ceiling. Ahead lay a valley of emerald rice paddies ringed by karst peaks, steaming gently in the morning sun. I had just traveled through Kong Lor Cave, and nothing in my years of travel through Southeast Asia had prepared me for it.
@@ -75,6 +83,14 @@ I arrived in Thakhek after a bus ride down from Vientiane, checked into a guesth
 The Thakhek Loop deserves its growing reputation. Over three to four days, it takes you through a landscape of limestone towers, hidden caves, river valleys, and villages where tourism is still a novelty rather than an industry. The roads range from smooth blacktop to potholed gravel. The caves range from small grottoes to Kong Lor, one of the largest river caves on Earth. And the sense of adventure -- of genuinely not knowing what is around the next bend -- is something that mainstream tourism has made increasingly rare.
 
 <ImmersiveBreak videoSrc="/videos/destinations/thakhek-hero.mp4" />
+
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #14532D 0%, #15803D 35%, #84CC16 65%, #14532D 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">What To Explore</h2>
+    <p class="ib-text">Kong Lor Cave's 7.5-kilometer underground river, the Thakhek Loop karst landscapes, Tham Kong Lo village, and a town center with French colonial architecture and almost no tourists.</p>
+  </div>
+</div>
 
 ## What Makes Thakhek Different
 
@@ -156,6 +172,14 @@ A small, well-run cafe on the main street serving the best coffee in Thakhek alo
 
 Each evening, vendors set up along the Mekong promenade selling grilled chicken and pork skewers, sticky rice, som tam, and fresh fruit shakes for 10,000-25,000 LAK (~$0.50-1.25). Grab a Beer Lao (10,000-15,000 LAK / ~$0.50-0.75), find a spot on the riverbank, and enjoy the sunset over Thailand. This is dinner as Thakhek locals do it, and it cannot be beaten for atmosphere or value.
 
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #78350F 0%, #92400E 35%, #D97706 65%, #78350F 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Where to Stay</h2>
+    <p class="ib-text">The Inthira Hotel in Thakhek's old town is the finest base for the Loop — the team arranges motorbike rentals, route advice, and accommodation bookings along the circuit.</p>
+  </div>
+</div>
+
 ## Where to Stay in Thakhek
 
 ### Budget: Thakhek Travel Lodge
@@ -182,6 +206,14 @@ Visit Kong Lor Cave in the morning for the best light at the far entrance. Allow
 
 **Day 3: Return to Thakhek (150-200 km)**
 The final stretch brings you west to Route 13 and then north along the Mekong back to Thakhek. The road is good, the riding is relaxed, and the sense of accomplishment as you return the motorbike is well-earned. Alternatively, stretch the loop to four days for a more leisurely pace, which I recommend if your schedule permits.
+
+<div class="immersive-break-inline" id="essentials">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #4A1D96 0%, #6D28D9 35%, #C084FC 65%, #4A1D96 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Before You Go</h2>
+    <p class="ib-text">Four days is the minimum for the full loop, Kong Lor Cave requires two boat journeys through the mountain, and the road conditions demand a semi-automatic rather than a manual motorbike.</p>
+  </div>
+</div>
 
 ## Scott's Pro Tips
 

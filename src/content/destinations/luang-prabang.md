@@ -76,6 +76,14 @@ What strikes me most about Luang Prabang is how it balances preservation with vi
 
 <ImmersiveBreak videoSrc="/videos/destinations/luang-prabang-hero.mp4" />
 
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #78350F 0%, #92400E 35%, #D97706 65%, #78350F 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">Saffron monks, French colonial villas, the Mekong at dusk — Luang Prabang is the most beautiful small town in Southeast Asia and it announces itself from the first moment.</p>
+  </div>
+</div>
+
 ## What Makes Luang Prabang Different
 
 Luang Prabang's magic lies in its layers. On the surface, it is extraordinarily photogenic -- a town that seems designed for golden-hour photography. But spend time here and you discover that the beauty is not decorative. It is the outward expression of a deeply Buddhist culture that values mindfulness, generosity, and connection to place.
@@ -85,6 +93,14 @@ The confluence setting is geographically dramatic. The narrow peninsula where th
 The French colonial legacy adds another dimension. Unlike many Southeast Asian cities where colonial architecture feels imposed, in Luang Prabang the French buildings and Lao temples have grown together over a century into something harmonious. Bougainvillea spills over colonial balconies while temple rooftops soar behind them. The result is an aesthetic that is neither purely Lao nor purely French, but something uniquely Luang Prabang.
 
 Finally, the food scene here has become genuinely remarkable. The fusion of Lao, French, and broader Southeast Asian cuisines, combined with an abundance of fresh herbs, river fish, and local produce, means eating in Luang Prabang is a highlight in itself.
+
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #14532D 0%, #15803D 35%, #84CC16 65%, #14532D 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">What To Explore</h2>
+    <p class="ib-text">Morning alms ceremony, Kuang Si Falls, Wat Xieng Thong, the Night Market, and Pak Ou Caves — each day in Luang Prabang fills naturally with the kind of experiences that define travel.</p>
+  </div>
+</div>
 
 ## Things to Do in Luang Prabang
 
@@ -142,6 +158,14 @@ A contemporary Lao restaurant that elevates local ingredients with modern techni
 ### Saffron Coffee
 Specializing in single-origin Lao coffee from the Bolaven Plateau, this cozy cafe on the main street is where I go for the best cup in town. Espresso-based drinks run 25,000-40,000 LAK (~$1.25-2), and they also offer coffee tasting sessions and sell beans to take home.
 
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #4A1D96 0%, #6D28D9 35%, #C084FC 65%, #4A1D96 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Where to Stay</h2>
+    <p class="ib-text">Converted royal residences, riverside guesthouses, and the Avani's infinity pool over the Nam Khan — Luang Prabang's accommodation is as beautiful as the town itself.</p>
+  </div>
+</div>
+
 ## Where to Stay in Luang Prabang
 
 ### Budget: Sayo River Guesthouse
@@ -152,6 +176,14 @@ A converted royal residence in the heart of the old town, Villa Santi offers ele
 
 ### Luxury: Avani+ Luang Prabang
 Perched on the banks of the Nam Khan with a stunning infinity pool and views of the river and mountains, Avani+ combines luxury with authentic Lao design. Rooms start at 4,000,000 LAK (~$200) and feature handwoven textiles, local artwork, and river-view balconies. The spa and restaurant are both excellent.
+
+<div class="immersive-break-inline" id="essentials">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #064E3B 0%, #065F46 35%, #10B981 65%, #064E3B 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Before You Go</h2>
+    <p class="ib-text">How to observe the alms ceremony respectfully, when to visit Kuang Si Falls, and why the Laos-China Railway makes Luang Prabang more accessible than ever before.</p>
+  </div>
+</div>
 
 ## Scott's Pro Tips
 

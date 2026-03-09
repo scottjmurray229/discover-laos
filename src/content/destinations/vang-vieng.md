@@ -66,6 +66,14 @@ affiliatePicks:
 
 # Vang Vieng: A Redemption Story Written in Limestone
 
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #14532D 0%, #15803D 35%, #84CC16 65%, #14532D 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">Karst towers rising from emerald paddies, the Nam Song River glittering below, and a landscape so absurdly beautiful that the bus passengers all press their faces to the windows simultaneously.</p>
+  </div>
+</div>
+
 I arrived in Vang Vieng expecting the ghost of a party town and found instead one of the most visually stunning landscapes I have ever encountered. The bus from Vientiane rounded a bend, and suddenly there they were: massive karst limestone towers rising straight out of vivid green rice paddies, their peaks dissolving into low-hanging clouds. I pressed my face against the window like a child, and the backpacker next to me laughed and said, "Yeah, everyone does that the first time."
 
 Vang Vieng's reputation precedes it, and not always favorably. For years, it was synonymous with reckless backpacker excess: river tubing fueled by cheap whiskey, bars on the riverbank blasting music, and a troubling injury rate that eventually forced the government to intervene. That era is over. The Vang Vieng I discovered is an adventure destination of genuine substance, where the natural landscape takes center stage and the activities have evolved from dangerous hedonism into proper outdoor pursuits.
@@ -75,6 +83,14 @@ The town sits on the banks of the Nam Song River in a valley so beautiful it bor
 The arrival of the Laos-China Railway in 2021 transformed Vang Vieng's accessibility. What was once a winding 4-hour bus ride from Vientiane is now a smooth 1-hour train journey. This has brought a wider demographic of visitors -- families, older travelers, nature photographers -- who are discovering what backpackers stumbled onto decades ago: Vang Vieng's landscape is world-class.
 
 <ImmersiveBreak videoSrc="/videos/destinations/vang-vieng-hero.mp4" />
+
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #064E3B 0%, #065F46 35%, #10B981 65%, #064E3B 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">What To Explore</h2>
+    <p class="ib-text">Blue Lagoons, Tham Phu Kham Cave, hot air balloon sunrise flights, kayaking the Nam Song, and viewpoints that take 30 minutes to climb and an hour to leave.</p>
+  </div>
+</div>
 
 ## What Makes Vang Vieng Different
 
@@ -138,6 +154,14 @@ Despite the name, Gary's serves reliable Western comfort food alongside Lao dish
 ### Lao Coffee House
 A quiet cafe on the main road serving excellent locally sourced coffee and light meals. The iced Lao coffee (20,000 LAK / ~$1) is perfect for hot afternoons. They also serve smoothie bowls and healthy lunch options (40,000-70,000 LAK / ~$2-3.50) that make a welcome change from fried rice.
 
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #78350F 0%, #92400E 35%, #D97706 65%, #78350F 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Where to Stay</h2>
+    <p class="ib-text">Riverfront bungalows facing the karsts, adventure-oriented guesthouses near the activity operators, and a growing selection of boutique hotels that match the landscape's quality.</p>
+  </div>
+</div>
+
 ## Where to Stay in Vang Vieng
 
 ### Budget: Nana Backpackers Hostel
@@ -148,6 +172,14 @@ Set on the banks of the Nam Song with unobstructed views of the karst mountains,
 
 ### Luxury: Amari Vang Vieng
 The most upscale option in town, with a stunning hillside location overlooking the river valley. Modern rooms, an infinity pool, spa, and excellent restaurant. Rooms start at 3,000,000 LAK (~$150). The views from the higher floors are among the most spectacular hotel views I have seen in Laos.
+
+<div class="immersive-break-inline" id="essentials">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #4A1D96 0%, #6D28D9 35%, #C084FC 65%, #4A1D96 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Before You Go</h2>
+    <p class="ib-text">The Laos-China Railway from Vientiane makes this a one-hour trip now, the Blue Lagoon charges 10,000 LAK entry, and the sunrise balloon flight books out days ahead during peak season.</p>
+  </div>
+</div>
 
 ## Scott's Pro Tips
 

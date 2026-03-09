@@ -64,6 +64,14 @@ affiliatePicks:
   - { name: "Nam Ou River & Muang Ngoi Boat Trip", type: "tour", price: "$15-25", personalNote: "A longtail boat up the Nam Ou to car-free Muang Ngoi — one of those remote spots that feels genuinely untouched. The river journey through the limestone gorge is as memorable as the destination.", affiliateUrl: "https://www.viator.com/nong-khiaw?pid=P00290009", badge: "" }
 ---
 
+<div class="immersive-break-inline" id="arrival">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #064E3B 0%, #065F46 35%, #10B981 65%, #064E3B 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">The Arrival</h2>
+    <p class="ib-text">The minivan descends into a valley and the landscape hits you — vertical limestone cliffs, the jade Nam Ou River, a tiny village at the base of cliffs so theatrical they look designed.</p>
+  </div>
+</div>
+
 # Nong Khiaw: Northern Laos at Its Most Dramatic
 
 The first time I saw Nong Khiaw, I was riding in a minivan from Luang Prabang, half-dozing through the mountain curves, when the road suddenly descended into a valley and everything changed. Massive limestone cliffs erupted from the green jungle on both sides, the Nam Ou River appeared below like a ribbon of jade, and a tiny town materialized at the base of cliffs so vertical and dramatic they looked like they had been placed there by a film set designer. I sat up straight and knew immediately that I would stay longer than planned.
@@ -75,6 +83,14 @@ I spent four days in Nong Khiaw, and each morning I woke to a view that I would 
 What makes Nong Khiaw special is the combination of dramatic scenery and genuine tranquility. This is not yet a major tourist destination, and the village retains an authenticity that places like Vang Vieng have largely traded away. There are no party bars, no tour buses, and no banana pancake stands. There are spectacular viewpoints, deep caves with wartime history, jungle treks to remote villages, and evenings so quiet that the loudest sound is the river moving past.
 
 <ImmersiveBreak videoSrc="/videos/destinations/nong-khiaw-hero.mp4" />
+
+<div class="immersive-break-inline" id="explore">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #14532D 0%, #15803D 35%, #84CC16 65%, #14532D 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">What To Explore</h2>
+    <p class="ib-text">Viewpoint 1 and 2 hikes above the valley, boat trips to car-free Muang Ngoi, kayaking the Nam Ou, and village treks through the limestone karst backcountry.</p>
+  </div>
+</div>
 
 ## What Makes Nong Khiaw Different
 
@@ -140,6 +156,14 @@ A traveler-friendly cafe and restaurant known for its baked goods and Western co
 ### Nong Khiaw Morning Market
 The small morning market near the bridge is worth an early visit for fresh baguettes (5,000 LAK / ~$0.25), noodle soups (15,000-20,000 LAK / ~$0.75-1), and strong Lao coffee (5,000-10,000 LAK / ~$0.25-0.50). It is where villagers from the surrounding area come to trade, and the atmosphere is authentically local.
 
+<div class="immersive-break-inline" id="stay">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #0E4D5C 0%, #0369A1 35%, #38BDF8 65%, #0E4D5C 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Where to Stay</h2>
+    <p class="ib-text">Bamboo bungalows on the riverbank, guesthouses facing the cliffs, and a handful of genuinely lovely mid-range options that cost almost nothing — Nong Khiaw is exceptional value.</p>
+  </div>
+</div>
+
 ## Where to Stay in Nong Khiaw
 
 ### Budget: Sengdao Chit Guesthouse
@@ -150,6 +174,14 @@ Beautiful wooden bungalows right on the Nam Ou with private terraces overlooking
 
 ### Luxury: Mandala Ou Resort
 The most upscale option in the Nong Khiaw area, set in a secluded riverside location with eco-designed bungalows, a spa, yoga studio, and organic restaurant. Rooms start at 2,400,000 LAK (~$120). The resort emphasizes sustainability and wellness, and the setting amid the limestone peaks is breathtaking. This is where to stay if you want Nong Khiaw's natural beauty wrapped in genuine comfort.
+
+<div class="immersive-break-inline" id="essentials">
+  <div class="ib-gradient" style="background: linear-gradient(160deg, #78350F 0%, #92400E 35%, #D97706 65%, #78350F 100%);"></div>
+  <div class="ib-content">
+    <h2 class="ib-title">Before You Go</h2>
+    <p class="ib-text">The Viewpoint 1 hike is 45 minutes each way, the Muang Ngoi boat costs 40,000 LAK, and this is the kind of place that makes you cancel your next booking and stay another two days.</p>
+  </div>
+</div>
 
 ## Scott's Pro Tips
 
