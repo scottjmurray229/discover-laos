@@ -3,7 +3,7 @@ title: "Welcome to Discover Laos"
 description: "Introducing Discover Laos — honest travel guides with real prices, local tips, and personal experience across the land of a million elephants."
 pubDate: 2026-02-27
 dateModified: 2026-03-08
-category: practical
+category: "practical"
 author: Scott
 draft: false
 ---

@@ -5,7 +5,7 @@ pubDate: 2026-02-24
 dateModified: 2026-03-08
 author: "Scott Murray"
 heroImage: ""
-category: "Planning"
+category: "planning"
 tags:
   - "luang prabang"
   - "laos"

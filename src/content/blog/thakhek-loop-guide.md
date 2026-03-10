@@ -5,7 +5,7 @@ pubDate: 2026-02-22
 dateModified: 2026-03-08
 author: "Scott Murray"
 heroImage: ""
-category: "Adventure"
+category: "adventure"
 tags:
   - "thakhek"
   - "thakhek loop"
