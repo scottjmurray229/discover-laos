@@ -19,7 +19,7 @@ budgetPerDay:
   backpacker: 25
   midRange: 70
   luxury: 120
-gettingThere: "Fly from Vientiane to Xieng Khouang Airport (near Phonsavan) in about 30 minutes, or take a bus from Vientiane (10-11 hours) or Luang Prabang (7-8 hours) through dramatic mountain roads."
+gettingThere: "Fly from Vientiane to Xieng Khouang Airport (near Phonsavan) in about 30 minutes, or take a bus from Vientiane (10-11 hours) or Luang Prabang (7-8 hours) through dramatic mountain roads. <a href='https://airasia.prf.hn/click/camref:1101l5F4ob'>AirAsia</a> serves Vientiane and Luang Prabang from Bangkok."
 essentials:
   - { icon: "✈️", label: "Airport", value: "Xieng Khouang Airport (XKH)" }
   - { icon: "💰", label: "Currency", value: "LAK (Lao Kip)" }
@@ -58,7 +58,7 @@ contentStatus: "published"
 lastVerified: "2026-02-27"
 fmContentType: "destination"
 affiliatePicks:
-  - { name: "Nice Guesthouse Phonsavan", type: "hotel", price: "$20-40/night", personalNote: "The most reliable mid-range option in Phonsavan with clean rooms, hot water, and owners who can arrange jar site tours.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=phonsavan+laos&lang=en-us", badge: "" }
+  - { name: "Nice Guesthouse Phonsavan", type: "hotel", price: "$20-40/night", personalNote: "The most reliable mid-range option in Phonsavan with clean rooms, hot water, and owners who can arrange jar site tours.", affiliateUrl: "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1959462&hl=en-us&textToSearch=phonsavan%20laos", badge: "" }
   - { name: "Plain of Jars Guided Tour", type: "tour", price: "$25-45", personalNote: "Full-day guided tour covering Jar Sites 1, 2, and 3 with historical context that brings the mystery to life.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
   - { name: "Hmong Village and War History Tour", type: "tour", price: "$20-35", personalNote: "A half-day combining a Hmong village visit with stops at bomb craters and war-era sites. The guide's personal family connection to the Secret War bombing period gave this tour an emotional weight I was not prepared for.", affiliateUrl: "https://www.viator.com/phonsavan?pid=P00290009", badge: "" }
 ---

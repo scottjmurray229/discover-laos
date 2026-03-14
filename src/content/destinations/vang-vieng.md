@@ -59,7 +59,7 @@ contentStatus: "published"
 lastVerified: "2026-02-27"
 fmContentType: "destination"
 affiliatePicks:
-  - { name: "Riverside Boutique Resort", type: "hotel", price: "$60-120/night", personalNote: "Beautiful riverside location with mountain views, pool, and easy access to town. The sunrise views are incredible.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=vang+vieng+laos&lang=en-us", badge: "" }
+  - { name: "Riverside Boutique Resort", type: "hotel", price: "$60-120/night", personalNote: "Beautiful riverside location with mountain views, pool, and easy access to town. The sunrise views are incredible.", affiliateUrl: "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1959462&hl=en-us&textToSearch=vang%20vieng%20laos", badge: "" }
   - { name: "Vang Vieng Adventure Day Tour", type: "tour", price: "$35-55", personalNote: "Full-day combo of kayaking, cave exploring, and Blue Lagoon visit with all equipment and lunch provided.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
   - { name: "Hot Air Balloon Sunrise Flight", type: "tour", price: "$80-120", personalNote: "Floating above the karst towers at sunrise is one of those travel experiences that earns its price immediately. The limestone peaks emerging from morning mist, the river below, the paddies glowing gold — I use this flight as my benchmark for extraordinary views.", affiliateUrl: "https://www.viator.com/vang-vieng?pid=P00290009", badge: "Bucket List" }
 ---

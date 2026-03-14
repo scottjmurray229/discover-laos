@@ -59,7 +59,7 @@ contentStatus: "published"
 lastVerified: "2026-02-27"
 fmContentType: "destination"
 affiliatePicks:
-  - { name: "Nong Khiaw Riverside", type: "hotel", price: "$35-65/night", personalNote: "Beautiful riverside bungalows with mountain views, the best mid-range option with a wonderful setting right on the Nam Ou.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=nong+khiaw+laos&lang=en-us", badge: "" }
+  - { name: "Nong Khiaw Riverside", type: "hotel", price: "$35-65/night", personalNote: "Beautiful riverside bungalows with mountain views, the best mid-range option with a wonderful setting right on the Nam Ou.", affiliateUrl: "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1959462&hl=en-us&textToSearch=nong%20khiaw%20laos", badge: "" }
   - { name: "Nong Khiaw Trekking & Cave Tour", type: "tour", price: "$20-40", personalNote: "Full-day guided trek to Pha Tok caves and Hmong villages with lunch and local cultural experiences.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
   - { name: "Nam Ou River & Muang Ngoi Boat Trip", type: "tour", price: "$15-25", personalNote: "A longtail boat up the Nam Ou to car-free Muang Ngoi — one of those remote spots that feels genuinely untouched. The river journey through the limestone gorge is as memorable as the destination.", affiliateUrl: "https://www.viator.com/nong-khiaw?pid=P00290009", badge: "" }
 ---

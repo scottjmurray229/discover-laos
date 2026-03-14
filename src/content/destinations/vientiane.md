@@ -19,7 +19,7 @@ budgetPerDay:
   backpacker: 25
   midRange: 70
   luxury: 150
-gettingThere: "Wattay International Airport receives direct flights from Bangkok, Hanoi, Kuala Lumpur, and several regional cities, or you can cross the Thai-Lao Friendship Bridge from Nong Khai, Thailand."
+gettingThere: "Wattay International Airport receives direct flights from Bangkok, Hanoi, Kuala Lumpur, and several regional cities, or you can cross the Thai-Lao Friendship Bridge from Nong Khai, Thailand. <a href='https://airasia.prf.hn/click/camref:1101l5F4ob'>AirAsia</a> serves Vientiane and Luang Prabang from Bangkok."
 essentials:
   - { icon: "✈️", label: "Airport", value: "Wattay International Airport (VTE)" }
   - { icon: "💰", label: "Currency", value: "LAK (Lao Kip)" }
@@ -59,7 +59,7 @@ contentStatus: "published"
 lastVerified: "2026-02-27"
 fmContentType: "destination"
 affiliatePicks:
-  - { name: "Barn1920s Hotel", type: "hotel", price: "$45-75/night", personalNote: "Beautifully restored colonial building with modern comforts right in the historic center.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=vientiane+laos&lang=en-us", badge: "" }
+  - { name: "Barn1920s Hotel", type: "hotel", price: "$45-75/night", personalNote: "Beautifully restored colonial building with modern comforts right in the historic center.", affiliateUrl: "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1959462&hl=en-us&textToSearch=vientiane%20laos", badge: "" }
   - { name: "Vientiane City Tour", type: "tour", price: "$25-40", personalNote: "Half-day guided tour covering That Luang, Patuxai, and key temples with hotel pickup included.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
   - { name: "Buddha Park and Mekong Day Tour", type: "tour", price: "$35-50", personalNote: "Combines the surreal Buddha Park sculpture garden with a sunset Mekong boat ride and riverside dinner. The two sites complement each other perfectly — weird sculptures in the afternoon, beautiful river at dusk.", affiliateUrl: "https://www.viator.com/vientiane?pid=P00290009", badge: "" }
 ---

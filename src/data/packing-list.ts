@@ -7,6 +7,36 @@ export const LAOS_ESSENTIALS: PackingItem[] = [
   { id: 'la-cash', name: 'Cash (USD + LAK)', category: 'destination', description: 'ATMs are limited outside Vientiane and Luang Prabang. USD is widely accepted. Carry enough cash for 3–4 days when traveling between towns — don\'t count on finding a working ATM in rural areas.', essential: true, quantityMultiplier: 0 },
   { id: 'la-waterpurify', name: 'Water Purification', category: 'destination', description: 'Tap water is not safe anywhere in Laos. Bottled water works in towns but is hard to find on slow boats and remote treks. Purification tablets or SteriPen are essential for adventure travel.', essential: true, amazonSearchFallback: 'water+purification+tablets+steripen', affiliatePrice: '$15–50' },
   { id: 'la-drybag', name: 'Dry Bag for Mekong Boat Trips', category: 'destination', description: 'The 2-day slow boat from Huay Xai to Luang Prabang is the iconic Laos experience — and your bags sit on an open wooden boat. A dry bag protects everything from rain and spray.', essential: true, amazonSearchFallback: 'dry+bag+waterproof+10l+boat', affiliatePrice: '$15–25' },
+  {
+    id: 'vpn-subscription',
+    name: 'VPN Subscription',
+    category: 'electronics',
+    description: 'Secure your data on public WiFi — essential for hotel, airport, and cafe networks abroad.',
+    essential: false,
+    affiliateUrl: 'https://go.nordvpn.net/aff_c?offer_id=15&aff_id=XXXXX&url_id=902',
+    affiliatePrice: '~$3/month',
+    affiliatePartner: 'NordVPN',
+  },
+  {
+    id: 'action-camera',
+    name: 'Waterproof Action Camera',
+    category: 'gear',
+    description: 'Capture snorkeling, diving, and beach adventures hands-free.',
+    essential: false,
+    affiliateUrl: 'https://www.insta360.com/sal/go-ultra?utm_source=AffiliateCenter&utm_medium=copylink&utm_term=INRSG7H5RTR',
+    affiliatePrice: '~$299',
+    affiliatePartner: 'Insta360',
+  },
+  {
+    id: 'phone-gimbal',
+    name: 'Phone Gimbal for Travel Vlogging',
+    category: 'electronics',
+    description: 'Stabilized video from your phone — no editing needed.',
+    essential: false,
+    affiliateUrl: 'https://www.insta360.com/sal/flow-2-pro?utm_source=AffiliateCenter&utm_medium=copylink&utm_term=INRSG7H5RTR',
+    affiliatePrice: '~$149',
+    affiliatePartner: 'Insta360',
+  },
 ];
 
 export const LAOS_GEAR_RECOMMENDATIONS: GearRecommendation[] = [

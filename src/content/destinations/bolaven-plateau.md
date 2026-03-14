@@ -19,7 +19,7 @@ budgetPerDay:
   backpacker: 25
   midRange: 70
   luxury: 120
-gettingThere: "The Bolaven Plateau is accessed from Pakse, which has an international airport with flights from Bangkok and Vientiane, then a 1.5-hour drive up to the plateau."
+gettingThere: "The Bolaven Plateau is accessed from Pakse, which has an international airport with flights from Bangkok and Vientiane, then a 1.5-hour drive up to the plateau. <a href='https://airasia.prf.hn/click/camref:1101l5F4ob'>AirAsia</a> serves Vientiane and Luang Prabang from Bangkok."
 essentials:
   - { icon: "✈️", label: "Airport", value: "Nearest: Pakse International Airport (PKZ)" }
   - { icon: "💰", label: "Currency", value: "LAK (Lao Kip)" }
@@ -59,7 +59,7 @@ contentStatus: "published"
 lastVerified: "2026-02-27"
 fmContentType: "destination"
 affiliatePicks:
-  - { name: "Tad Fane Resort", type: "hotel", price: "$35-70/night", personalNote: "Perched on the rim of Tad Fane gorge with direct views of the twin waterfalls from your bungalow. Unforgettable setting.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=bolaven+plateau+laos&lang=en-us", badge: "" }
+  - { name: "Tad Fane Resort", type: "hotel", price: "$35-70/night", personalNote: "Perched on the rim of Tad Fane gorge with direct views of the twin waterfalls from your bungalow. Unforgettable setting.", affiliateUrl: "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1959462&hl=en-us&textToSearch=bolaven%20plateau%20laos", badge: "" }
   - { name: "Bolaven Plateau Motorbike Tour", type: "tour", price: "$50-80/day", personalNote: "Guided 2-3 day motorbike loop with all accommodation, meals, and local guide included. Great for those not confident riding solo.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
   - { name: "Coffee Plantation and Waterfall Day Tour", type: "tour", price: "$30-45", personalNote: "A Pakse day trip covering Sinouk Coffee plantation, Tad Fane, and Tad Yuang falls. The best single-day introduction to the plateau for those without motorbike experience.", affiliateUrl: "https://www.viator.com/bolaven-plateau?pid=P00290009", badge: "" }
 ---

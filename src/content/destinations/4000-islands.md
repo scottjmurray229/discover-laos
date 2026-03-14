@@ -58,7 +58,7 @@ contentStatus: "published"
 lastVerified: "2026-02-27"
 fmContentType: "destination"
 affiliatePicks:
-  - { name: "La Folie Lodge Don Khon", type: "hotel", price: "$60-120/night", personalNote: "The most atmospheric accommodation on the islands, with beautiful bungalows right on the Mekong and incredible sunset views.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=4000+islands+laos&lang=en-us", badge: "" }
+  - { name: "La Folie Lodge Don Khon", type: "hotel", price: "$60-120/night", personalNote: "The most atmospheric accommodation on the islands, with beautiful bungalows right on the Mekong and incredible sunset views.", affiliateUrl: "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1959462&hl=en-us&textToSearch=4000%20islands%20laos", badge: "" }
   - { name: "Dolphin Watching & Falls Tour", type: "tour", price: "$15-25", personalNote: "Full-day tour combining dolphin spotting, Khone Phapheng Falls, and Li Phi Falls with lunch included.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
   - { name: "Don Det Island Kayak Tour", type: "tour", price: "$15-25", personalNote: "Half-day kayak through the channels between the 4000 Islands — a different perspective on the Mekong than any boat gives you. The flooded forest channels between islands are meditative and beautiful.", affiliateUrl: "https://www.viator.com/si-phan-don?pid=P00290009", badge: "" }
 ---

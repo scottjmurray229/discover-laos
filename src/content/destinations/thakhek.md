@@ -19,7 +19,7 @@ budgetPerDay:
   backpacker: 20
   midRange: 55
   luxury: 100
-gettingThere: "Take a bus from Vientiane along Route 13 South (6-7 hours, ~100,000 LAK), or fly to Savannakhet and take a 2-hour bus north along the Mekong."
+gettingThere: "Take a bus from Vientiane along Route 13 South (6-7 hours, ~100,000 LAK), or fly to Savannakhet and take a 2-hour bus north along the Mekong. <a href='https://airasia.prf.hn/click/camref:1101l5F4ob'>AirAsia</a> serves Vientiane and Luang Prabang from Bangkok."
 essentials:
   - { icon: "✈️", label: "Airport", value: "Nearest: Savannakhet Airport (ZVK) or Vientiane (VTE)" }
   - { icon: "💰", label: "Currency", value: "LAK (Lao Kip)" }
@@ -59,7 +59,7 @@ contentStatus: "published"
 lastVerified: "2026-02-27"
 fmContentType: "destination"
 affiliatePicks:
-  - { name: "Inthira Thakhek Hotel", type: "hotel", price: "$35-65/night", personalNote: "Beautifully restored colonial building right on the Mekong riverfront with stylish rooms and a great restaurant.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=thakhek+laos&lang=en-us", badge: "" }
+  - { name: "Inthira Thakhek Hotel", type: "hotel", price: "$35-65/night", personalNote: "Beautifully restored colonial building right on the Mekong riverfront with stylish rooms and a great restaurant.", affiliateUrl: "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1959462&hl=en-us&textToSearch=thakhek%20laos", badge: "" }
   - { name: "Thakhek Loop Guided Tour", type: "tour", price: "$45-80/day", personalNote: "Guided 3-4 day motorbike loop with all accommodation, meals, and an experienced guide who knows every cave.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
   - { name: "Kong Lor Cave Day Trip from Thakhek", type: "tour", price: "$35-50", personalNote: "A full day to the cave and back — 2 hours each way by vehicle, then the 45-minute boat journey through 7.5km of underground river. If you cannot do the full Loop, this day trip captures the most extraordinary single experience on it.", affiliateUrl: "https://www.viator.com/thakhek?pid=P00290009", badge: "Bucket List" }
 ---

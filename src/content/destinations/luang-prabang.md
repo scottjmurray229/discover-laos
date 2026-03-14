@@ -19,7 +19,7 @@ budgetPerDay:
   backpacker: 40
   midRange: 100
   luxury: 250
-gettingThere: "Luang Prabang International Airport has direct flights from Bangkok, Chiang Mai, Hanoi, and Siem Reap, or take the Laos-China Railway from Vientiane in about 2 hours."
+gettingThere: "Luang Prabang International Airport has direct flights from Bangkok, Chiang Mai, Hanoi, and Siem Reap, or take the Laos-China Railway from Vientiane in about 2 hours. <a href='https://airasia.prf.hn/click/camref:1101l5F4ob'>AirAsia</a> serves Vientiane and Luang Prabang from Bangkok."
 essentials:
   - { icon: "✈️", label: "Airport", value: "Luang Prabang International Airport (LPQ)" }
   - { icon: "💰", label: "Currency", value: "LAK (Lao Kip)" }
@@ -59,7 +59,7 @@ contentStatus: "published"
 lastVerified: "2026-02-27"
 fmContentType: "destination"
 affiliatePicks:
-  - { name: "Avani+ Luang Prabang", type: "hotel", price: "$120-200/night", personalNote: "Stunning riverside location with infinity pool overlooking the Nam Khan river and impeccable service.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=luang+prabang+laos&lang=en-us", badge: "" }
+  - { name: "Avani+ Luang Prabang", type: "hotel", price: "$120-200/night", personalNote: "Stunning riverside location with infinity pool overlooking the Nam Khan river and impeccable service.", affiliateUrl: "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1959462&hl=en-us&textToSearch=luang%20prabang%20laos", badge: "" }
   - { name: "Kuang Si Falls & Local Villages Tour", type: "tour", price: "$30-50", personalNote: "Full-day tour including falls, bear rescue centre, and visits to local weaving villages with lunch included.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
   - { name: "Mekong Sunset Cruise", type: "tour", price: "$15-25", personalNote: "A 2-hour sunset boat ride on the Mekong with drinks and views of the golden riverbank temples. The light on Luang Prabang from the water at dusk is one of the most beautiful things I have seen in Southeast Asia.", affiliateUrl: "https://www.viator.com/luang-prabang?pid=P00290009", badge: "" }
 ---

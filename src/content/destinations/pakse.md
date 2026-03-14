@@ -19,7 +19,7 @@ budgetPerDay:
   backpacker: 20
   midRange: 60
   luxury: 120
-gettingThere: "Pakse International Airport has direct flights from Bangkok, Siem Reap, and Vientiane, or take an overnight bus from Vientiane (10-12 hours) along Route 13."
+gettingThere: "Pakse International Airport has direct flights from Bangkok, Siem Reap, and Vientiane, or take an overnight bus from Vientiane (10-12 hours) along Route 13. <a href='https://airasia.prf.hn/click/camref:1101l5F4ob'>AirAsia</a> serves Vientiane and Luang Prabang from Bangkok."
 essentials:
   - { icon: "✈️", label: "Airport", value: "Pakse International Airport (PKZ)" }
   - { icon: "💰", label: "Currency", value: "LAK (Lao Kip)" }
@@ -58,7 +58,7 @@ contentStatus: "published"
 lastVerified: "2026-02-27"
 fmContentType: "destination"
 affiliatePicks:
-  - { name: "Champasak Grand Hotel", type: "hotel", price: "$40-70/night", personalNote: "The best mid-range option in Pakse with a pool, river views, and reliable service right in the center of town.", affiliateUrl: "https://www.booking.com/searchresults.html?aid=2778866&ss=pakse+laos&lang=en-us", badge: "" }
+  - { name: "Champasak Grand Hotel", type: "hotel", price: "$40-70/night", personalNote: "The best mid-range option in Pakse with a pool, river views, and reliable service right in the center of town.", affiliateUrl: "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1959462&hl=en-us&textToSearch=pakse%20laos", badge: "" }
   - { name: "Wat Phou & Champasak Day Tour", type: "tour", price: "$30-45", personalNote: "Full-day guided tour to the UNESCO temple with lunch and Mekong river cruise included.", affiliateUrl: "https://www.getyourguide.com?partner_id=IVN6IQ3", badge: "" }
   - { name: "4000 Islands Day Trip from Pakse", type: "tour", price: "$35-50", personalNote: "A full-day trip south to Don Det and Don Khon with time for the Li Phi Falls and dolphin boat trip — perfect if you can't spare multiple nights on the islands but want a taste of the Mekong island life.", affiliateUrl: "https://www.viator.com/pakse?pid=P00290009", badge: "" }
 ---
